@@ -652,15 +652,31 @@ def node_link_list(items: list[dict], empty_text: str) -> str:
     return f'<ul class="panel-list">{"".join(rows[:120])}</ul>'
 
 
-def chain_link_list(items: list[dict], empty_text: str) -> str:
+def clean_node_excerpt(text: str, limit: int = 170) -> str:
+    cleaned = re.sub(r"\[\d+\]\s*", "", text or "")
+    cleaned = re.sub(r"\s+", " ", cleaned).strip()
+    return cleaned if len(cleaned) <= limit else cleaned[: limit - 1].rstrip() + "…"
+
+
+def chain_link_list(items: list[dict], empty_text: str, root_code: str, direction: str) -> str:
     if not items:
         return f"<p>{html.escape(empty_text)}</p>"
+    arrow = "←" if direction == "out" else "→"
+    relation = "upstream" if direction == "out" else "downstream"
     rows = []
     for item in items[:160]:
+        path = [root_code] + item.get("path", [])
+        chain = f" {arrow} ".join(path)
+        depth = item.get("depth", 1)
+        step_label = f"{depth} step{'s' if depth != 1 else ''} {relation}"
+        excerpt = clean_node_excerpt(item.get("doc", ""))
+        meta = f"{step_label} · {chain}"
+        if excerpt:
+            meta += f" · {excerpt}"
         rows.append(
             f'<li style="--depth:{min(item.get("depth", 1), 8)}">'
-            f'<a href="{html.escape(item["href"])}">{html.escape(item["text"])}</a>'
-            f'<span class="result-doc">{html.escape("depth " + str(item.get("depth", 1)) + " · " + " -> ".join(item.get("path", [])))}</span></li>'
+            f'<a href="{html.escape(item["href"])}">{html.escape(item.get("code") or item["text"])}</a>'
+            f'<span class="result-doc">{html.escape(meta)}</span></li>'
         )
     return f'<ol class="chain-list">{"".join(rows)}</ol>'
 
@@ -794,7 +810,8 @@ def write_node_pages(
                 "href": node_page_href(target_node),
                 "node_href": ref,
                 "code": target_node["code"],
-                "text": f"{target_node['code']} · {target_node['type']}",
+                "text": target_node["code"],
+                "kind": target_node["type"],
                 "doc": target_node["label"],
             })
         return items
@@ -921,10 +938,6 @@ def write_node_pages(
       <section class="node-source source-text">
         {source_html}
       </section>
-      <section class="commentary-shell">
-        <h2>Commentary</h2>
-        <p>This dossier gathers the available apparatus for {html.escape(node["code"])}: Curley notes, glossary entries, dependencies, descendants, graph data, and source links. Original interpretive commentary can be added here without disturbing the source text.</p>
-      </section>
     </article>
     <aside class="node-apparatus">
       <section>
@@ -957,11 +970,11 @@ def write_node_pages(
       </section>
       <section>
         <h2>All Ancestors</h2>
-        {chain_link_list(ancestors, "No transitive ancestors recorded.")}
+        {chain_link_list(ancestors, "No transitive ancestors recorded.", node["code"], "out")}
       </section>
       <section>
         <h2>All Descendants</h2>
-        {chain_link_list(descendants, "No transitive descendants recorded.")}
+        {chain_link_list(descendants, "No transitive descendants recorded.", node["code"], "in")}
       </section>
       <section>
         <h2>Usage Matrix</h2>
@@ -2928,7 +2941,7 @@ APP_JS = r"""
 
   function compactNodeLink(node, rel) {
     if (!node) return "";
-    return `<a class="trail-card ${rel || ""}" href="${nodePageHref(node)}"><span>${escapeHtml(rel || "")}</span><strong>${escapeHtml(node.code)}</strong><em>${escapeHtml(node.type)}</em></a>`;
+    return `<a class="trail-card ${rel || ""}" href="${nodePageHref(node)}"><span>${escapeHtml(rel || "")}</span><strong>${escapeHtml(node.code)}</strong></a>`;
   }
 
   function nodePageHref(node) {
@@ -3120,12 +3133,14 @@ APP_JS = r"""
     return rows;
   }
 
-  function chainList(items, emptyText) {
+  function chainList(items, emptyText, rootCode, direction) {
     if (!items.length) return `<p>${escapeHtml(emptyText)}</p>`;
+    const arrow = direction === "out" ? "←" : "→";
+    const relation = direction === "out" ? "upstream" : "downstream";
     return `<ol class="chain-list">${items.slice(0, 120).map(item => `
       <li style="--depth:${Math.min(item.depth, 8)}">
-        <a href="${item.href}" data-app-link>${escapeHtml(item.text || item.href)}</a>
-        <span class="result-doc">${escapeHtml(`depth ${item.depth}${item.path?.length ? " · " + item.path.join(" -> ") : ""}`)}</span>
+        <a href="${item.href}" data-app-link>${escapeHtml((item.text || item.href).split(" · ")[0])}</a>
+        <span class="result-doc">${escapeHtml(`${item.depth} step${item.depth === 1 ? "" : "s"} ${relation}${item.path?.length ? " · " + [rootCode || "current"].concat(item.path.map(part => String(part).split(" · ")[0])).join(" " + arrow + " ") : ""}`)}</span>
       </li>
     `).join("")}</ol>`;
   }
@@ -3140,9 +3155,9 @@ APP_JS = r"""
       <h2>${escapeHtml(node?.code || "Dependency Chains")}</h2>
       <p><span class="result-doc">${ancestors.length} transitive ancestor${ancestors.length === 1 ? "" : "s"} · ${descendants.length} transitive descendant${descendants.length === 1 ? "" : "s"}</span></p>
       <h3>All Ancestors</h3>
-      ${chainList(ancestors, "No transitive ancestors recorded.")}
+      ${chainList(ancestors, "No transitive ancestors recorded.", node?.code || "", "out")}
       <h3>All Descendants</h3>
-      ${chainList(descendants, "No transitive descendants recorded.")}
+      ${chainList(descendants, "No transitive descendants recorded.", node?.code || "", "in")}
     `;
   }
 
