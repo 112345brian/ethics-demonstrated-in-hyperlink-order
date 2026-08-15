@@ -511,6 +511,12 @@ def write_static(
         <input id="global-search" type="search" placeholder="Search Ethics, notes, glossary, references" aria-label="Search the corpus">
         <button id="toggle-columns" type="button" aria-pressed="false">Columns</button>
         <button id="toggle-marginalia" type="button" aria-pressed="true">Marginalia</button>
+        <label class="margin-mode-label" for="marginalia-mode">Margin</label>
+        <select id="marginalia-mode" aria-label="Choose marginalia content">
+          <option value="proof">Proof refs</option>
+          <option value="notes">Notes</option>
+          <option value="all">All refs</option>
+        </select>
         <button id="open-apparatus" type="button">Apparatus</button>
       </div>
     </header>
@@ -1477,7 +1483,8 @@ input:focus-visible {
   gap: 8px;
   min-width: 0;
 }
-input[type="search"] {
+input[type="search"],
+select {
   width: min(42vw, 420px);
   min-width: 210px;
   border: 1px solid var(--rule);
@@ -1486,6 +1493,15 @@ input[type="search"] {
   border-radius: 6px;
   padding: 8px 10px;
   font: 14px/1.2 ui-sans-serif, system-ui, sans-serif;
+}
+select {
+  width: auto;
+  min-width: 118px;
+  min-height: 40px;
+}
+.margin-mode-label {
+  color: var(--muted);
+  font: 700 12px/1 ui-sans-serif, system-ui, sans-serif;
 }
 button, .home-actions a, .doc-tools a, .doc-tools button {
   border: 1px solid var(--rule);
@@ -2370,6 +2386,8 @@ button[aria-pressed="true"] {
   .source-text { font-size: 17px; }
   .app-topbar { padding: 10px; }
   .app-command button { flex: 1 1 44%; min-height: 44px; }
+  .margin-mode-label { align-self: center; }
+  #marginalia-mode { flex: 1 1 44%; min-height: 44px; }
   .wiki-breadcrumbs { position: static; }
   .node-group a { min-height: 36px; }
   .usage-matrix th,
@@ -2609,6 +2627,7 @@ APP_JS = r"""
     contextPinned: false,
     columns: localStorage.getItem("spinoza:columns") === "1",
     marginalia: localStorage.getItem("spinoza:marginalia") !== "0",
+    marginaliaMode: localStorage.getItem("spinoza:marginaliaMode") || "proof",
   };
   const docCache = new Map();
   let hoverTimer = 0;
@@ -2732,8 +2751,16 @@ APP_JS = r"""
     document.body.classList.toggle("marginalia-on", state.marginalia);
     const columnButton = $("#toggle-columns");
     const marginaliaButton = $("#toggle-marginalia");
+    const marginaliaMode = $("#marginalia-mode");
     if (columnButton) columnButton.setAttribute("aria-pressed", state.columns ? "true" : "false");
     if (marginaliaButton) marginaliaButton.setAttribute("aria-pressed", state.marginalia ? "true" : "false");
+    if (marginaliaMode) marginaliaMode.value = state.marginaliaMode;
+  }
+
+  function marginaliaKind(link, label) {
+    if (link.classList.contains("gloss") || link.dataset.refKind === "gloss") return "";
+    if (/^\d+[a-z]?$/i.test(label) || /fn|note/i.test(link.getAttribute("href") || "")) return "note";
+    return "proof";
   }
 
   function buildMarginalia(reader) {
@@ -2742,11 +2769,15 @@ APP_JS = r"""
       const refs = [];
       const seen = new Set();
       for (const a of $$("a.reference-link[href], a.cite[href]", block)) {
-        if (a.classList.contains("gloss") || a.dataset.refKind === "gloss") continue;
+        const label = a.textContent.replace(/\s+/g, " ").trim();
+        const kind = marginaliaKind(a, label);
+        if (!kind) continue;
+        if (state.marginaliaMode === "proof" && kind !== "proof") continue;
+        if (state.marginaliaMode === "notes" && kind !== "note") continue;
         const href = normalizeHref(a.getAttribute("href"), state.currentPath);
         if (seen.has(href)) continue;
         seen.add(href);
-        refs.push({ href, label: a.textContent.replace(/\s+/g, " ").trim() });
+        refs.push({ href, label });
       }
       if (!refs.length) continue;
       const note = document.createElement("aside");
@@ -3347,6 +3378,13 @@ APP_JS = r"""
     $("#toggle-marginalia")?.addEventListener("click", () => {
       state.marginalia = !state.marginalia;
       localStorage.setItem("spinoza:marginalia", state.marginalia ? "1" : "0");
+      applyReaderModes();
+    });
+
+    $("#marginalia-mode")?.addEventListener("change", event => {
+      state.marginaliaMode = event.target.value;
+      localStorage.setItem("spinoza:marginaliaMode", state.marginaliaMode);
+      buildMarginalia($("#app-document"));
       applyReaderModes();
     });
 
