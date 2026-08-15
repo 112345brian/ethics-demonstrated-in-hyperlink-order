@@ -3328,6 +3328,9 @@ APP_JS = r"""
     $("#open-apparatus")?.addEventListener("click", () => {
       state.activeTab = "incoming";
       selectTarget(currentSectionHref());
+      if (matchMedia("(max-width: 1240px)").matches) {
+        $("#app-panel")?.scrollIntoView({ behavior: "smooth", block: "start" });
+      }
     });
 
     $("#toggle-columns")?.addEventListener("click", () => {
