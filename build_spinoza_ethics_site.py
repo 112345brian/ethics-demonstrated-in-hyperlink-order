@@ -542,14 +542,10 @@ def write_static(
     <aside class="app-panel" id="app-panel">
       <div class="panel-tabs" role="tablist" aria-label="Apparatus views">
         <button class="active" type="button" data-tab="target">Target</button>
-        <button type="button" data-tab="context">Context</button>
         <button type="button" data-tab="dossier">Dossier</button>
-        <button type="button" data-tab="proof">Proof Map</button>
+        <button type="button" data-tab="relations">Relations</button>
         <button type="button" data-tab="chains">Chains</button>
-        <button type="button" data-tab="matrix">Matrix</button>
         <button type="button" data-tab="graph">Graph</button>
-        <button type="button" data-tab="incoming">Backlinks</button>
-        <button type="button" data-tab="outgoing">Outgoing</button>
         <button type="button" data-tab="search">Search</button>
       </div>
       <section id="panel-content" class="panel-content">Loading apparatus...</section>
@@ -2121,17 +2117,20 @@ button[aria-pressed="true"] {
   flex-direction: column;
 }
 .panel-tabs {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(64px, 1fr));
+  display: flex;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
   gap: 0;
   border-bottom: 1px solid var(--rule);
 }
 .panel-tabs button {
+  flex: 1 0 auto;
   border: 0;
   border-right: 1px solid var(--rule);
   border-radius: 0;
   background: transparent;
-  padding: 12px 6px;
+  padding: 12px 10px;
+  white-space: nowrap;
 }
 .panel-tabs button.active {
   background: #fffefa;
@@ -3065,7 +3064,7 @@ APP_JS = r"""
     `;
   }
 
-  function renderContext(target) {
+  function renderRelations(target) {
     const panel = $("#panel-content");
     const nodeTarget = canonicalTarget(nearestEthicsTarget(target));
     const node = data.ethicsNodes.find(n => n.href === nodeTarget) || ethicsNodeForTarget(target);
@@ -3073,14 +3072,14 @@ APP_JS = r"""
     const usedBy = relationItems(nodeTarget, "in").filter(i => data.ethicsNodes.some(n => n.href === i.href));
     const { previous, next, siblings } = neighboringNodes(node);
     panel.innerHTML = `
-      <h2>${escapeHtml(node?.code || "Context")}</h2>
+      <h2>${escapeHtml(node?.code || "Relations")}</h2>
       <p><span class="result-doc">${escapeHtml(node ? `${nodePartLabel(node)} · ${node.type}` : target)}</span></p>
       <p>${escapeHtml(node?.label || data.anchors[target]?.label || target)}</p>
-      <h3>Breadcrumb Trails</h3>
+      <h3>Trail</h3>
       <div class="trail-row">${compactNodeLink(previous, "Previous")}${compactNodeLink(node, "Current")}${compactNodeLink(next, "Next")}</div>
-      <h3>Parents / Uses</h3>
+      <h3>Uses</h3>
       ${linkList(uses, "No structural parents are recorded for this node.")}
-      <h3>Children / Used by</h3>
+      <h3>Used By</h3>
       ${linkList(usedBy, "No structural children are recorded for this node.")}
       <h3>Siblings</h3>
       ${linkList(siblings.map(n => ({ href: n.href, text: `${n.code} · ${n.type}`, doc: n.label })), "No sibling sequence nodes available.")}
@@ -3096,13 +3095,13 @@ APP_JS = r"""
     const usedBy = relationItems(nodeTarget, "in").filter(i => data.ethicsNodes.some(n => n.href === i.href));
     const { previous, next } = neighboringNodes(node);
     mount.innerHTML = `
-      <button type="button" class="rail-handle" data-rail-tab="context" aria-label="Open context">Context</button>
+      <button type="button" class="rail-handle" data-rail-tab="relations" aria-label="Open relations">Relations</button>
       <div class="rail-body">
         <strong>${escapeHtml(node?.code || "Ethics")}</strong>
         <span>${escapeHtml(node ? `${nodePartLabel(node)} · ${node.type}` : "Current target")}</span>
         <div class="rail-counts">
-          <button type="button" data-rail-tab="context">${uses.length} uses</button>
-          <button type="button" data-rail-tab="incoming">${usedBy.length} used by</button>
+          <button type="button" data-rail-tab="relations">${uses.length} uses</button>
+          <button type="button" data-rail-tab="relations">${usedBy.length} used by</button>
         </div>
         <div class="rail-jump">${compactNodeLink(previous, "Prev")}${compactNodeLink(next, "Next")}</div>
       </div>
@@ -3234,8 +3233,6 @@ APP_JS = r"""
       ${linkList(glossary, "No linked glossary terms recorded for this node.")}
       <h3>Other Linked Resources</h3>
       ${linkList(resources, "No other linked resources recorded for this node.")}
-      <h3>Commentary Slot</h3>
-      <p>Use the canonical node page for full dossier context and future interpretive commentary.</p>
     `;
   }
 
@@ -3297,36 +3294,24 @@ APP_JS = r"""
     const outgoing = data.outgoing[target] || data.outgoing[currentSectionHref()] || [];
     $$(".panel-tabs button").forEach(btn => btn.classList.toggle("active", btn.dataset.tab === state.activeTab));
 
-    if (state.activeTab === "incoming") {
-      panel.innerHTML = incomingPanelHtml(target, rec, incoming);
-      return;
-    }
-    if (state.activeTab === "context") {
-      renderContext(target);
+    if (["relations", "context", "proof", "incoming", "outgoing"].includes(state.activeTab)) {
+      state.activeTab = "relations";
+      $$(".panel-tabs button").forEach(btn => btn.classList.toggle("active", btn.dataset.tab === state.activeTab));
+      renderRelations(target);
       return;
     }
     if (state.activeTab === "dossier") {
       renderDossier(target);
       return;
     }
-    if (state.activeTab === "proof") {
-      renderProofMap(target);
-      return;
-    }
     if (state.activeTab === "chains") {
       renderChains(target);
       return;
     }
-    if (state.activeTab === "matrix") {
-      renderMatrix(target);
-      return;
-    }
-    if (state.activeTab === "graph") {
+    if (["graph", "matrix"].includes(state.activeTab)) {
+      state.activeTab = "graph";
+      $$(".panel-tabs button").forEach(btn => btn.classList.toggle("active", btn.dataset.tab === state.activeTab));
       renderGraph(target);
-      return;
-    }
-    if (state.activeTab === "outgoing") {
-      panel.innerHTML = `<h2>Outgoing Links</h2><p>${escapeHtml(rec.label || "Current section")}</p>${linkList(outgoing, "No outgoing references recorded for this section.")}`;
       return;
     }
     if (state.activeTab === "search") {
@@ -3341,10 +3326,6 @@ APP_JS = r"""
       <p><span class="result-doc">${escapeHtml(rec.doc || state.currentPath)}</span></p>
       ${visibleSnippet ? `<p>${escapeHtml(visibleSnippet)}</p>` : ""}
       <p><a href="${target}" data-app-link>Open target</a></p>
-      <h3>Incoming</h3>
-      ${linkList(incoming.slice(0, 10), "No incoming references recorded.")}
-      <h3>Outgoing</h3>
-      ${linkList(outgoing.slice(0, 10), "No outgoing references recorded.")}
     `;
   }
 
@@ -3456,7 +3437,7 @@ APP_JS = r"""
     });
 
     $("#open-apparatus")?.addEventListener("click", () => {
-      state.activeTab = "incoming";
+      state.activeTab = "relations";
       selectTarget(currentSectionHref());
       if (matchMedia("(max-width: 1240px)").matches) {
         requestAnimationFrame(() => {
