@@ -1,0 +1,19 @@
+{
+  "name": "Spinoza Ethics Workbench",
+  "short_name": "Ethics",
+  "description": "Offline-capable scholarly workbench for Spinoza's Ethics.",
+  "start_url": "/ethics-demonstrated-in-hyperlink-order/index.html",
+  "scope": "/ethics-demonstrated-in-hyperlink-order/",
+  "display": "standalone",
+  "background_color": "#fbfaf7",
+  "theme_color": "#fbfaf7",
+  "orientation": "any",
+  "icons": [
+    {
+      "src": "/ethics-demonstrated-in-hyperlink-order/cover.jpeg",
+      "sizes": "512x512",
+      "type": "image/jpeg",
+      "purpose": "any"
+    }
+  ]
+}
