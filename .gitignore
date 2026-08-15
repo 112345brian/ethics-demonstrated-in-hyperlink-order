@@ -1,5 +1,6 @@
 dist/
 spinoza-ethics.db
+*.tar.gz
 apparatus.html
 assets/
 cover.jpeg
