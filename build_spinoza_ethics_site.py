@@ -355,6 +355,12 @@ def enhance_doc(rel: str, backlinks: dict[str, list[dict]]) -> str:
     link = ET.SubElement(head, "link")
     link.set("rel", "stylesheet")
     link.set("href", "/assets/site.css")
+    manifest = ET.SubElement(head, "link")
+    manifest.set("rel", "manifest")
+    manifest.set("href", "/manifest.webmanifest")
+    theme = ET.SubElement(head, "meta")
+    theme.set("name", "theme-color")
+    theme.set("content", "#fbfaf7")
     script = ET.SubElement(head, "script")
     script.set("defer", "defer")
     script.set("src", "/assets/site-data.js")
@@ -367,6 +373,9 @@ def enhance_doc(rel: str, backlinks: dict[str, list[dict]]) -> str:
     script = ET.SubElement(head, "script")
     script.set("defer", "defer")
     script.set("src", "/assets/site.js")
+    script = ET.SubElement(head, "script")
+    script.set("defer", "defer")
+    script.set("src", "/assets/pwa.js")
 
     body = root.find(".//{*}body")
     if body is not None:
@@ -482,11 +491,14 @@ def write_static(
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Spinoza Ethics Scholarly Workbench</title>
+  <meta name="theme-color" content="#fbfaf7">
+  <link rel="manifest" href="/manifest.webmanifest">
   <link rel="stylesheet" href="/assets/site.css">
   <script defer src="/assets/site-data.js"></script>
   <script defer src="/assets/site-data-links.js"></script>
   <script defer src="/assets/site-data-search.js"></script>
   <script defer src="/assets/app.js"></script>
+  <script defer src="/assets/pwa.js"></script>
 </head>
 <body class="app-body">
   <a class="skip-link" href="#app-document">Skip to text</a>
@@ -881,11 +893,14 @@ def write_node_pages(
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>{html.escape(node["code"])} | Spinoza Ethics Node</title>
+  <meta name="theme-color" content="#fbfaf7">
+  <link rel="manifest" href="/manifest.webmanifest">
   <link rel="stylesheet" href="/assets/site.css">
   <script defer src="/assets/site-data.js"></script>
   <script defer src="/assets/site-data-links.js"></script>
   <script defer src="/assets/site-data-search.js"></script>
   <script defer src="/assets/site.js"></script>
+  <script defer src="/assets/pwa.js"></script>
 </head>
 <body>
   <a class="skip-link" href="#node-main">Skip to text</a>
@@ -1077,7 +1092,10 @@ def write_node_index_and_exports(
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Ethics Node Index | Spinoza Ethics</title>
+  <meta name="theme-color" content="#fbfaf7">
+  <link rel="manifest" href="/manifest.webmanifest">
   <link rel="stylesheet" href="/assets/site.css">
+  <script defer src="/assets/pwa.js"></script>
 </head>
 <body>
   <a class="skip-link" href="#node-index-main">Skip to index</a>
@@ -1153,7 +1171,10 @@ def write_resources_page() -> None:
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Resources | Spinoza Ethics</title>
+  <meta name="theme-color" content="#fbfaf7">
+  <link rel="manifest" href="/manifest.webmanifest">
   <link rel="stylesheet" href="/assets/site.css">
+  <script defer src="/assets/pwa.js"></script>
 </head>
 <body>
   <a class="skip-link" href="#resources-main">Skip to resources</a>
@@ -2480,6 +2501,95 @@ JS = r"""
 """
 
 
+def write_pwa_files() -> None:
+    assets = OUT / "assets"
+    assets.mkdir(parents=True, exist_ok=True)
+    manifest = {
+        "name": "Spinoza Ethics Workbench",
+        "short_name": "Ethics",
+        "description": "Offline-capable scholarly workbench for Spinoza's Ethics.",
+        "start_url": "/index.html",
+        "scope": "/",
+        "display": "standalone",
+        "background_color": "#fbfaf7",
+        "theme_color": "#fbfaf7",
+        "orientation": "any",
+        "icons": [
+            {"src": "/cover.jpeg", "sizes": "512x512", "type": "image/jpeg", "purpose": "any"}
+        ],
+    }
+    (OUT / "manifest.webmanifest").write_text(json.dumps(manifest, ensure_ascii=False, indent=2), encoding="utf-8")
+    (assets / "pwa.js").write_text("""(function () {
+  if (!("serviceWorker" in navigator)) return;
+  window.addEventListener("load", function () {
+    navigator.serviceWorker.register("/sw.js").catch(function () {});
+  });
+})();
+""", encoding="utf-8")
+
+    cached_paths = []
+    for path in sorted(OUT.rglob("*")):
+        if not path.is_file():
+            continue
+        rel = path.relative_to(OUT).as_posix()
+        if rel.startswith(".git/") or rel.endswith(".tar.gz") or rel == "spinoza-ethics.db":
+            continue
+        cached_paths.append("/" + rel)
+    if "/index.html" not in cached_paths:
+        cached_paths.insert(0, "/index.html")
+    cache_name = "spinoza-ethics-workbench-v" + str(len(cached_paths))
+    (OUT / "sw.js").write_text(f"""const CACHE_NAME = {json.dumps(cache_name)};
+const PRECACHE_URLS = {json.dumps(cached_paths, ensure_ascii=False)};
+
+self.addEventListener("install", event => {{
+  event.waitUntil((async () => {{
+    const cache = await caches.open(CACHE_NAME);
+    for (const url of PRECACHE_URLS) {{
+      try {{
+        await cache.add(url);
+      }} catch (error) {{
+        console.warn("Skipping offline cache item", url, error);
+      }}
+    }}
+    await self.skipWaiting();
+  }})());
+}});
+
+self.addEventListener("activate", event => {{
+  event.waitUntil((async () => {{
+    const names = await caches.keys();
+    await Promise.all(names.filter(name => name !== CACHE_NAME).map(name => caches.delete(name)));
+    await self.clients.claim();
+  }})());
+}});
+
+self.addEventListener("fetch", event => {{
+  const request = event.request;
+  if (request.method !== "GET") return;
+  const url = new URL(request.url);
+  if (url.origin !== location.origin) return;
+
+  event.respondWith((async () => {{
+    const cached = await caches.match(request);
+    if (cached) return cached;
+    try {{
+      const response = await fetch(request);
+      if (response && response.ok) {{
+        const cache = await caches.open(CACHE_NAME);
+        cache.put(request, response.clone());
+      }}
+      return response;
+    }} catch (error) {{
+      if (request.mode === "navigate") {{
+        return caches.match("/index.html");
+      }}
+      throw error;
+    }}
+  }})());
+}});
+""", encoding="utf-8")
+
+
 APP_JS = r"""
 
 
@@ -3277,6 +3387,7 @@ def main() -> None:
     for asset in ["cover.jpeg"]:
         if (SOURCE / asset).exists():
             shutil.copy2(SOURCE / asset, OUT / asset)
+    write_pwa_files()
 
     report = {
         "source": str(SOURCE),

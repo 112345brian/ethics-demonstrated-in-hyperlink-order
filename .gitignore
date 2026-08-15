@@ -8,7 +8,9 @@ fonts/
 graph/
 images/
 index.html
+manifest.webmanifest
 nodes/
 resources/
+sw.js
 text/
 titlepage.xhtml
