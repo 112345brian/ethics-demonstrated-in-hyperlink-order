@@ -3329,7 +3329,11 @@ APP_JS = r"""
       state.activeTab = "incoming";
       selectTarget(currentSectionHref());
       if (matchMedia("(max-width: 1240px)").matches) {
-        $("#app-panel")?.scrollIntoView({ behavior: "smooth", block: "start" });
+        requestAnimationFrame(() => {
+          const panel = $("#app-panel");
+          if (!panel) return;
+          window.scrollTo({ top: panel.getBoundingClientRect().top + window.scrollY - 8, behavior: "auto" });
+        });
       }
     });
 
