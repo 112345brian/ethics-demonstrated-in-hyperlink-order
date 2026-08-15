@@ -2741,7 +2741,8 @@ APP_JS = r"""
     for (const block of $$("p, li, blockquote", reader)) {
       const refs = [];
       const seen = new Set();
-      for (const a of $$("a.reference-link[href], a.cite[href], a.gloss[href]", block)) {
+      for (const a of $$("a.reference-link[href], a.cite[href]", block)) {
+        if (a.classList.contains("gloss") || a.dataset.refKind === "gloss") continue;
         const href = normalizeHref(a.getAttribute("href"), state.currentPath);
         if (seen.has(href)) continue;
         seen.add(href);
@@ -3396,6 +3397,8 @@ def main() -> None:
     for asset in ["cover.jpeg"]:
         if (SOURCE / asset).exists():
             shutil.copy2(SOURCE / asset, OUT / asset)
+            if asset == "cover.jpeg":
+                shutil.copy2(SOURCE / asset, OUT / "favicon.ico")
     write_pwa_files()
 
     report = {
