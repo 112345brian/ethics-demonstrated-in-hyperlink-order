@@ -2151,6 +2151,13 @@ button[aria-pressed="true"] {
   border-top: 1px solid var(--rule);
   padding-top: 8px;
 }
+.panel-note {
+  border-left: 3px solid rgba(15,95,106,.35);
+  margin: 12px 0;
+  padding: 8px 10px;
+  background: rgba(15,95,106,.06);
+  color: var(--muted);
+}
 .chain-list {
   display: grid;
   gap: 7px;
@@ -2746,6 +2753,82 @@ APP_JS = r"""
     }).join("")}</ul>`;
   }
 
+  function cleanPanelLabel(text) {
+    return String(text || "").replace(/\[\d+\]\s*/g, "").replace(/\s+/g, " ").trim();
+  }
+
+  function isGlossaryBacklink(item) {
+    return /\bgloss\b/.test(item?.classes || "");
+  }
+
+  function sourceSummaryItem(item) {
+    const source = item.from || item.href || "#";
+    const canonical = canonicalTarget(source);
+    const node = data.ethicsNodes.find(n => n.href === canonical);
+    const anchor = data.anchors[source] || data.anchors[canonical] || {};
+    if (node) {
+      return {
+        href: node.href,
+        text: `${node.code} · ${node.type}`,
+        doc: cleanPanelLabel(node.label || anchor.label || item.doc || ""),
+        structural: true,
+      };
+    }
+    return {
+      href: source,
+      text: cleanPanelLabel(anchor.label || item.label || source),
+      doc: documentLabel(item.file || anchor.file || source.split("#")[0]),
+      structural: false,
+    };
+  }
+
+  function groupedMentionList(items) {
+    const groups = new Map();
+    for (const item of items || []) {
+      const summary = sourceSummaryItem(item);
+      const group = groups.get(summary.href) || { ...summary, count: 0, labels: new Set() };
+      group.count += 1;
+      if (item.label) group.labels.add(cleanPanelLabel(item.label).toLowerCase());
+      groups.set(summary.href, group);
+    }
+    return [...groups.values()].sort((a, b) => {
+      if (a.structural !== b.structural) return a.structural ? -1 : 1;
+      return b.count - a.count || a.text.localeCompare(b.text, undefined, { numeric: true });
+    }).map(group => {
+      const labels = [...group.labels].filter(Boolean).slice(0, 4).join(", ");
+      const suffix = group.count > 1 ? ` · ${group.count} mentions` : " · 1 mention";
+      return {
+        href: group.href,
+        text: group.text,
+        doc: `${group.doc || ""}${labels ? ` · terms: ${labels}` : ""}${suffix}`,
+      };
+    });
+  }
+
+  function incomingPanelHtml(target, rec, incoming) {
+    const nodeTarget = canonicalTarget(nearestEthicsTarget(target));
+    const targetNode = data.ethicsNodes.find(n => n.href === nodeTarget || n.href === target);
+    const glossaryLinks = incoming.filter(isGlossaryBacklink);
+    const formalLinks = incoming.filter(item => !isGlossaryBacklink(item));
+    const glossaryHeavy = glossaryLinks.length >= 8 && glossaryLinks.length >= formalLinks.length;
+    if (targetNode && !glossaryHeavy) {
+      const structuralUses = relationItems(targetNode.href, "in").filter(item => data.ethicsNodes.some(n => n.href === item.href));
+      return `<h2>Used By</h2><p>${escapeHtml(targetNode.code)} · ${escapeHtml(targetNode.type)}</p>${linkList(structuralUses, "No incoming structural references recorded for this node.")}`;
+    }
+    if (glossaryHeavy) {
+      const formal = formalLinks.map(sourceSummaryItem);
+      const mentions = groupedMentionList(glossaryLinks);
+      const combined = formal.concat(mentions);
+      return `
+        <h2>Mentions</h2>
+        <p>${escapeHtml(cleanPanelLabel(rec.label || target))}</p>
+        <p class="panel-note">Collapsed ${glossaryLinks.length} inline glossary mention${glossaryLinks.length === 1 ? "" : "s"} into distinct source locations. Use Search when you need every raw occurrence.</p>
+        ${linkList(combined, "No incoming references recorded for this exact anchor.")}
+      `;
+    }
+    return `<h2>References To This</h2><p>${escapeHtml(cleanPanelLabel(rec.label || target))}</p>${linkList(groupedMentionList(incoming), "No incoming references recorded for this exact anchor.")}`;
+  }
+
   function applyReaderModes() {
     document.body.classList.toggle("columns-on", state.columns);
     document.body.classList.toggle("marginalia-on", state.marginalia);
@@ -3200,7 +3283,7 @@ APP_JS = r"""
     $$(".panel-tabs button").forEach(btn => btn.classList.toggle("active", btn.dataset.tab === state.activeTab));
 
     if (state.activeTab === "incoming") {
-      panel.innerHTML = `<h2>Backlinks</h2><p>${escapeHtml(rec.label || target)}</p>${linkList(incoming, "No incoming references recorded for this exact anchor.")}`;
+      panel.innerHTML = incomingPanelHtml(target, rec, incoming);
       return;
     }
     if (state.activeTab === "context") {
