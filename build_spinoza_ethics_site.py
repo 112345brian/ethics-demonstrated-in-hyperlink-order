@@ -2225,6 +2225,50 @@ button[aria-pressed="true"] {
   color: var(--muted);
   font-family: ui-sans-serif, system-ui, sans-serif;
 }
+@media (min-width: 981px) and (max-width: 1240px) {
+  .app-frame {
+    grid-template-columns: 260px minmax(0, 1fr);
+    grid-template-rows: auto minmax(0, 1fr) minmax(320px, 42vh);
+    grid-template-areas:
+      "top top"
+      "side reader"
+      "panel panel";
+  }
+  .app-command { width: min(680px, 58vw); }
+  .app-reader { padding: 0 22px 44px; }
+  .app-panel {
+    border-left: 0;
+    border-top: 1px solid var(--rule);
+  }
+  .panel-tabs {
+    display: flex;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+  .panel-tabs button {
+    min-width: max-content;
+    min-height: 44px;
+    padding-inline: 12px;
+    white-space: nowrap;
+  }
+  .columns-on .app-document {
+    max-width: 100%;
+    column-count: 2;
+    column-gap: 34px;
+  }
+  .marginalia-on .app-document,
+  .columns-on.marginalia-on .app-document {
+    padding-right: 0;
+  }
+  .marginalia-on .margin-note {
+    position: static;
+    display: inline-grid;
+    width: auto;
+    max-width: 100%;
+    margin: .45em 0 .2em;
+    break-inside: avoid;
+  }
+}
 @media (max-width: 980px) {
   .reader-main { grid-template-columns: 1fr; padding: 18px; }
   .apparatus-panel { position: static; max-height: none; border-left: 0; border-top: 1px solid var(--rule); padding: 18px 0 0; }
@@ -2260,12 +2304,39 @@ button[aria-pressed="true"] {
   }
   .context-rail { display: none; }
   .columns-on .app-document { column-count: 1; column-rule: 0; }
+  .columns-on .app-document h1,
+  .columns-on .app-document h2 {
+    column-span: none;
+  }
   .marginalia-on .app-document { padding-right: 0; }
   .marginalia-on .margin-note {
     position: static;
     display: grid;
     width: auto;
     margin: .45em 0 .2em;
+  }
+}
+@media (min-width: 720px) and (max-width: 980px) {
+  .app-reader { padding: 0 28px 44px; }
+  .source-text { max-width: 100%; font-size: 18px; }
+  .columns-on .app-document {
+    column-count: 2;
+    column-gap: 32px;
+    column-rule: 1px solid var(--rule);
+  }
+  .columns-on .app-document h1,
+  .columns-on .app-document h2 {
+    column-span: all;
+  }
+  .node-source {
+    column-count: 2;
+    column-gap: 32px;
+    column-rule: 1px solid var(--rule);
+  }
+  .node-source h1,
+  .node-source h2,
+  .node-source h3 {
+    column-span: all;
   }
 }
 @media (max-width: 620px) {
