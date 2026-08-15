@@ -360,6 +360,12 @@ def enhance_doc(rel: str, backlinks: dict[str, list[dict]]) -> str:
     script.set("src", "/assets/site-data.js")
     script = ET.SubElement(head, "script")
     script.set("defer", "defer")
+    script.set("src", "/assets/site-data-links.js")
+    script = ET.SubElement(head, "script")
+    script.set("defer", "defer")
+    script.set("src", "/assets/site-data-search.js")
+    script = ET.SubElement(head, "script")
+    script.set("defer", "defer")
     script.set("src", "/assets/site.js")
 
     body = root.find(".//{*}body")
@@ -438,13 +444,21 @@ def write_static(
         "window.SPINOZA_SITE_DATA = " + json.dumps({
             "records": records,
             "anchors": anchors,
-            "backlinks": backlinks,
-            "outgoing": outgoing,
-            "search": search,
             "ethicsNodes": ethics_nodes,
             "nodeForAnchor": node_for_anchor,
             "coreFiles": CORE_FILES,
         }, ensure_ascii=False) + ";\n",
+        encoding="utf-8",
+    )
+    (assets / "site-data-links.js").write_text(
+        "Object.assign(window.SPINOZA_SITE_DATA, " + json.dumps({
+            "backlinks": backlinks,
+            "outgoing": outgoing,
+        }, ensure_ascii=False) + ");\n",
+        encoding="utf-8",
+    )
+    (assets / "site-data-search.js").write_text(
+        "window.SPINOZA_SITE_DATA.search = " + json.dumps(search, ensure_ascii=False) + ";\n",
         encoding="utf-8",
     )
     (assets / "site.css").write_text(CSS, encoding="utf-8")
@@ -470,6 +484,8 @@ def write_static(
   <title>Spinoza Ethics Scholarly Workbench</title>
   <link rel="stylesheet" href="/assets/site.css">
   <script defer src="/assets/site-data.js"></script>
+  <script defer src="/assets/site-data-links.js"></script>
+  <script defer src="/assets/site-data-search.js"></script>
   <script defer src="/assets/app.js"></script>
 </head>
 <body class="app-body">
@@ -536,6 +552,8 @@ def write_static(
   <title>Reference Apparatus | Spinoza Ethics</title>
   <link rel="stylesheet" href="/assets/site.css">
   <script defer src="/assets/site-data.js"></script>
+  <script defer src="/assets/site-data-links.js"></script>
+  <script defer src="/assets/site-data-search.js"></script>
   <script defer src="/assets/site.js"></script>
 </head>
 <body>
@@ -865,6 +883,8 @@ def write_node_pages(
   <title>{html.escape(node["code"])} | Spinoza Ethics Node</title>
   <link rel="stylesheet" href="/assets/site.css">
   <script defer src="/assets/site-data.js"></script>
+  <script defer src="/assets/site-data-links.js"></script>
+  <script defer src="/assets/site-data-search.js"></script>
   <script defer src="/assets/site.js"></script>
 </head>
 <body>
