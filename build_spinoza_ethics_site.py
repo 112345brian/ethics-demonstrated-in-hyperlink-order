@@ -14,6 +14,8 @@ import xml.etree.ElementTree as ET
 
 SOURCE = Path("/tmp/spinoza_work").resolve()
 OUT = Path("/Users/bri/epub-rebuilds-artifacts/spinoza-ethics-site").resolve()
+# Sites serves this build through a worker bundled under dist/. The deployed
+# worker tries both root-relative and /dist-prefixed asset paths.
 
 CORE_FILES = [
     "text/part0029_split_000.html",  # Editorial Preface
