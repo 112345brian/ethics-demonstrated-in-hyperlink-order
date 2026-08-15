@@ -2,21 +2,25 @@
 
 from __future__ import annotations
 
+from spinoza_ethics.config import BuildConfig
 from spinoza_ethics.render.fragments import chain_link_list, clean_node_excerpt, node_link_list
+
+ROOT = BuildConfig.create(".", ".")
+PREFIXED = BuildConfig.create(".", ".", base_path="/repo-name")
 
 # --- node_link_list ------------------------------------------------------
 
 
 def test_node_link_list_renders_the_empty_text_as_a_paragraph():
-    assert node_link_list([], "Nothing yet.") == "<p>Nothing yet.</p>"
+    assert node_link_list(ROOT, [], "Nothing yet.") == "<p>Nothing yet.</p>"
 
 
 def test_node_link_list_escapes_the_empty_text():
-    assert node_link_list([], "a & b") == "<p>a &amp; b</p>"
+    assert node_link_list(ROOT, [], "a & b") == "<p>a &amp; b</p>"
 
 
 def test_node_link_list_renders_one_item_per_link():
-    html = node_link_list([{"href": "/nodes/IP1.html", "text": "IP1", "doc": "Ethics I-II"}], "e")
+    html = node_link_list(ROOT, [{"href": "/nodes/IP1.html", "text": "IP1", "doc": "Ethics I-II"}], "e")
     assert html == (
         '<ul class="panel-list"><li><a href="/nodes/IP1.html">IP1</a>'
         '<span class="result-doc">Ethics I-II</span></li></ul>'
@@ -25,20 +29,25 @@ def test_node_link_list_renders_one_item_per_link():
 
 def test_node_link_list_deduplicates_identical_href_and_label():
     item = {"href": "/nodes/IP1.html", "text": "IP1"}
-    assert node_link_list([item, dict(item)], "e").count("<li>") == 1
+    assert node_link_list(ROOT, [item, dict(item)], "e").count("<li>") == 1
 
 
 def test_node_link_list_falls_back_through_href_keys():
-    assert 'href="/text/a.html#x"' in node_link_list([{"from": "/text/a.html#x"}], "e")
+    assert 'href="/text/a.html#x"' in node_link_list(ROOT, [{"from": "/text/a.html#x"}], "e")
 
 
 def test_node_link_list_escapes_labels():
-    assert "&amp;" in node_link_list([{"href": "/a", "text": "a & b"}], "e")
+    assert "&amp;" in node_link_list(ROOT, [{"href": "/a", "text": "a & b"}], "e")
 
 
 def test_node_link_list_caps_at_120_rows():
     items = [{"href": f"/nodes/IP{i}.html", "text": f"IP{i}"} for i in range(200)]
-    assert node_link_list(items, "e").count("<li>") == 120
+    assert node_link_list(ROOT, items, "e").count("<li>") == 120
+
+
+def test_node_link_list_prefixes_hrefs_with_the_deploy_base_path():
+    html = node_link_list(PREFIXED, [{"href": "/nodes/IP1.html", "text": "IP1"}], "e")
+    assert 'href="/repo-name/nodes/IP1.html"' in html
 
 
 # --- clean_node_excerpt --------------------------------------------------
@@ -80,29 +89,34 @@ def chain_item(depth: int = 1, path=("IP1",)) -> dict:
 
 
 def test_chain_link_list_empty_text():
-    assert chain_link_list([], "No chain.", "IP2", "out") == "<p>No chain.</p>"
+    assert chain_link_list(ROOT, [], "No chain.", "IP2", "out") == "<p>No chain.</p>"
 
 
 def test_chain_link_list_renders_the_upstream_arrow_and_root():
-    html = chain_link_list([chain_item()], "e", "IP2", "out")
+    html = chain_link_list(ROOT, [chain_item()], "e", "IP2", "out")
     assert "1 step upstream · IP2 ← IP1" in html
 
 
 def test_chain_link_list_renders_the_downstream_arrow():
-    html = chain_link_list([chain_item()], "e", "IP2", "in")
+    html = chain_link_list(ROOT, [chain_item()], "e", "IP2", "in")
     assert "1 step downstream · IP2 → IP1" in html
 
 
 def test_chain_link_list_pluralises_the_step_count():
-    html = chain_link_list([chain_item(depth=2, path=("IP3", "IP1"))], "e", "IP2", "out")
+    html = chain_link_list(ROOT, [chain_item(depth=2, path=("IP3", "IP1"))], "e", "IP2", "out")
     assert "2 steps upstream · IP2 ← IP3 ← IP1" in html
 
 
 def test_chain_link_list_clamps_the_depth_custom_property():
-    html = chain_link_list([chain_item(depth=12)], "e", "IP2", "out")
+    html = chain_link_list(ROOT, [chain_item(depth=12)], "e", "IP2", "out")
     assert 'style="--depth:8"' in html
 
 
 def test_chain_link_list_caps_at_160_rows():
     items = [chain_item() for _ in range(200)]
-    assert chain_link_list(items, "e", "IP2", "out").count("<li ") == 160
+    assert chain_link_list(ROOT, items, "e", "IP2", "out").count("<li ") == 160
+
+
+def test_chain_link_list_prefixes_hrefs_with_the_deploy_base_path():
+    html = chain_link_list(PREFIXED, [chain_item()], "e", "IP2", "out")
+    assert 'href="/repo-name/nodes/IP1.html"' in html

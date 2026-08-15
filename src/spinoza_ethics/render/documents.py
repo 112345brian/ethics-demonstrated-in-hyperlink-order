@@ -2,16 +2,20 @@
 
 from __future__ import annotations
 
+import json
 import re
 import xml.etree.ElementTree as ET
 from pathlib import Path
 
 from ..config import DOC_LABELS, HTML_NS, BuildConfig
+from ..templating import site_url
 from ..xmlutil import absolutize_href, lname, parse
 
 
 def enhance_doc(config: BuildConfig, rel: str) -> str:
     """Return the site-shell version of one source document."""
+    base = config.base_path
+
     tree = parse(config.source / rel)
     root = tree.getroot()
     head = root.find(".//{*}head")
@@ -27,28 +31,30 @@ def enhance_doc(config: BuildConfig, rel: str) -> str:
             head.remove(child)
     link = ET.SubElement(head, "link")
     link.set("rel", "stylesheet")
-    link.set("href", "/assets/site.css")
+    link.set("href", site_url(base, "/assets/site.css"))
     manifest = ET.SubElement(head, "link")
     manifest.set("rel", "manifest")
-    manifest.set("href", "/manifest.webmanifest")
+    manifest.set("href", site_url(base, "/manifest.webmanifest"))
     theme = ET.SubElement(head, "meta")
     theme.set("name", "theme-color")
     theme.set("content", "#fbfaf7")
+    base_script = ET.SubElement(head, "script")
+    base_script.text = f"window.SPINOZA_BASE_PATH = {json.dumps(base)};"
     script = ET.SubElement(head, "script")
     script.set("defer", "defer")
-    script.set("src", "/assets/site-data.js")
+    script.set("src", site_url(base, "/assets/site-data.js"))
     script = ET.SubElement(head, "script")
     script.set("defer", "defer")
-    script.set("src", "/assets/site-data-links.js")
+    script.set("src", site_url(base, "/assets/site-data-links.js"))
     script = ET.SubElement(head, "script")
     script.set("defer", "defer")
-    script.set("src", "/assets/site-data-search.js")
+    script.set("src", site_url(base, "/assets/site-data-search.js"))
     script = ET.SubElement(head, "script")
     script.set("defer", "defer")
-    script.set("src", "/assets/site.js")
+    script.set("src", site_url(base, "/assets/site.js"))
     script = ET.SubElement(head, "script")
     script.set("defer", "defer")
-    script.set("src", "/assets/pwa.js")
+    script.set("src", site_url(base, "/assets/pwa.js"))
 
     body = root.find(".//{*}body")
     if body is not None:
@@ -58,7 +64,7 @@ def enhance_doc(config: BuildConfig, rel: str) -> str:
             body.remove(child)
         shell = ET.Element("div", {"class": "reader-shell"})
         top = ET.Element("header", {"class": "topbar"})
-        brand = ET.SubElement(top, "a", {"class": "brand", "href": "/index.html"})
+        brand = ET.SubElement(top, "a", {"class": "brand", "href": site_url(base, "/index.html")})
         brand.text = "Spinoza Ethics"
         controls = ET.SubElement(top, "div", {"class": "top-actions"})
         search = ET.SubElement(controls, "input", {
@@ -73,8 +79,8 @@ def enhance_doc(config: BuildConfig, rel: str) -> str:
         main = ET.Element("main", {"class": "reader-main"})
         article = ET.SubElement(main, "article", {"class": "source-text"})
         banner = ET.SubElement(article, "nav", {"class": "doc-tools", "aria-label": "Document tools"})
-        ET.SubElement(banner, "a", {"href": "/index.html#contents"}).text = "Contents"
-        ET.SubElement(banner, "a", {"href": "/apparatus.html"}).text = "Apparatus"
+        ET.SubElement(banner, "a", {"href": site_url(base, "/index.html#contents")}).text = "Contents"
+        ET.SubElement(banner, "a", {"href": site_url(base, "/apparatus.html")}).text = "Apparatus"
         ET.SubElement(banner, "button", {"type": "button", "class": "copy-anchor"}).text = "Copy link"
         for child in original_children:
             article.append(child)
@@ -90,7 +96,7 @@ def enhance_doc(config: BuildConfig, rel: str) -> str:
     for a in root.iter(f"{{{HTML_NS}}}a"):
         href = a.attrib.get("href")
         if href is not None:
-            a.set("href", absolutize_href(rel, href))
+            a.set("href", site_url(base, absolutize_href(rel, href)))
         classes = set(a.attrib.get("class", "").split())
         if "cite" in classes:
             classes.add("reference-link")
@@ -106,7 +112,7 @@ def enhance_doc(config: BuildConfig, rel: str) -> str:
     for el in root.iter():
         src = el.attrib.get("src")
         if src and not re.match(r"^[a-z]+:", src) and not src.startswith("/"):
-            el.set("src", "/" + (Path(rel).parent / src).as_posix())
+            el.set("src", site_url(base, "/" + (Path(rel).parent / src).as_posix()))
 
     return "<!doctype html>\n" + ET.tostring(root, encoding="unicode", method="html")
 

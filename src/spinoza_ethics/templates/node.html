@@ -5,19 +5,20 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>$code | Spinoza Ethics Node</title>
   <meta name="theme-color" content="#fbfaf7">
-  <link rel="manifest" href="/manifest.webmanifest">
-  <link rel="stylesheet" href="/assets/site.css">
-  <script defer src="/assets/site-data.js"></script>
-  <script defer src="/assets/site-data-links.js"></script>
-  <script defer src="/assets/site-data-search.js"></script>
-  <script defer src="/assets/site.js"></script>
-  <script defer src="/assets/pwa.js"></script>
+  <link rel="manifest" href="$base/manifest.webmanifest">
+  <link rel="stylesheet" href="$base/assets/site.css">
+  <script>window.SPINOZA_BASE_PATH = $base_json;</script>
+  <script defer src="$base/assets/site-data.js"></script>
+  <script defer src="$base/assets/site-data-links.js"></script>
+  <script defer src="$base/assets/site-data-search.js"></script>
+  <script defer src="$base/assets/site.js"></script>
+  <script defer src="$base/assets/pwa.js"></script>
 </head>
 <body>
   <a class="skip-link" href="#node-main">Skip to text</a>
-  <header class="topbar"><a class="brand" href="/index.html">Spinoza Ethics</a><div class="top-actions"><a href="$source_href">Open in source</a><a href="/index.html?doc=$source_query">Open in workbench</a></div></header>
+  <header class="topbar"><a class="brand" href="$base/index.html">Spinoza Ethics</a><div class="top-actions"><a href="$source_href">Open in source</a><a href="$base/index.html?doc=$source_query">Open in workbench</a></div></header>
   <main class="node-page">
-    <nav class="wiki-breadcrumbs" aria-label="Breadcrumbs"><a href="/index.html">Ethics</a><span class="crumb-sep">/</span><a href="$source_href">$doc</a><span class="crumb-sep">/</span><a class="crumb-current" href="$page_href">$code</a></nav>
+    <nav class="wiki-breadcrumbs" aria-label="Breadcrumbs"><a href="$base/index.html">Ethics</a><span class="crumb-sep">/</span><a href="$source_href">$doc</a><span class="crumb-sep">/</span><a class="crumb-current" href="$page_href">$code</a></nav>
     <article class="node-main" id="node-main">
       <p class="kicker">$type</p>
       <h1>$code</h1>

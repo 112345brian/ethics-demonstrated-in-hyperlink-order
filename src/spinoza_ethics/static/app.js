@@ -6,6 +6,20 @@
 
 (function () {
   const data = window.SPINOZA_SITE_DATA || { anchors: {}, backlinks: {}, outgoing: {}, search: [], records: [], coreFiles: [], ethicsNodes: [], nodeForAnchor: {} };
+  // Every value in `data` (and every value derived from it) is a canonical,
+  // *unprefixed* site-root path -- the deploy base path is added only when a
+  // path is written into a real href/fetch/pushState, and stripped back off
+  // when a real browser path is used to look something up in `data`.
+  const BASE = window.SPINOZA_BASE_PATH || "";
+  function withBase(path) {
+    if (!BASE || !path || path.charAt(0) !== "/") return path;
+    return path === BASE || path.startsWith(BASE + "/") ? path : BASE + path;
+  }
+  function stripBase(path) {
+    if (!BASE || !path) return path;
+    if (path === BASE) return "/";
+    return path.startsWith(BASE + "/") ? path.slice(BASE.length) : path;
+  }
   const state = {
     currentPath: "/text/part0029_split_001.html",
     currentHash: "",
@@ -60,12 +74,14 @@
     const reader = $("#app-document");
     if (!reader) return;
     reader.innerHTML = '<p class="app-loading">Loading source...</p>';
-    const doc = await fetchDoc(state.currentPath);
+    const doc = await fetchDoc(withBase(state.currentPath));
     const article = doc.querySelector(".source-text") || doc.body;
     reader.innerHTML = article.innerHTML;
     reader.querySelectorAll("script, .topbar, .apparatus-panel, .doc-tools").forEach(el => el.remove());
     reader.querySelectorAll("a[href]").forEach(a => {
-      a.href = normalizeHref(a.getAttribute("href"), state.currentPath);
+      // Resolve against the real (base-prefixed) page URL: a bare-fragment
+      // href like "#cite-ID3" must resolve to a fetchable, prefixed path.
+      a.href = normalizeHref(a.getAttribute("href"), withBase(state.currentPath));
       if (a.classList.contains("cite") || a.classList.contains("gloss")) {
         a.classList.add("reference-link");
       }
@@ -73,7 +89,7 @@
     buildMarginalia(reader);
     applyReaderModes();
     if (push) {
-      const appUrl = "/index.html?doc=" + encodeURIComponent(state.currentPath + state.currentHash);
+      const appUrl = withBase("/index.html") + "?doc=" + encodeURIComponent(state.currentPath + state.currentHash);
       history.pushState({ target: state.currentPath + state.currentHash }, "", appUrl);
       localStorage.setItem("spinoza:lastTarget", state.currentPath + state.currentHash);
     }
@@ -130,7 +146,7 @@
     return `<ul class="panel-list">${unique.slice(0, 80).map(item => {
       const href = item.from || item.target || item.href || "#";
       const label = item.label || item.text || href;
-      return `<li><a href="${href}" data-app-link>${escapeHtml(label)}</a><span class="result-doc">${escapeHtml(item.doc || "")}</span></li>`;
+      return `<li><a href="${withBase(href)}" data-app-link>${escapeHtml(label)}</a><span class="result-doc">${escapeHtml(item.doc || "")}</span></li>`;
     }).join("")}</ul>`;
   }
 
@@ -238,7 +254,7 @@
         if (!kind) continue;
         if (state.marginaliaMode === "proof" && kind !== "proof") continue;
         if (state.marginaliaMode === "notes" && kind !== "note") continue;
-        const href = normalizeHref(a.getAttribute("href"), state.currentPath);
+        const href = normalizeHref(a.getAttribute("href"), withBase(state.currentPath));
         if (seen.has(href)) continue;
         seen.add(href);
         refs.push({ href, label });
@@ -313,7 +329,7 @@
   }
 
   function nodePageHref(node) {
-    return node ? `/nodes/${encodeURIComponent(node.code)}.html` : "#";
+    return node ? withBase(`/nodes/${encodeURIComponent(node.code)}.html`) : "#";
   }
 
   function normalizeNodeCode(raw) {
@@ -381,7 +397,7 @@
     mount.innerHTML = crumbs.map((crumb, index) => {
       const sep = index ? '<span class="crumb-sep">/</span>' : "";
       const cls = crumb.current ? ' class="crumb-current"' : "";
-      return `${sep}<a${cls} href="${crumb.href}" data-app-link>${escapeHtml(crumb.label)}</a>`;
+      return `${sep}<a${cls} href="${withBase(crumb.href)}" data-app-link>${escapeHtml(crumb.label)}</a>`;
     }).join("") + renderTrailStrip(node);
   }
 
@@ -507,7 +523,7 @@
     const relation = direction === "out" ? "upstream" : "downstream";
     return `<ol class="chain-list">${items.slice(0, 120).map(item => `
       <li style="--depth:${Math.min(item.depth, 8)}">
-        <a href="${item.href}" data-app-link>${escapeHtml((item.text || item.href).split(" · ")[0])}</a>
+        <a href="${withBase(item.href)}" data-app-link>${escapeHtml((item.text || item.href).split(" · ")[0])}</a>
         <span class="result-doc">${escapeHtml(`${item.depth} step${item.depth === 1 ? "" : "s"} ${relation}${item.path?.length ? " · " + [rootCode || "current"].concat(item.path.map(part => String(part).split(" · ")[0])).join(" " + arrow + " ") : ""}`)}</span>
       </li>
     `).join("")}</ol>`;
@@ -542,9 +558,9 @@
       <p><span class="result-doc">Rows are dependencies. Columns are this node and direct users.</span></p>
       <div class="matrix-scroll">
         <table class="usage-matrix">
-          <thead><tr><th>Dependency</th>${colNodes.map(col => `<th><a href="${col.href}" data-app-link>${escapeHtml((col.text || col.href).split(" · ")[0])}</a></th>`).join("")}</tr></thead>
+          <thead><tr><th>Dependency</th>${colNodes.map(col => `<th><a href="${withBase(col.href)}" data-app-link>${escapeHtml((col.text || col.href).split(" · ")[0])}</a></th>`).join("")}</tr></thead>
           <tbody>
-            ${rowNodes.map(row => `<tr><th><a href="${row.href}" data-app-link>${escapeHtml((row.text || row.href).split(" · ")[0])}</a></th>${colNodes.map(col => `<td class="${depSets.get(col.href)?.has(row.href) ? "has-edge" : ""}">${depSets.get(col.href)?.has(row.href) ? "use" : ""}</td>`).join("")}</tr>`).join("")}
+            ${rowNodes.map(row => `<tr><th><a href="${withBase(row.href)}" data-app-link>${escapeHtml((row.text || row.href).split(" · ")[0])}</a></th>${colNodes.map(col => `<td class="${depSets.get(col.href)?.has(row.href) ? "has-edge" : ""}">${depSets.get(col.href)?.has(row.href) ? "use" : ""}</td>`).join("")}</tr>`).join("")}
           </tbody>
         </table>
       </div>
@@ -570,9 +586,9 @@
       <svg class="node-graph" viewBox="0 0 460 ${Math.max(210, centerY * 2)}" role="img" aria-label="Node dependency graph">
         ${left.map(n => `<line x1="${n.x + 54}" y1="${n.y}" x2="220" y2="${centerY}" />`).join("")}
         ${right.map(n => `<line x1="240" y1="${centerY}" x2="${n.x - 54}" y2="${n.y}" />`).join("")}
-        ${left.map(n => `<a href="${n.href}" data-app-link><circle cx="${n.x}" cy="${n.y}" r="18" class="dep-node"/><text x="${n.x}" y="${n.y + 4}" text-anchor="middle">${graphNodeLabel(n)}</text></a>`).join("")}
+        ${left.map(n => `<a href="${withBase(n.href)}" data-app-link><circle cx="${n.x}" cy="${n.y}" r="18" class="dep-node"/><text x="${n.x}" y="${n.y + 4}" text-anchor="middle">${graphNodeLabel(n)}</text></a>`).join("")}
         <a href="${nodePageHref(node)}"><circle cx="230" cy="${centerY}" r="26" class="focus-node"/><text x="230" y="${centerY + 5}" text-anchor="middle">${escapeHtml(node?.code || "node")}</text></a>
-        ${right.map(n => `<a href="${n.href}" data-app-link><circle cx="${n.x}" cy="${n.y}" r="18" class="use-node"/><text x="${n.x}" y="${n.y + 4}" text-anchor="middle">${graphNodeLabel(n)}</text></a>`).join("")}
+        ${right.map(n => `<a href="${withBase(n.href)}" data-app-link><circle cx="${n.x}" cy="${n.y}" r="18" class="use-node"/><text x="${n.x}" y="${n.y + 4}" text-anchor="middle">${graphNodeLabel(n)}</text></a>`).join("")}
       </svg>
     `;
   }
@@ -626,11 +642,16 @@
   }
 
   function showHoverCard(target, label, event) {
+    // `target` is a real (base-prefixed) site path -- correct as-is for the
+    // rendered "Open"/copy-link href. `key` strips the base back off for the
+    // data.* lookups and for data-pin, which selectTarget expects as a
+    // data-model key.
+    const key = stripBase(target);
     clearTimeout(hoverTimer);
     hoverTimer = window.setTimeout(async () => {
-      const rec = data.anchors[target] || {};
-      const incoming = data.backlinks[target] || [];
-      const outgoing = data.outgoing[target] || [];
+      const rec = data.anchors[key] || {};
+      const incoming = data.backlinks[key] || [];
+      const outgoing = data.outgoing[key] || [];
       const snippet = await targetSnippet(target);
       if (!hoverCard) {
         hoverCard = document.createElement("div");
@@ -640,14 +661,14 @@
         hoverCard.addEventListener("mouseleave", hideHoverCard);
       }
       hoverCard.innerHTML = `
-        <h2>${escapeHtml(rec.label || label || target)}</h2>
-        <span class="result-doc">${escapeHtml(rec.doc || target)}</span>
+        <h2>${escapeHtml(rec.label || label || key)}</h2>
+        <span class="result-doc">${escapeHtml(rec.doc || key)}</span>
         ${snippet ? `<p>${escapeHtml(snippet)}</p>` : `<p>No readable preview available for this anchor.</p>`}
         <p>${incoming.length} backlink${incoming.length === 1 ? "" : "s"} · ${outgoing.length} outgoing link${outgoing.length === 1 ? "" : "s"}</p>
         <div class="hover-actions">
           <a href="${target}" data-app-link>Open</a>
           <button type="button" data-copy="${target}">Copy link</button>
-          <button type="button" data-pin="${target}">Pin in panel</button>
+          <button type="button" data-pin="${key}">Pin in panel</button>
         </div>
       `;
       positionHoverCard(event);
@@ -694,7 +715,7 @@
       <h2>${escapeHtml(targetText)}</h2>
       <p><span class="result-doc">${escapeHtml(rec.doc || state.currentPath)}</span></p>
       ${visibleSnippet ? `<p>${escapeHtml(visibleSnippet)}</p>` : ""}
-      <p><a href="${target}" data-app-link>Open target</a></p>
+      <p><a href="${withBase(target)}" data-app-link>Open target</a></p>
     `;
   }
 
@@ -767,7 +788,10 @@
       }
       const a = event.target.closest("a[href]");
       if (!a) return;
-      const href = normalizeHref(a.getAttribute("href"), state.currentPath);
+      // normalizeHref resolves the rendered href against the real (base-
+      // prefixed) page URL into a site path; strip the base back off before
+      // treating it as a data-model key.
+      const href = stripBase(normalizeHref(a.getAttribute("href"), withBase(state.currentPath)));
       if (href.startsWith("/text/") || href.startsWith("/titlepage")) {
         event.preventDefault();
         selectTarget(href);
@@ -778,9 +802,13 @@
     document.addEventListener("mouseover", event => {
       const a = event.target.closest("a.reference-link[href], a[data-app-link][href]");
       if (!a) return;
-      const target = normalizeHref(a.getAttribute("href"), state.currentPath);
-      selectTarget(target);
-      showHoverCard(target, a.textContent.trim(), event);
+      // sitePath: a real, base-prefixed browser path -- used for the hover
+      // card's own href/copy-link. dataKey: the same path with the deploy
+      // base stripped -- used for every data.* lookup.
+      const sitePath = normalizeHref(a.getAttribute("href"), withBase(state.currentPath));
+      const dataKey = stripBase(sitePath);
+      selectTarget(dataKey);
+      showHoverCard(sitePath, a.textContent.trim(), event);
     });
 
     document.addEventListener("mousemove", event => {

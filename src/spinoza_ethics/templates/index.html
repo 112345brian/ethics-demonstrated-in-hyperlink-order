@@ -5,19 +5,20 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Spinoza Ethics Scholarly Workbench</title>
   <meta name="theme-color" content="#fbfaf7">
-  <link rel="manifest" href="/manifest.webmanifest">
-  <link rel="stylesheet" href="/assets/site.css">
-  <script defer src="/assets/site-data.js"></script>
-  <script defer src="/assets/site-data-links.js"></script>
-  <script defer src="/assets/site-data-search.js"></script>
-  <script defer src="/assets/app.js"></script>
-  <script defer src="/assets/pwa.js"></script>
+  <link rel="manifest" href="$base/manifest.webmanifest">
+  <link rel="stylesheet" href="$base/assets/site.css">
+  <script>window.SPINOZA_BASE_PATH = $base_json;</script>
+  <script defer src="$base/assets/site-data.js"></script>
+  <script defer src="$base/assets/site-data-links.js"></script>
+  <script defer src="$base/assets/site-data-search.js"></script>
+  <script defer src="$base/assets/app.js"></script>
+  <script defer src="$base/assets/pwa.js"></script>
 </head>
 <body class="app-body">
   <a class="skip-link" href="#app-document">Skip to text</a>
   <div class="app-frame">
     <header class="app-topbar">
-      <a class="brand" href="/index.html">Spinoza Ethics</a>
+      <a class="brand" href="$base/index.html">Spinoza Ethics</a>
       <div class="app-command">
         <input id="global-search" type="search" placeholder="Search Ethics, notes, glossary, references" aria-label="Search the corpus">
         <button id="toggle-columns" type="button" aria-pressed="false">Columns</button>
@@ -36,7 +37,7 @@
         <p class="kicker">Focused corpus</p>
         <h1>Ethics Workbench</h1>
         <p>Ethics remains primary; referenced works are included as context.</p>
-        <p><a href="/nodes/index.html">Node Index</a> · <a href="/resources/index.html">Resources</a> · <a href="/graph/ethics-graph.json">Graph JSON</a></p>
+        <p><a href="$base/nodes/index.html">Node Index</a> · <a href="$base/resources/index.html">Resources</a> · <a href="$base/graph/ethics-graph.json">Graph JSON</a></p>
       </div>
       <nav id="app-toc" class="app-toc" aria-label="Ethics navigation">
         $toc_cards

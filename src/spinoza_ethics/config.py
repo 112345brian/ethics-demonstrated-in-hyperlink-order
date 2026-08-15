@@ -76,10 +76,19 @@ class BuildConfig:
 
     source: Path
     output: Path
+    #: URL path the site is served under, e.g. "/repo-name" for a GitHub
+    #: Pages project page. Empty string for a site served from a domain root.
+    base_path: str = ""
 
     @classmethod
-    def create(cls, source: Path | str, output: Path | str) -> BuildConfig:
-        return cls(source=Path(source).resolve(), output=Path(output).resolve())
+    def create(
+        cls, source: Path | str, output: Path | str, base_path: str = ""
+    ) -> BuildConfig:
+        return cls(
+            source=Path(source).resolve(),
+            output=Path(output).resolve(),
+            base_path=base_path.rstrip("/"),
+        )
 
     @property
     def files(self) -> list[str]:

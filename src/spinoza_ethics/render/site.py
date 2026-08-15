@@ -6,7 +6,7 @@ import html
 
 from ..config import CORE_FILES, BuildConfig
 from ..corpus import Corpus
-from ..templating import render_template
+from ..templating import render_page, site_url
 
 #: Cards shown on the resources page.
 RESOURCE_SECTIONS = [
@@ -51,14 +51,15 @@ def write_index(config: BuildConfig, corpus: Corpus) -> None:
         for heading in rec["headings"][:12]:
             if heading["id"]:
                 head_links.append(
-                    f'<a href="/{rec["file"]}#{html.escape(heading["id"])}">'
+                    f'<a href="{site_url(config.base_path, "/" + rec["file"])}#{html.escape(heading["id"])}">'
                     f'{html.escape(heading["text"][:90])}</a>'
                 )
+        section_href = html.escape(site_url(config.base_path, "/" + rec["file"]))
         cards.append(
-            f'<section class="toc-card"><h2><a href="/{rec["file"]}">{html.escape(rec["title"])}</a></h2>'
+            f'<section class="toc-card"><h2><a href="{section_href}">{html.escape(rec["title"])}</a></h2>'
             f'<div class="toc-links">{"".join(head_links)}</div></section>'
         )
-    page = render_template("index.html", toc_cards="".join(cards))
+    page = render_page(config, "index.html", toc_cards="".join(cards))
     (config.output / "index.html").write_text(page, encoding="utf-8")
 
 
@@ -70,7 +71,8 @@ def write_apparatus(config: BuildConfig, corpus: Corpus) -> None:
     gloss_count = sum(
         1 for refs in corpus.backlinks.values() for ref in refs if "gloss" in ref.get("classes", "")
     )
-    page = render_template(
+    page = render_page(
+        config,
         "apparatus.html",
         anchor_count=len(corpus.anchors),
         linked_targets=len([k for k, v in corpus.backlinks.items() if v]),
@@ -85,9 +87,10 @@ def write_resources(config: BuildConfig) -> None:
     resources_dir = config.output / "resources"
     resources_dir.mkdir(parents=True, exist_ok=True)
     cards = "".join(
-        f'<article class="resource-card"><h2><a href="{item["href"]}">{html.escape(item["title"])}</a></h2>'
+        f'<article class="resource-card"><h2><a href="{html.escape(site_url(config.base_path, item["href"]))}">'
+        f'{html.escape(item["title"])}</a></h2>'
         f'<p>{html.escape(item["body"])}</p></article>'
         for item in RESOURCE_SECTIONS
     )
-    page = render_template("resources.html", cards=cards)
+    page = render_page(config, "resources.html", cards=cards)
     (resources_dir / "index.html").write_text(page, encoding="utf-8")

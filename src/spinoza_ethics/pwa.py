@@ -5,7 +5,7 @@ from __future__ import annotations
 import json
 
 from .config import BuildConfig
-from .templating import render_template, static_text
+from .templating import render_template, site_url, static_text
 
 MANIFEST = {
     "name": "Spinoza Ethics Workbench",
@@ -22,13 +22,24 @@ MANIFEST = {
     ],
 }
 
+
+def manifest_for(config: BuildConfig) -> dict:
+    """The web app manifest, with start_url/scope/icon prefixed for the deploy base path."""
+    base = config.base_path
+    manifest = json.loads(json.dumps(MANIFEST))
+    manifest["start_url"] = site_url(base, manifest["start_url"])
+    manifest["scope"] = site_url(base, manifest["scope"])
+    for icon in manifest["icons"]:
+        icon["src"] = site_url(base, icon["src"])
+    return manifest
+
 #: Never precached: build metadata and the (large) derived database.
 PRECACHE_EXCLUDE_SUFFIXES = (".tar.gz",)
 PRECACHE_EXCLUDE_NAMES = ("spinoza-ethics.db",)
 
 
 def precache_urls(config: BuildConfig) -> list[str]:
-    """Every already-written output file, as a site-absolute URL."""
+    """Every already-written output file, as a browser-fetchable URL."""
     paths = []
     for path in sorted(config.output.rglob("*")):
         if not path.is_file():
@@ -38,9 +49,10 @@ def precache_urls(config: BuildConfig) -> list[str]:
             continue
         if rel in PRECACHE_EXCLUDE_NAMES:
             continue
-        paths.append("/" + rel)
-    if "/index.html" not in paths:
-        paths.insert(0, "/index.html")
+        paths.append(site_url(config.base_path, "/" + rel))
+    index_url = site_url(config.base_path, "/index.html")
+    if index_url not in paths:
+        paths.insert(0, index_url)
     return paths
 
 
@@ -53,7 +65,7 @@ def write_pwa_files(config: BuildConfig) -> None:
     assets = config.output / "assets"
     assets.mkdir(parents=True, exist_ok=True)
     (config.output / "manifest.webmanifest").write_text(
-        json.dumps(MANIFEST, ensure_ascii=False, indent=2), encoding="utf-8"
+        json.dumps(manifest_for(config), ensure_ascii=False, indent=2), encoding="utf-8"
     )
     (assets / "pwa.js").write_text(static_text("pwa.js"), encoding="utf-8")
 

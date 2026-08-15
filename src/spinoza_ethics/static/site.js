@@ -1,6 +1,19 @@
 
 (function () {
   const data = window.SPINOZA_SITE_DATA || { anchors: {}, backlinks: {}, records: [] };
+  // Every value in `data` is a canonical, *unprefixed* site-root path -- the
+  // deploy base path is added only when a path is written into a real href,
+  // and stripped back off when a real browser path is used as a lookup key.
+  const BASE = window.SPINOZA_BASE_PATH || "";
+  function withBase(path) {
+    if (!BASE || !path || path.charAt(0) !== "/") return path;
+    return path === BASE || path.startsWith(BASE + "/") ? path : BASE + path;
+  }
+  function stripBase(path) {
+    if (!BASE || !path) return path;
+    if (path === BASE) return "/";
+    return path.startsWith(BASE + "/") ? path.slice(BASE.length) : path;
+  }
   const $ = (sel, root = document) => root.querySelector(sel);
   const $$ = (sel, root = document) => Array.from(root.querySelectorAll(sel));
 
@@ -21,13 +34,16 @@
   }
 
   function renderCard(target, linkText) {
+    // `target` is a real (base-prefixed) site path; `key` strips the base
+    // back off for the data.* lookups.
     const panel = $("#selection-card");
     if (!panel || !target) return;
-    const rec = data.anchors[target] || {};
-    const hereSnippet = snippetFor(target);
-    const backs = data.backlinks[target] || [];
+    const key = stripBase(target);
+    const rec = data.anchors[key] || {};
+    const hereSnippet = snippetFor(key);
+    const backs = data.backlinks[key] || [];
     const targetLink = `<a href="${target}">${escapeHtml(rec.label || linkText || target)}</a>`;
-    const backItems = backs.slice(0, 12).map(b => `<li><a href="${b.from || '/' + b.file}">${escapeHtml(b.label || b.doc)}</a> <span>${escapeHtml(b.doc || "")}</span></li>`).join("");
+    const backItems = backs.slice(0, 12).map(b => `<li><a href="${withBase(b.from || "/" + b.file)}">${escapeHtml(b.label || b.doc)}</a> <span>${escapeHtml(b.doc || "")}</span></li>`).join("");
     panel.innerHTML = `
       <div class="preview-card">
         <h3>${targetLink}</h3>
@@ -60,7 +76,7 @@
     const a = event.target.closest("a[href]");
     if (!a) return;
     const target = samePathTarget(a.getAttribute("href"));
-    if (target && (a.classList.contains("reference-link") || data.backlinks[target])) {
+    if (target && (a.classList.contains("reference-link") || data.backlinks[stripBase(target)])) {
       renderCard(target, a.textContent.trim());
     }
   });
@@ -99,13 +115,13 @@
       .slice(0, 500);
     list.innerHTML = entries.map(([target, refs]) => {
       const rec = data.anchors[target] || {};
-      const refsHtml = refs.slice(0, 10).map(r => `<li><a href="${r.from || '/' + r.file}">${escapeHtml(r.label || r.doc)}</a> <span>${escapeHtml(r.doc || "")}</span></li>`).join("");
-      return `<article class="apparatus-entry"><h2><a href="${target}">${escapeHtml(rec.label || target)}</a></h2><p>${escapeHtml(rec.doc || "")} · ${refs.length} incoming reference${refs.length === 1 ? "" : "s"}</p><ul>${refsHtml}</ul></article>`;
+      const refsHtml = refs.slice(0, 10).map(r => `<li><a href="${withBase(r.from || "/" + r.file)}">${escapeHtml(r.label || r.doc)}</a> <span>${escapeHtml(r.doc || "")}</span></li>`).join("");
+      return `<article class="apparatus-entry"><h2><a href="${withBase(target)}">${escapeHtml(rec.label || target)}</a></h2><p>${escapeHtml(rec.doc || "")} · ${refs.length} incoming reference${refs.length === 1 ? "" : "s"}</p><ul>${refsHtml}</ul></article>`;
     }).join("");
   }
 
   if (location.hash) {
     const target = location.pathname + location.hash;
-    if (data.backlinks[target]) renderCard(target, "");
+    if (data.backlinks[stripBase(target)]) renderCard(target, "");
   }
 })();

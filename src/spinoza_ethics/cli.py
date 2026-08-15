@@ -33,12 +33,20 @@ def parse_args(argv: list[str] | None = None) -> argparse.Namespace:
         action="store_true",
         help="write into an existing output directory instead of removing it first",
     )
+    parser.add_argument(
+        "--base-path",
+        default="",
+        help=(
+            "URL path the site is served under, e.g. '/repo-name' for a GitHub "
+            "Pages project page (default: served from a domain root)"
+        ),
+    )
     return parser.parse_args(argv)
 
 
 def main(argv: list[str] | None = None) -> int:
     args = parse_args(argv)
-    config = BuildConfig.create(args.source, args.output)
+    config = BuildConfig.create(args.source, args.output, base_path=args.base_path)
 
     if not (config.source / "text").is_dir():
         print(
