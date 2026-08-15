@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ethics Node Index | Spinoza Ethics</title>
+  <meta name="theme-color" content="#fbfaf7">
+  <link rel="manifest" href="/manifest.webmanifest">
+  <link rel="stylesheet" href="/assets/site.css">
+  <script defer src="/assets/pwa.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#node-index-main">Skip to index</a>
+  <header class="topbar"><a class="brand" href="/index.html">Spinoza Ethics</a><div class="top-actions"><a href="/graph/ethics-graph.json">Graph JSON</a><a href="/graph/ethics-nodes.csv">Nodes CSV</a><a href="/graph/ethics-edges.csv">Edges CSV</a></div></header>
+  <main class="node-index-page" id="node-index-main">
+    <p class="kicker">Canonical node pages</p>
+    <h1>Ethics Node Index</h1>
+    <div class="stats"><span>$node_count nodes</span><span>$edge_count graph edges</span><span>direct + transitive counts</span></div>
+    <input id="node-index-filter" type="search" placeholder="Filter by code, type, part, or text" aria-label="Filter node index">
+    <div class="matrix-scroll node-index-table">
+      <table class="usage-matrix">
+        <thead><tr><th>Node</th><th>Type</th><th>Part</th><th>Uses</th><th>Used By</th><th>Ancestors</th><th>Descendants</th><th>Text</th></tr></thead>
+        <tbody id="node-index-body">$rows</tbody>
+      </table>
+    </div>
+  </main>
+  <script>
+    const filter = document.getElementById('node-index-filter');
+    const rows = Array.from(document.querySelectorAll('#node-index-body tr'));
+    filter.addEventListener('input', () => {
+      const q = filter.value.trim().toLowerCase();
+      rows.forEach(row => row.hidden = q && !row.dataset.search.includes(q));
+    });
+  </script>
+</body>
+</html>

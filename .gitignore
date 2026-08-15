@@ -1,16 +1,14 @@
+# Generated output
+build/
 dist/
-spinoza-ethics.db
 *.tar.gz
-apparatus.html
-assets/
-cover.jpeg
-fonts/
-graph/
-images/
-index.html
-manifest.webmanifest
-nodes/
-resources/
-sw.js
-text/
-titlepage.xhtml
+spinoza-ethics.db
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+.pytest_cache/
+.ruff_cache/
