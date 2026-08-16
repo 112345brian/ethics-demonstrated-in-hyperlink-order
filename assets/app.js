@@ -577,8 +577,19 @@
     for (const edge of raw) {
       const href = edge.target || edge.href;
       if (!href || data.ethicsNodes.some(n => n.href === canonicalTarget(href))) continue;
-      const item = { href, text: edge.label || href, doc: edge.doc || edge.file || "" };
-      if (href.includes("part0033.html")) notes.push(item);
+      // edge.doc is the CITING document's title (e.g. "Ethics I-II" for
+      // every single note), which is useless as a preview -- data.anchors
+      // has the actual target text, so show that instead.
+      const isNote = href.includes("part0033.html");
+      const anchor = data.anchors[href] || {};
+      let preview = cleanPanelLabel(anchor.label);
+      if (isNote) preview = preview.replace(/^\d+\s*/, ""); // drop the redundant leading footnote number
+      const item = {
+        href,
+        text: isNote && edge.label ? `Note ${edge.label}` : (edge.label || href),
+        doc: preview || edge.doc || edge.file || "",
+      };
+      if (isNote) notes.push(item);
       else if ((edge.classes || "").includes("gloss")) glossary.push(item);
       else if (href.startsWith("/text/")) resources.push(item);
     }
