@@ -827,8 +827,11 @@
     });
 
     $("#app-reader")?.addEventListener("scroll", () => {
-      if (state.activeTab === "target") selectTarget(currentSectionHref());
-      else renderBreadcrumbs(currentSectionHref());
+      // Keep the panel (whichever tab is open) in sync with scroll position,
+      // not just the breadcrumbs -- otherwise switching off the Target tab
+      // freezes state.selectedTarget, and Notes/Relations/Chains/Graph show
+      // stale (or no) data for whatever you've since scrolled to.
+      selectTarget(currentSectionHref());
     }, { passive: true });
 
     window.addEventListener("popstate", event => {
