@@ -785,12 +785,13 @@
     document.addEventListener("mouseover", event => {
       const a = event.target.closest("a.reference-link[href], a[data-app-link][href]");
       if (!a) return;
-      // sitePath: a real, base-prefixed browser path -- used for the hover
-      // card's own href/copy-link. dataKey: the same path with the deploy
-      // base stripped -- used for every data.* lookup.
+      // Hovering shows the transient hover card only -- it must NOT call
+      // selectTarget(), which drives the breadcrumbs and the whole apparatus
+      // panel. That's reserved for scroll position and explicit clicks; a
+      // stray mouseover (e.g. over a glossary term, which isn't an Ethics
+      // node) used to hijack the panel and show an empty, unresolvable
+      // dossier for whatever you'd merely moused over.
       const sitePath = normalizeHref(a.getAttribute("href"), withBase(state.currentPath));
-      const dataKey = stripBase(sitePath);
-      selectTarget(dataKey);
       showHoverCard(sitePath, a.textContent.trim(), a);
     });
 
