@@ -2,6 +2,7 @@
 
 from __future__ import annotations
 
+import hashlib
 import json
 
 from .config import BuildConfig
@@ -56,6 +57,25 @@ def precache_urls(config: BuildConfig) -> list[str]:
     return paths
 
 
+def content_fingerprint(config: BuildConfig, urls: list[str]) -> str:
+    """A short hash of every precached file's actual bytes.
+
+    Used as the cache name suffix so *any* content change -- not just a
+    change in file count -- produces a different sw.js, which is what
+    makes the browser notice there's a new service worker to install and
+    replace its cache. A count-based version number stays identical
+    across a same-file-count content edit, so browsers never re-fetch and
+    users are stuck on stale cached assets indefinitely.
+    """
+    digest = hashlib.sha256()
+    for url in sorted(urls):
+        rel = url[len(config.base_path):] if config.base_path else url
+        path = config.output / rel.lstrip("/")
+        if path.is_file():
+            digest.update(path.read_bytes())
+    return digest.hexdigest()[:12]
+
+
 def write_pwa_files(config: BuildConfig) -> None:
     """Write the manifest, the registration shim, and the service worker.
 
@@ -70,9 +90,10 @@ def write_pwa_files(config: BuildConfig) -> None:
     (assets / "pwa.js").write_text(static_text("pwa.js"), encoding="utf-8")
 
     urls = precache_urls(config)
+    fingerprint = content_fingerprint(config, urls)
     worker = render_template(
         "sw.js",
-        cache_name=json.dumps(f"spinoza-ethics-workbench-v{len(urls)}"),
+        cache_name=json.dumps(f"spinoza-ethics-workbench-{fingerprint}"),
         precache_urls=json.dumps(urls, ensure_ascii=False),
     )
     (config.output / "sw.js").write_text(worker, encoding="utf-8")
