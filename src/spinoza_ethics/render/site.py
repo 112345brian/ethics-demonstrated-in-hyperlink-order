@@ -3,10 +3,41 @@
 from __future__ import annotations
 
 import html
+import re
 
-from ..config import CORE_FILES, BuildConfig
+from ..codes import node_sort_key
+from ..config import BuildConfig
 from ..corpus import Corpus
 from ..templating import render_page, site_url
+
+#: The sidebar table of contents, in reading order. Ethics parts link to
+#: their first canonical node rather than a source file: the EPUB splits
+#: the text across files that don't line up with the work's own five-part
+#: structure, so a file-per-card TOC produced misleading labels like
+#: "Ethics I-II" and duplicated "Glossary-Index" cards for every page
+#: split of the same section.
+TOC_SECTIONS = [
+    {"title": "Editorial Preface", "href": "/text/part0029_split_000.html"},
+    {"title": "I. Of God", "part": "I"},
+    {"title": "II. Of the Nature and Origin of the Mind", "part": "II"},
+    {"title": "III. Of the Origin and Nature of the Affects", "part": "III"},
+    {"title": "IV. Of Human Bondage, or of the Powers of the Affects", "part": "IV"},
+    {"title": "V. Of the Power of the Intellect, or of Human Freedom", "part": "V"},
+    {"title": "Curley Notes", "href": "/text/part0033.html"},
+    {"title": "Glossary-Index", "href": "/text/part0034.html"},
+    {"title": "Reference List", "href": "/text/part0039.html"},
+    {"title": "Editorial Note", "href": "/text/part0086.html"},
+]
+
+
+def first_node_hrefs(corpus: Corpus) -> dict[str, str]:
+    """The href of the first canonical node in each of the five Ethics parts."""
+    hrefs: dict[str, str] = {}
+    for node in sorted(corpus.ethics_nodes, key=node_sort_key):
+        part = re.match(r"^(IV|III|II|I|V)", node["code"]).group(1)
+        hrefs.setdefault(part, node["href"])
+    return hrefs
+
 
 #: Cards shown on the resources page.
 RESOURCE_SECTIONS = [
@@ -45,19 +76,13 @@ RESOURCE_SECTIONS = [
 
 def write_index(config: BuildConfig, corpus: Corpus) -> None:
     """Write the workbench shell with its table of contents."""
+    part_hrefs = first_node_hrefs(corpus)
     cards = []
-    for rec in [r for r in corpus.records if r["file"] in CORE_FILES]:
-        head_links = []
-        for heading in rec["headings"][:12]:
-            if heading["id"]:
-                head_links.append(
-                    f'<a href="{site_url(config.base_path, "/" + rec["file"])}#{html.escape(heading["id"])}">'
-                    f'{html.escape(heading["text"][:90])}</a>'
-                )
-        section_href = html.escape(site_url(config.base_path, "/" + rec["file"]))
+    for section in TOC_SECTIONS:
+        href = section["href"] if "href" in section else part_hrefs[section["part"]]
+        section_href = html.escape(site_url(config.base_path, href))
         cards.append(
-            f'<section class="toc-card"><h2><a href="{section_href}">{html.escape(rec["title"])}</a></h2>'
-            f'<div class="toc-links">{"".join(head_links)}</div></section>'
+            f'<section class="toc-card"><h2><a href="{section_href}">{html.escape(section["title"])}</a></h2></section>'
         )
     page = render_page(config, "index.html", toc_cards="".join(cards))
     (config.output / "index.html").write_text(page, encoding="utf-8")

@@ -27,7 +27,6 @@
     activeTab: "target",
     lastSearch: "",
     contextPinned: false,
-    columns: localStorage.getItem("spinoza:columns") === "1",
     marginalia: localStorage.getItem("spinoza:marginalia") !== "0",
     marginaliaMode: localStorage.getItem("spinoza:marginaliaMode") || "proof",
   };
@@ -120,7 +119,6 @@
   function selectTarget(target) {
     state.selectedTarget = target || state.currentPath + state.currentHash;
     renderBreadcrumbs(state.selectedTarget);
-    renderContextRail(state.selectedTarget);
     renderPanel();
   }
 
@@ -227,12 +225,9 @@
   }
 
   function applyReaderModes() {
-    document.body.classList.toggle("columns-on", state.columns);
     document.body.classList.toggle("marginalia-on", state.marginalia);
-    const columnButton = $("#toggle-columns");
     const marginaliaButton = $("#toggle-marginalia");
     const marginaliaMode = $("#marginalia-mode");
-    if (columnButton) columnButton.setAttribute("aria-pressed", state.columns ? "true" : "false");
     if (marginaliaButton) marginaliaButton.setAttribute("aria-pressed", state.marginalia ? "true" : "false");
     if (marginaliaMode) marginaliaMode.value = state.marginaliaMode;
   }
@@ -471,28 +466,6 @@
     `;
   }
 
-  function renderContextRail(target) {
-    const mount = $("#context-rail");
-    if (!mount) return;
-    const nodeTarget = canonicalTarget(nearestEthicsTarget(target));
-    const node = data.ethicsNodes.find(n => n.href === nodeTarget) || ethicsNodeForTarget(target);
-    const uses = relationItems(nodeTarget, "out").filter(i => data.ethicsNodes.some(n => n.href === i.href));
-    const usedBy = relationItems(nodeTarget, "in").filter(i => data.ethicsNodes.some(n => n.href === i.href));
-    const { previous, next } = neighboringNodes(node);
-    mount.innerHTML = `
-      <button type="button" class="rail-handle" data-rail-tab="relations" aria-label="Open relations">Relations</button>
-      <div class="rail-body">
-        <strong>${escapeHtml(node?.code || "Ethics")}</strong>
-        <span>${escapeHtml(node ? `${nodePartLabel(node)} · ${node.type}` : "Current target")}</span>
-        <div class="rail-counts">
-          <button type="button" data-rail-tab="relations">${uses.length} uses</button>
-          <button type="button" data-rail-tab="relations">${usedBy.length} used by</button>
-        </div>
-        <div class="rail-jump">${compactNodeLink(previous, "Prev")}${compactNodeLink(next, "Next")}</div>
-      </div>
-    `;
-  }
-
   function ethicsOnly(items) {
     return items.filter(item => data.ethicsNodes.some(n => n.href === item.href));
   }
@@ -621,14 +594,19 @@
     `;
   }
 
-  function positionHoverCard(event) {
-    if (!hoverCard) return;
+  function positionHoverCard(anchorEl) {
+    if (!hoverCard || !anchorEl) return;
     const pad = 14;
-    const rect = hoverCard.getBoundingClientRect();
-    let left = event.clientX + 18;
-    let top = event.clientY + 18;
-    if (left + rect.width + pad > window.innerWidth) left = Math.max(pad, event.clientX - rect.width - 18);
-    if (top + rect.height + pad > window.innerHeight) top = Math.max(pad, window.innerHeight - rect.height - pad);
+    const linkRect = anchorEl.getBoundingClientRect();
+    const cardRect = hoverCard.getBoundingClientRect();
+    let left = linkRect.left;
+    let top = linkRect.bottom + 8;
+    if (left + cardRect.width + pad > window.innerWidth) {
+      left = Math.max(pad, window.innerWidth - cardRect.width - pad);
+    }
+    if (top + cardRect.height + pad > window.innerHeight) {
+      top = Math.max(pad, linkRect.top - cardRect.height - 8);
+    }
     hoverCard.style.left = left + "px";
     hoverCard.style.top = top + "px";
   }
@@ -641,11 +619,12 @@
     }, 140);
   }
 
-  function showHoverCard(target, label, event) {
+  function showHoverCard(target, label, anchorEl) {
     // `target` is a real (base-prefixed) site path -- correct as-is for the
     // rendered "Open"/copy-link href. `key` strips the base back off for the
     // data.* lookups and for data-pin, which selectTarget expects as a
-    // data-model key.
+    // data-model key. The card is anchored to `anchorEl` (the hovered link)
+    // rather than the cursor, so it doesn't chase the mouse around.
     const key = stripBase(target);
     clearTimeout(hoverTimer);
     hoverTimer = window.setTimeout(async () => {
@@ -671,7 +650,7 @@
           <button type="button" data-pin="${key}">Pin in panel</button>
         </div>
       `;
-      positionHoverCard(event);
+      positionHoverCard(anchorEl);
     }, 180);
   }
 
@@ -715,7 +694,6 @@
       <h2>${escapeHtml(targetText)}</h2>
       <p><span class="result-doc">${escapeHtml(rec.doc || state.currentPath)}</span></p>
       ${visibleSnippet ? `<p>${escapeHtml(visibleSnippet)}</p>` : ""}
-      <p><a href="${withBase(target)}" data-app-link>Open target</a></p>
     `;
   }
 
@@ -766,12 +744,6 @@
         renderPanel();
         return;
       }
-      const railTab = event.target.closest("[data-rail-tab]");
-      if (railTab) {
-        state.activeTab = railTab.dataset.railTab;
-        renderPanel();
-        return;
-      }
       const copy = event.target.closest("[data-copy]");
       if (copy) {
         const target = copy.dataset.copy;
@@ -808,11 +780,7 @@
       const sitePath = normalizeHref(a.getAttribute("href"), withBase(state.currentPath));
       const dataKey = stripBase(sitePath);
       selectTarget(dataKey);
-      showHoverCard(sitePath, a.textContent.trim(), event);
-    });
-
-    document.addEventListener("mousemove", event => {
-      if (hoverCard) positionHoverCard(event);
+      showHoverCard(sitePath, a.textContent.trim(), a);
     });
 
     document.addEventListener("mouseout", event => {
@@ -843,12 +811,6 @@
           window.scrollTo({ top: panel.getBoundingClientRect().top + window.scrollY - 8, behavior: "auto" });
         });
       }
-    });
-
-    $("#toggle-columns")?.addEventListener("click", () => {
-      state.columns = !state.columns;
-      localStorage.setItem("spinoza:columns", state.columns ? "1" : "0");
-      applyReaderModes();
     });
 
     $("#toggle-marginalia")?.addEventListener("click", () => {
