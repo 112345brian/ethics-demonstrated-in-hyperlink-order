@@ -10,7 +10,7 @@
       "direct_uses": 0,
       "direct_used_by": 1,
       "ancestors": 0,
-      "descendants": 18
+      "descendants": 136
     },
     {
       "code": "ID2",
@@ -20,9 +20,9 @@
       "source": "/text/part0029_split_001.html#cite-ID2",
       "label": "D2: That thing is said to be finite in its own kind that can be limited by another of the same nature.",
       "direct_uses": 0,
-      "direct_used_by": 1,
+      "direct_used_by": 2,
       "ancestors": 0,
-      "descendants": 22
+      "descendants": 110
     },
     {
       "code": "ID3",
@@ -32,9 +32,9 @@
       "source": "/text/part0029_split_001.html#cite-ID3",
       "label": "D3: By substance I understand what is in itself and is conceived through [15] itself, i.e., that whose concept does not require the concept of another thing, from which it must be formed.",
       "direct_uses": 0,
-      "direct_used_by": 1,
+      "direct_used_by": 8,
       "ancestors": 0,
-      "descendants": 3
+      "descendants": 151
     },
     {
       "code": "ID4",
@@ -44,9 +44,9 @@
       "source": "/text/part0029_split_001.html#cite-ID4",
       "label": "D4: By attribute I understand what the intellect perceives of a substance, as constituting its essence.2",
       "direct_uses": 0,
-      "direct_used_by": 1,
+      "direct_used_by": 5,
       "ancestors": 0,
-      "descendants": 3
+      "descendants": 131
     },
     {
       "code": "ID5",
@@ -56,9 +56,9 @@
       "source": "/text/part0029_split_001.html#cite-ID5",
       "label": "[20] D5: By mode I understand the affections of a substance, or that which is in another through which it is also conceived.",
       "direct_uses": 0,
-      "direct_used_by": 1,
+      "direct_used_by": 8,
       "ancestors": 0,
-      "descendants": 3
+      "descendants": 151
     },
     {
       "code": "ID6",
@@ -68,9 +68,9 @@
       "source": "/text/part0029_split_001.html#cite-ID6",
       "label": "D6: By God I understand a being absolutely infinite, i.e., a substance consisting of an infinity of attributes, of which each one expresses an3 [25] eternal and infinite essence.",
       "direct_uses": 0,
-      "direct_used_by": 4,
+      "direct_used_by": 10,
       "ancestors": 0,
-      "descendants": 31
+      "descendants": 149
     },
     {
       "code": "ID7",
@@ -80,9 +80,9 @@
       "source": "/text/part0029_split_001.html#cite-ID7",
       "label": "D7: That thing is called free which exists from the necessity of its nature alone, and is determined to act by itself alone. But a thing is [10] called necessary, or rather compelled, which is determined by another to exist and to produce an effect in a certai",
       "direct_uses": 0,
-      "direct_used_by": 2,
+      "direct_used_by": 4,
       "ancestors": 0,
-      "descendants": 5
+      "descendants": 20
     },
     {
       "code": "ID8",
@@ -92,9 +92,9 @@
       "source": "/text/part0029_split_001.html#cite-ID8",
       "label": "D8: By eternity I understand existence itself, insofar as it is conceived [15] to follow necessarily from the definition alone of the eternal thing.",
       "direct_uses": 0,
-      "direct_used_by": 2,
+      "direct_used_by": 4,
       "ancestors": 0,
-      "descendants": 4
+      "descendants": 19
     },
     {
       "code": "IA1",
@@ -104,9 +104,9 @@
       "source": "/text/part0029_split_001.html#cite-IA1",
       "label": "A1: Whatever is, is either in itself or in another.",
       "direct_uses": 0,
-      "direct_used_by": 1,
+      "direct_used_by": 5,
       "ancestors": 0,
-      "descendants": 3
+      "descendants": 152
     },
     {
       "code": "IA2",
@@ -130,7 +130,7 @@
       "direct_uses": 0,
       "direct_used_by": 2,
       "ancestors": 0,
-      "descendants": 13
+      "descendants": 34
     },
     {
       "code": "IA4",
@@ -140,9 +140,9 @@
       "source": "/text/part0029_split_001.html#cite-IA4",
       "label": "A4: The knowledge of an effect depends on, and involves, the knowledge of its cause.",
       "direct_uses": 0,
-      "direct_used_by": 3,
+      "direct_used_by": 5,
       "ancestors": 0,
-      "descendants": 20
+      "descendants": 143
     },
     {
       "code": "IA5",
@@ -154,7 +154,7 @@
       "direct_uses": 0,
       "direct_used_by": 1,
       "ancestors": 0,
-      "descendants": 2
+      "descendants": 120
     },
     {
       "code": "IA6",
@@ -164,9 +164,9 @@
       "source": "/text/part0029_split_001.html#cite-IA6",
       "label": "[II/47] A6: A true idea must agree with its object.",
       "direct_uses": 0,
-      "direct_used_by": 2,
+      "direct_used_by": 3,
       "ancestors": 0,
-      "descendants": 5
+      "descendants": 128
     },
     {
       "code": "IA7",
@@ -178,7 +178,7 @@
       "direct_uses": 0,
       "direct_used_by": 1,
       "ancestors": 0,
-      "descendants": 27
+      "descendants": 139
     },
     {
       "code": "IP1",
@@ -190,7 +190,7 @@
       "direct_uses": 2,
       "direct_used_by": 1,
       "ancestors": 2,
-      "descendants": 2
+      "descendants": 126
     },
     {
       "code": "IP2",
@@ -200,9 +200,9 @@
       "source": "/text/part0029_split_001.html#cite-IP2",
       "label": "P2: Two substances having different attributes have nothing in common with [10] one another.8",
       "direct_uses": 0,
-      "direct_used_by": 1,
+      "direct_used_by": 3,
       "ancestors": 0,
-      "descendants": 1
+      "descendants": 145
     },
     {
       "code": "IP3",
@@ -214,7 +214,7 @@
       "direct_uses": 2,
       "direct_used_by": 1,
       "ancestors": 2,
-      "descendants": 1
+      "descendants": 135
     },
     {
       "code": "IP4",
@@ -223,10 +223,10 @@
       "href": "/nodes/IP4.html",
       "source": "/text/part0029_split_001.html#cite-IP4",
       "label": "P4: Two or more distinct things are distinguished from one another, either by a difference in the attributes of the substances or by a difference in their affections.",
-      "direct_uses": 2,
+      "direct_uses": 4,
       "direct_used_by": 1,
-      "ancestors": 2,
-      "descendants": 2
+      "ancestors": 4,
+      "descendants": 126
     },
     {
       "code": "IP5",
@@ -235,10 +235,10 @@
       "href": "/nodes/IP5.html",
       "source": "/text/part0029_split_001.html#cite-IP5",
       "label": "P5: In nature there cannot be two or more substances of the same nature or [5] attribute.",
-      "direct_uses": 3,
-      "direct_used_by": 1,
+      "direct_uses": 4,
+      "direct_used_by": 5,
       "ancestors": 7,
-      "descendants": 1
+      "descendants": 140
     },
     {
       "code": "IP6",
@@ -247,22 +247,22 @@
       "href": "/nodes/IP6.html",
       "source": "/text/part0029_split_001.html#cite-IP6",
       "label": "P6: One substance cannot be produced by another substance.",
-      "direct_uses": 4,
-      "direct_used_by": 1,
+      "direct_uses": 7,
+      "direct_used_by": 3,
       "ancestors": 12,
-      "descendants": 0
+      "descendants": 144
     },
     {
       "code": "IP7",
       "type": "proposition",
       "part": "Part I",
       "href": "/nodes/IP7.html",
-      "source": "/text/part0029_split_001.html#p-part0029-split-001-0039",
+      "source": "/text/part0029_split_001.html#cite-IP7",
       "label": "[I/49] P7: It pertains to the nature of a substance to exist.",
       "direct_uses": 1,
-      "direct_used_by": 1,
+      "direct_used_by": 4,
       "ancestors": 1,
-      "descendants": 22
+      "descendants": 145
     },
     {
       "code": "IP8",
@@ -271,10 +271,10 @@
       "href": "/nodes/IP8.html",
       "source": "/text/part0029_split_001.html#cite-IP8",
       "label": "P8: Every substance is necessarily infinite.",
-      "direct_uses": 2,
-      "direct_used_by": 1,
-      "ancestors": 3,
-      "descendants": 24
+      "direct_uses": 3,
+      "direct_used_by": 3,
+      "ancestors": 11,
+      "descendants": 116
     },
     {
       "code": "IP9",
@@ -295,34 +295,34 @@
       "href": "/nodes/IP10.html",
       "source": "/text/part0029_split_001.html#cite-IP10",
       "label": "P10: Each attribute of a substance must be conceived through itself.",
-      "direct_uses": 1,
+      "direct_uses": 3,
       "direct_used_by": 1,
-      "ancestors": 1,
-      "descendants": 24
+      "ancestors": 3,
+      "descendants": 107
     },
     {
       "code": "IP11",
       "type": "proposition",
       "part": "Part I",
       "href": "/nodes/IP11.html",
-      "source": "/text/part0029_split_001.html#p-part0029-split-001-0066",
+      "source": "/text/part0029_split_001.html#cite-IP11",
       "label": "P11: God, or a substance consisting of infinite attributes, each of which expresses [25] eternal and infinite essence, necessarily exists.",
-      "direct_uses": 1,
-      "direct_used_by": 2,
-      "ancestors": 1,
-      "descendants": 29
+      "direct_uses": 6,
+      "direct_used_by": 9,
+      "ancestors": 17,
+      "descendants": 144
     },
     {
       "code": "IP12",
       "type": "proposition",
       "part": "Part I",
       "href": "/nodes/IP12.html",
-      "source": "/text/part0029_split_001.html#p-part0029-split-001-0078",
+      "source": "/text/part0029_split_001.html#cite-IP12",
       "label": "[II/55] P12: No attribute of a substance can be truly conceived from which it follows that the substance can be divided.",
-      "direct_uses": 2,
-      "direct_used_by": 1,
-      "ancestors": 6,
-      "descendants": 26
+      "direct_uses": 7,
+      "direct_used_by": 2,
+      "ancestors": 19,
+      "descendants": 115
     },
     {
       "code": "IP13",
@@ -331,10 +331,10 @@
       "href": "/nodes/IP13.html",
       "source": "/text/part0029_split_001.html#p-part0029-split-001-0081",
       "label": "[20] P13: A substance which is absolutely infinite is indivisible.",
-      "direct_uses": 2,
+      "direct_uses": 4,
       "direct_used_by": 1,
-      "ancestors": 9,
-      "descendants": 26
+      "ancestors": 22,
+      "descendants": 114
     },
     {
       "code": "IP14",
@@ -343,22 +343,22 @@
       "href": "/nodes/IP14.html",
       "source": "/text/part0029_split_001.html#cite-IP14",
       "label": "P14: Except God, no substance can be or be conceived.",
-      "direct_uses": 0,
-      "direct_used_by": 1,
-      "ancestors": 0,
-      "descendants": 26
+      "direct_uses": 4,
+      "direct_used_by": 2,
+      "ancestors": 18,
+      "descendants": 114
     },
     {
       "code": "IP15",
       "type": "proposition",
       "part": "Part I",
       "href": "/nodes/IP15.html",
-      "source": "/text/part0029_split_001.html#p-part0029-split-001-0089",
+      "source": "/text/part0029_split_001.html#cite-IP15",
       "label": "[25] P15: Whatever is, is in God, and nothing can be or be conceived without God.",
-      "direct_uses": 2,
-      "direct_used_by": 4,
-      "ancestors": 11,
-      "descendants": 25
+      "direct_uses": 7,
+      "direct_used_by": 11,
+      "ancestors": 24,
+      "descendants": 117
     },
     {
       "code": "IP16",
@@ -367,10 +367,10 @@
       "href": "/nodes/IP16.html",
       "source": "/text/part0029_split_001.html#cite-IP16",
       "label": "P16: From the necessity of the divine nature there must follow infinitely many things in infinitely many modes,43 (i.e., everything which can fall under an infinite intellect.)44",
-      "direct_uses": 0,
-      "direct_used_by": 4,
-      "ancestors": 0,
-      "descendants": 12
+      "direct_uses": 1,
+      "direct_used_by": 8,
+      "ancestors": 1,
+      "descendants": 117
     },
     {
       "code": "IP17",
@@ -379,9 +379,9 @@
       "href": "/nodes/IP17.html",
       "source": "/text/part0029_split_001.html#p-part0029-split-001-0111",
       "label": "[5] P17: God acts from the laws of his nature alone, and is compelled by no one.",
-      "direct_uses": 4,
+      "direct_uses": 5,
       "direct_used_by": 1,
-      "ancestors": 14,
+      "ancestors": 27,
       "descendants": 0
     },
     {
@@ -391,9 +391,9 @@
       "href": "/nodes/IP18.html",
       "source": "/text/part0029_split_001.html#cite-IP18",
       "label": "P18: God is the immanent, not the transitive, cause of all things.",
-      "direct_uses": 0,
+      "direct_uses": 3,
       "direct_used_by": 0,
-      "ancestors": 0,
+      "ancestors": 25,
       "descendants": 0
     },
     {
@@ -403,10 +403,10 @@
       "href": "/nodes/IP19.html",
       "source": "/text/part0029_split_001.html#cite-IP19",
       "label": "P19: God is eternal, or all God’s attributes are eternal.",
-      "direct_uses": 2,
-      "direct_used_by": 1,
-      "ancestors": 1,
-      "descendants": 0
+      "direct_uses": 6,
+      "direct_used_by": 3,
+      "ancestors": 19,
+      "descendants": 3
     },
     {
       "code": "IP20",
@@ -415,9 +415,9 @@
       "href": "/nodes/IP20.html",
       "source": "/text/part0029_split_001.html#cite-IP20",
       "label": "P20: God’s existence and his essence are one and the same.",
-      "direct_uses": 1,
+      "direct_uses": 4,
       "direct_used_by": 1,
-      "ancestors": 0,
+      "ancestors": 20,
       "descendants": 0
     },
     {
@@ -427,10 +427,10 @@
       "href": "/nodes/IP21.html",
       "source": "/text/part0029_split_001.html#cite-IP21",
       "label": "P21: All the things which follow from the absolute nature of any of God’s attributes have always53 had to exist and be infinite, or are, through the same attribute, eternal and infinite.",
-      "direct_uses": 0,
-      "direct_used_by": 4,
-      "ancestors": 0,
-      "descendants": 14
+      "direct_uses": 2,
+      "direct_used_by": 6,
+      "ancestors": 19,
+      "descendants": 32
     },
     {
       "code": "IP22",
@@ -440,9 +440,9 @@
       "source": "/text/part0029_split_001.html#cite-IP22",
       "label": "P22: Whatever follows from some attribute of God insofar as it is modified by a modification which, through the same attribute, exists necessarily and is [20] infinite, must also exist necessarily and be infinite.57",
       "direct_uses": 0,
-      "direct_used_by": 1,
+      "direct_used_by": 2,
       "ancestors": 0,
-      "descendants": 2
+      "descendants": 30
     },
     {
       "code": "IP23",
@@ -451,9 +451,9 @@
       "href": "/nodes/IP23.html",
       "source": "/text/part0029_split_001.html#p-part0029-split-001-0139",
       "label": "[25] P23: Every mode which exists necessarily and is infinite has necessarily had to follow either from the absolute nature of some attribute of God, or from some attribute, modified by a modification which exists necessarily and is infinite.",
-      "direct_uses": 2,
+      "direct_uses": 7,
       "direct_used_by": 1,
-      "ancestors": 2,
+      "ancestors": 29,
       "descendants": 1
     },
     {
@@ -466,7 +466,7 @@
       "direct_uses": 0,
       "direct_used_by": 3,
       "ancestors": 0,
-      "descendants": 25
+      "descendants": 35
     },
     {
       "code": "IP25",
@@ -475,22 +475,22 @@
       "href": "/nodes/IP25.html",
       "source": "/text/part0029_split_001.html#cite-IP25",
       "label": "P25: God is the efficient cause, not only of the existence of things, but also of their essence.",
-      "direct_uses": 0,
+      "direct_uses": 3,
       "direct_used_by": 3,
-      "ancestors": 0,
-      "descendants": 39
+      "ancestors": 25,
+      "descendants": 92
     },
     {
       "code": "IP26",
       "type": "proposition",
       "part": "Part I",
       "href": "/nodes/IP26.html",
-      "source": "/text/part0029_split_001.html#p-part0029-split-001-0148",
+      "source": "/text/part0029_split_001.html#cite-IP26",
       "label": "[15] P26: A thing which has been determined to produce an effect has necessarily been determined in this way by God; and one which has not been determined by God cannot determine itself to produce an effect.",
       "direct_uses": 1,
-      "direct_used_by": 1,
-      "ancestors": 1,
-      "descendants": 15
+      "direct_used_by": 2,
+      "ancestors": 26,
+      "descendants": 29
     },
     {
       "code": "IP27",
@@ -502,19 +502,19 @@
       "direct_uses": 1,
       "direct_used_by": 1,
       "ancestors": 1,
-      "descendants": 11
+      "descendants": 25
     },
     {
       "code": "IP28",
       "type": "proposition",
       "part": "Part I",
       "href": "/nodes/IP28.html",
-      "source": "/text/part0029_split_001.html#p-part0029-split-001-0152",
+      "source": "/text/part0029_split_001.html#cite-IP28",
       "label": "[II/69] P28: Every singular thing, or any thing which is finite and has a determinate existence, can neither exist nor be determined to produce an effect unless it is [5] determined to exist and produce an effect by another cause, which is also finite and has ",
-      "direct_uses": 2,
-      "direct_used_by": 4,
-      "ancestors": 3,
-      "descendants": 14
+      "direct_uses": 8,
+      "direct_used_by": 5,
+      "ancestors": 30,
+      "descendants": 28
     },
     {
       "code": "IP29",
@@ -523,10 +523,10 @@
       "href": "/nodes/IP29.html",
       "source": "/text/part0029_split_001.html#cite-IP29",
       "label": "P29: In nature there is nothing contingent, but all things have been determined from the necessity of the divine nature to exist and produce an effect in a certain way.",
-      "direct_uses": 2,
-      "direct_used_by": 3,
-      "ancestors": 6,
-      "descendants": 10
+      "direct_uses": 7,
+      "direct_used_by": 5,
+      "ancestors": 34,
+      "descendants": 24
     },
     {
       "code": "IP30",
@@ -535,9 +535,9 @@
       "href": "/nodes/IP30.html",
       "source": "/text/part0029_split_001.html#cite-IP30",
       "label": "P30: An actual intellect, whether finite or infinite,62 must comprehend God’s attributes and God’s affections, and nothing else.",
-      "direct_uses": 0,
+      "direct_uses": 2,
       "direct_used_by": 1,
-      "ancestors": 0,
+      "ancestors": 25,
       "descendants": 1
     },
     {
@@ -547,9 +547,9 @@
       "href": "/nodes/IP31.html",
       "source": "/text/part0029_split_001.html#p-part0029-split-001-0164",
       "label": "[30] P31: The actual intellect, whether finite or infinite, like will, desire, love, etc., must be referred to Natura naturata, not to Natura naturans.63",
-      "direct_uses": 1,
+      "direct_uses": 4,
       "direct_used_by": 0,
-      "ancestors": 7,
+      "ancestors": 35,
       "descendants": 0
     },
     {
@@ -559,9 +559,9 @@
       "href": "/nodes/IP32.html",
       "source": "/text/part0029_split_001.html#p-part0029-split-001-0167",
       "label": "[20] P32: The will cannot be called a free cause, but only a necessary one.",
-      "direct_uses": 1,
+      "direct_uses": 4,
       "direct_used_by": 0,
-      "ancestors": 3,
+      "ancestors": 39,
       "descendants": 0
     },
     {
@@ -571,9 +571,9 @@
       "href": "/nodes/IP33.html",
       "source": "/text/part0029_split_001.html#cite-IP33",
       "label": "P33: Things could have been produced by God in no other way, and in no [20] other order than they have been produced.",
-      "direct_uses": 0,
+      "direct_uses": 4,
       "direct_used_by": 0,
-      "ancestors": 0,
+      "ancestors": 36,
       "descendants": 0
     },
     {
@@ -581,12 +581,12 @@
       "type": "proposition",
       "part": "Part I",
       "href": "/nodes/IP34.html",
-      "source": "/text/part0029_split_001.html#p-part0029-split-001-0186",
+      "source": "/text/part0029_split_001.html#cite-IP34",
       "label": "[35] P34: God’s power is his essence itself.",
-      "direct_uses": 0,
-      "direct_used_by": 3,
-      "ancestors": 0,
-      "descendants": 43
+      "direct_uses": 2,
+      "direct_used_by": 4,
+      "ancestors": 19,
+      "descendants": 107
     },
     {
       "code": "IP35",
@@ -597,8 +597,8 @@
       "label": "P35: Whatever we conceive to be in God’s power, necessarily exists.",
       "direct_uses": 1,
       "direct_used_by": 1,
-      "ancestors": 1,
-      "descendants": 20
+      "ancestors": 20,
+      "descendants": 55
     },
     {
       "code": "IP36",
@@ -607,10 +607,10 @@
       "href": "/nodes/IP36.html",
       "source": "/text/part0029_split_001.html#cite-IP36",
       "label": "P36: Nothing exists from whose nature some effect does not follow.",
-      "direct_uses": 0,
+      "direct_uses": 2,
       "direct_used_by": 3,
-      "ancestors": 0,
-      "descendants": 27
+      "ancestors": 20,
+      "descendants": 78
     },
     {
       "code": "IID1",
@@ -622,7 +622,7 @@
       "direct_uses": 0,
       "direct_used_by": 2,
       "ancestors": 0,
-      "descendants": 10
+      "descendants": 78
     },
     {
       "code": "IID2",
@@ -634,7 +634,7 @@
       "direct_uses": 0,
       "direct_used_by": 2,
       "ancestors": 0,
-      "descendants": 7
+      "descendants": 20
     },
     {
       "code": "IID3",
@@ -646,7 +646,7 @@
       "direct_uses": 0,
       "direct_used_by": 1,
       "ancestors": 0,
-      "descendants": 5
+      "descendants": 16
     },
     {
       "code": "IID4",
@@ -682,7 +682,7 @@
       "direct_uses": 0,
       "direct_used_by": 3,
       "ancestors": 0,
-      "descendants": 24
+      "descendants": 54
     },
     {
       "code": "IID7",
@@ -704,9 +704,9 @@
       "source": "/text/part0029_split_001.html#cite-IIA1",
       "label": "A1: The essence of man does not involve necessary existence, i.e., from the order of nature it can happen equally that this or that man does exist, or that he does not exist.",
       "direct_uses": 0,
-      "direct_used_by": 3,
+      "direct_used_by": 6,
       "ancestors": 0,
-      "descendants": 13
+      "descendants": 132
     },
     {
       "code": "IIA2",
@@ -718,7 +718,7 @@
       "direct_uses": 0,
       "direct_used_by": 1,
       "ancestors": 0,
-      "descendants": 21
+      "descendants": 105
     },
     {
       "code": "IIA3",
@@ -730,7 +730,7 @@
       "direct_uses": 0,
       "direct_used_by": 2,
       "ancestors": 0,
-      "descendants": 22
+      "descendants": 105
     },
     {
       "code": "IIA4",
@@ -742,7 +742,7 @@
       "direct_uses": 0,
       "direct_used_by": 1,
       "ancestors": 0,
-      "descendants": 6
+      "descendants": 75
     },
     {
       "code": "IIA5",
@@ -753,8 +753,8 @@
       "label": "A5: We neither feel nor perceive any singular things [NS: or anything of natura naturata],6 except bodies and modes of thinking. See the postulates after P13.",
       "direct_uses": 1,
       "direct_used_by": 1,
-      "ancestors": 8,
-      "descendants": 5
+      "ancestors": 30,
+      "descendants": 74
     },
     {
       "code": "IIP1",
@@ -766,7 +766,7 @@
       "direct_uses": 1,
       "direct_used_by": 2,
       "ancestors": 1,
-      "descendants": 20
+      "descendants": 55
     },
     {
       "code": "IIP2",
@@ -785,12 +785,12 @@
       "type": "proposition",
       "part": "Part II",
       "href": "/nodes/IIP3.html",
-      "source": "/text/part0029_split_001.html#p-part0029-split-001-0242",
+      "source": "/text/part0029_split_001.html#cite-IIP3",
       "label": "[5] P3: In God there is necessarily an idea, both of his essence and of everything that necessarily follows from his essence.",
       "direct_uses": 3,
-      "direct_used_by": 3,
-      "ancestors": 5,
-      "descendants": 19
+      "direct_used_by": 4,
+      "ancestors": 25,
+      "descendants": 54
     },
     {
       "code": "IIP4",
@@ -801,7 +801,7 @@
       "label": "P4: God’s idea, from which infinitely many things follow in infinitely many modes, must be unique.",
       "direct_uses": 1,
       "direct_used_by": 0,
-      "ancestors": 1,
+      "ancestors": 26,
       "descendants": 0
     },
     {
@@ -813,7 +813,7 @@
       "label": "[15] P5: The formal being of ideas admits God as a cause only insofar as he is considered as a thinking thing, and not insofar as he is explained by any other attribute. I.e., ideas, both of God’s attributes and of singular things, admit not the objects themse",
       "direct_uses": 1,
       "direct_used_by": 0,
-      "ancestors": 6,
+      "ancestors": 26,
       "descendants": 0
     },
     {
@@ -824,21 +824,21 @@
       "source": "/text/part0029_split_001.html#cite-IIP6",
       "label": "P6: The modes of each attribute have God for their cause only insofar as he is [5] considered under the attribute of which they are modes, and not insofar as he is considered under any other attribute.",
       "direct_uses": 0,
-      "direct_used_by": 4,
+      "direct_used_by": 5,
       "ancestors": 0,
-      "descendants": 17
+      "descendants": 91
     },
     {
       "code": "IIP7",
       "type": "proposition",
       "part": "Part II",
       "href": "/nodes/IIP7.html",
-      "source": "/text/part0029_split_001.html#p-part0029-split-001-0255",
+      "source": "/text/part0029_split_001.html#cite-IIP7",
       "label": "[20] P7: The order and connection of ideas is the same as the order and connection of things.",
       "direct_uses": 0,
-      "direct_used_by": 3,
+      "direct_used_by": 4,
       "ancestors": 0,
-      "descendants": 12
+      "descendants": 70
     },
     {
       "code": "IIP8",
@@ -850,19 +850,19 @@
       "direct_uses": 0,
       "direct_used_by": 3,
       "ancestors": 0,
-      "descendants": 21
+      "descendants": 42
     },
     {
       "code": "IIP9",
       "type": "proposition",
       "part": "Part II",
       "href": "/nodes/IIP9.html",
-      "source": "/text/part0029_split_001.html#p-part0029-split-001-0267",
+      "source": "/text/part0029_split_001.html#cite-IIP9",
       "label": "[30] P9: The idea of a singular thing which actually exists has God for a cause not [II/92] insofar as he is infinite,17 but insofar as he is considered to be affected by another idea of a singular thing which actually exists; and of this [idea] God is also th",
-      "direct_uses": 4,
+      "direct_uses": 5,
       "direct_used_by": 2,
-      "ancestors": 3,
-      "descendants": 8
+      "ancestors": 29,
+      "descendants": 20
     },
     {
       "code": "IIP10",
@@ -874,7 +874,7 @@
       "direct_uses": 3,
       "direct_used_by": 2,
       "ancestors": 2,
-      "descendants": 2
+      "descendants": 15
     },
     {
       "code": "IIP11",
@@ -883,10 +883,10 @@
       "href": "/nodes/IIP11.html",
       "source": "/text/part0029_split_001.html#cite-IIP11",
       "label": "P11: The first thing that constitutes the actual being of a human Mind is [15] nothing but the idea of a singular thing which actually exists.",
-      "direct_uses": 2,
-      "direct_used_by": 4,
-      "ancestors": 2,
-      "descendants": 20
+      "direct_uses": 3,
+      "direct_used_by": 5,
+      "ancestors": 3,
+      "descendants": 107
     },
     {
       "code": "IIP12",
@@ -896,21 +896,21 @@
       "source": "/text/part0029_split_001.html#cite-IIP12",
       "label": "P12: Whatever happens in the object of the idea constituting the human Mind must be perceived by the human Mind, or there will necessarily be an idea of [15] that thing in the Mind; i.e., if the object of the idea constituting a human Mind is a body, nothing c",
       "direct_uses": 1,
-      "direct_used_by": 3,
-      "ancestors": 3,
-      "descendants": 11
+      "direct_used_by": 5,
+      "ancestors": 4,
+      "descendants": 101
     },
     {
       "code": "IIP13",
       "type": "proposition",
       "part": "Part II",
       "href": "/nodes/IIP13.html",
-      "source": "/text/part0029_split_001.html#p-part0029-split-001-0287",
+      "source": "/text/part0029_split_001.html#cite-IIP13",
       "label": "[II/96] P13: The object of the idea constituting the human Mind is the Body,29 or a certain mode of Extension which actually exists, and nothing else.",
-      "direct_uses": 5,
-      "direct_used_by": 2,
-      "ancestors": 8,
-      "descendants": 5
+      "direct_uses": 8,
+      "direct_used_by": 3,
+      "ancestors": 30,
+      "descendants": 76
     },
     {
       "code": "IIP14",
@@ -919,10 +919,10 @@
       "href": "/nodes/IIP14.html",
       "source": "/text/part0029_split_001.html#cite-IIP14",
       "label": "P14: The human Mind is capable of perceiving a great many things, and is the more capable, the more its body can be disposed in a great many ways.",
-      "direct_uses": 0,
+      "direct_uses": 1,
       "direct_used_by": 2,
-      "ancestors": 0,
-      "descendants": 22
+      "ancestors": 5,
+      "descendants": 78
     },
     {
       "code": "IIP15",
@@ -931,10 +931,10 @@
       "href": "/nodes/IIP15.html",
       "source": "/text/part0029_split_001.html#cite-IIP15",
       "label": "P15: The idea that constitutes the formal being [esse] of the human Mind is not simple, but composed of a great many ideas.",
-      "direct_uses": 0,
+      "direct_uses": 2,
       "direct_used_by": 1,
-      "ancestors": 0,
-      "descendants": 19
+      "ancestors": 32,
+      "descendants": 60
     },
     {
       "code": "IIP16",
@@ -943,10 +943,10 @@
       "href": "/nodes/IIP16.html",
       "source": "/text/part0029_split_001.html#cite-IIP16",
       "label": "P16: The idea of any mode in which the human Body is affected by external bodies must involve the nature of the human Body and at the same time the [30] nature of the external body.",
-      "direct_uses": 0,
-      "direct_used_by": 3,
-      "ancestors": 0,
-      "descendants": 45
+      "direct_uses": 1,
+      "direct_used_by": 4,
+      "ancestors": 1,
+      "descendants": 83
     },
     {
       "code": "IIP17",
@@ -955,10 +955,10 @@
       "href": "/nodes/IIP17.html",
       "source": "/text/part0029_split_001.html#cite-IIP17",
       "label": "P17: If the human Body is affected with a mode that involves the nature of [20] an external body, the human Mind will regard the same external body as actually existing, or as present to it, until the Body is affected by an affect43 that excludes the existence",
-      "direct_uses": 0,
+      "direct_uses": 2,
       "direct_used_by": 1,
-      "ancestors": 0,
-      "descendants": 4
+      "ancestors": 6,
+      "descendants": 5
     },
     {
       "code": "IIP18",
@@ -968,33 +968,33 @@
       "source": "/text/part0030.html#cite-IIP18",
       "label": "P18: If the human Body has once been affected by two or more bodies at the same time, then when the Mind subsequently imagines one of them, it will immediately recollect the others also.",
       "direct_uses": 1,
-      "direct_used_by": 3,
-      "ancestors": 1,
-      "descendants": 13
+      "direct_used_by": 4,
+      "ancestors": 2,
+      "descendants": 28
     },
     {
       "code": "IIP19",
       "type": "proposition",
       "part": "Part II",
       "href": "/nodes/IIP19.html",
-      "source": "/text/part0030.html#p-part0030-0014",
+      "source": "/text/part0030.html#cite-IIP19",
       "label": "[30] P19: The human Mind does not know the human Body itself, nor does it know that it exists, except through ideas of affections by which the Body is affected.",
       "direct_uses": 3,
-      "direct_used_by": 1,
-      "ancestors": 7,
-      "descendants": 7
+      "direct_used_by": 3,
+      "ancestors": 32,
+      "descendants": 19
     },
     {
       "code": "IIP20",
       "type": "proposition",
       "part": "Part II",
       "href": "/nodes/IIP20.html",
-      "source": "/text/part0030.html#p-part0030-0018",
+      "source": "/text/part0030.html#cite-IIP20",
       "label": "[20] P20: There is also in God an idea, or knowledge, of the human Mind, which follows in God in the same way and is related to God in the same way as the idea, or knowledge, of the human Body.",
       "direct_uses": 2,
-      "direct_used_by": 1,
-      "ancestors": 6,
-      "descendants": 12
+      "direct_used_by": 3,
+      "ancestors": 26,
+      "descendants": 33
     },
     {
       "code": "IIP21",
@@ -1006,19 +1006,19 @@
       "direct_uses": 0,
       "direct_used_by": 3,
       "ancestors": 0,
-      "descendants": 15
+      "descendants": 34
     },
     {
       "code": "IIP22",
       "type": "proposition",
       "part": "Part II",
       "href": "/nodes/IIP22.html",
-      "source": "/text/part0030.html#p-part0030-0023",
+      "source": "/text/part0030.html#cite-IIP22",
       "label": "[25] P22: The human Mind perceives not only the affections of the Body, but also the ideas of these affections.",
       "direct_uses": 2,
-      "direct_used_by": 2,
-      "ancestors": 8,
-      "descendants": 11
+      "direct_used_by": 3,
+      "ancestors": 27,
+      "descendants": 29
     },
     {
       "code": "IIP23",
@@ -1027,10 +1027,10 @@
       "href": "/nodes/IIP23.html",
       "source": "/text/part0030.html#cite-IIP23",
       "label": "P23: The Mind does not know itself, except insofar as it perceives the ideas of the affections of the Body.",
-      "direct_uses": 2,
-      "direct_used_by": 2,
-      "ancestors": 17,
-      "descendants": 6
+      "direct_uses": 3,
+      "direct_used_by": 3,
+      "ancestors": 36,
+      "descendants": 18
     },
     {
       "code": "IIP24",
@@ -1040,33 +1040,33 @@
       "source": "/text/part0030.html#cite-IIP24",
       "label": "P24: The human Mind does not involve adequate knowledge of the parts composing the human Body.",
       "direct_uses": 1,
-      "direct_used_by": 1,
+      "direct_used_by": 2,
       "ancestors": 1,
-      "descendants": 4
+      "descendants": 5
     },
     {
       "code": "IIP25",
       "type": "proposition",
       "part": "Part II",
       "href": "/nodes/IIP25.html",
-      "source": "/text/part0030.html#p-part0030-0030",
+      "source": "/text/part0030.html#cite-IIP25",
       "label": "[20] P25: The idea of any affection of the human Body does not involve adequate knowledge of an external body.",
       "direct_uses": 0,
-      "direct_used_by": 1,
+      "direct_used_by": 4,
       "ancestors": 0,
-      "descendants": 5
+      "descendants": 45
     },
     {
       "code": "IIP26",
       "type": "proposition",
       "part": "Part II",
       "href": "/nodes/IIP26.html",
-      "source": "/text/part0030.html#p-part0030-0032",
+      "source": "/text/part0030.html#cite-IIP26",
       "label": "[II/112] P26: The human Mind does not perceive any external body as actually existing, except through the ideas of the affections of its own Body.",
       "direct_uses": 2,
-      "direct_used_by": 2,
+      "direct_used_by": 3,
       "ancestors": 1,
-      "descendants": 4
+      "descendants": 22
     },
     {
       "code": "IIP27",
@@ -1076,9 +1076,9 @@
       "source": "/text/part0030.html#cite-IIP27",
       "label": "P27: The idea of any affection of the human Body does not involve adequate [25] knowledge of the human body itself.",
       "direct_uses": 0,
-      "direct_used_by": 1,
+      "direct_used_by": 2,
       "ancestors": 0,
-      "descendants": 3
+      "descendants": 30
     },
     {
       "code": "IIP28",
@@ -1087,10 +1087,10 @@
       "href": "/nodes/IIP28.html",
       "source": "/text/part0030.html#cite-IIP28",
       "label": "P28: The ideas of the affections of the human Body, insofar as they are related [5] only to the human Mind, are not clear and distinct, but confused.",
-      "direct_uses": 1,
-      "direct_used_by": 1,
-      "ancestors": 2,
-      "descendants": 3
+      "direct_uses": 2,
+      "direct_used_by": 2,
+      "ancestors": 3,
+      "descendants": 4
     },
     {
       "code": "IIP29",
@@ -1099,9 +1099,9 @@
       "href": "/nodes/IIP29.html",
       "source": "/text/part0030.html#cite-IIP29",
       "label": "P29: The idea of the idea of any affection of the human Body does not involve [30] adequate knowledge of the human Mind.",
-      "direct_uses": 5,
+      "direct_uses": 8,
       "direct_used_by": 2,
-      "ancestors": 23,
+      "ancestors": 39,
       "descendants": 2
     },
     {
@@ -1113,8 +1113,8 @@
       "label": "P30: We can have only an entirely inadequate knowledge of the duration of [30] our Body.",
       "direct_uses": 2,
       "direct_used_by": 1,
-      "ancestors": 5,
-      "descendants": 6
+      "ancestors": 31,
+      "descendants": 17
     },
     {
       "code": "IIP31",
@@ -1125,8 +1125,8 @@
       "label": "[15] P31: We can have only an entirely inadequate knowledge of the duration of the singular things which are outside us.",
       "direct_uses": 3,
       "direct_used_by": 3,
-      "ancestors": 9,
-      "descendants": 5
+      "ancestors": 36,
+      "descendants": 16
     },
     {
       "code": "IIP32",
@@ -1136,9 +1136,9 @@
       "source": "/text/part0030.html#cite-IIP32",
       "label": "P32: All ideas, insofar as they are related to God, are true.",
       "direct_uses": 0,
-      "direct_used_by": 3,
+      "direct_used_by": 5,
       "ancestors": 0,
-      "descendants": 24
+      "descendants": 48
     },
     {
       "code": "IIP33",
@@ -1149,20 +1149,20 @@
       "label": "[10] P33: There is nothing positive in ideas on account of which they are called false.",
       "direct_uses": 2,
       "direct_used_by": 2,
-      "ancestors": 13,
-      "descendants": 23
+      "ancestors": 26,
+      "descendants": 41
     },
     {
       "code": "IIP34",
       "type": "proposition",
       "part": "Part II",
       "href": "/nodes/IIP34.html",
-      "source": "/text/part0030.html#p-part0030-0054",
+      "source": "/text/part0030.html#cite-IIP34",
       "label": "[20] P34: Every idea that in us is absolute, or adequate and perfect, is true.",
-      "direct_uses": 0,
-      "direct_used_by": 1,
-      "ancestors": 0,
-      "descendants": 14
+      "direct_uses": 1,
+      "direct_used_by": 2,
+      "ancestors": 1,
+      "descendants": 40
     },
     {
       "code": "IIP35",
@@ -1172,9 +1172,9 @@
       "source": "/text/part0030.html#cite-IIP35",
       "label": "P35: Falsity consists in the privation of knowledge which inadequate, or mutilated and confused, ideas involve.",
       "direct_uses": 1,
-      "direct_used_by": 3,
-      "ancestors": 14,
-      "descendants": 20
+      "direct_used_by": 4,
+      "ancestors": 27,
+      "descendants": 40
     },
     {
       "code": "IIP36",
@@ -1183,9 +1183,9 @@
       "href": "/nodes/IIP36.html",
       "source": "/text/part0030.html#cite-IIP36",
       "label": "P36: Inadequate and confused ideas follow with the same necessity as adequate, or clear and distinct ideas.",
-      "direct_uses": 1,
+      "direct_uses": 4,
       "direct_used_by": 0,
-      "ancestors": 1,
+      "ancestors": 6,
       "descendants": 0
     },
     {
@@ -1205,12 +1205,12 @@
       "type": "proposition",
       "part": "Part II",
       "href": "/nodes/IIP38.html",
-      "source": "/text/part0030.html#p-part0030-0064",
+      "source": "/text/part0030.html#cite-IIP38",
       "label": "[20] P38: Those things which are common to all, and which are equally in the part and in the whole, can only be conceived adequately.",
-      "direct_uses": 1,
-      "direct_used_by": 2,
-      "ancestors": 0,
-      "descendants": 1
+      "direct_uses": 3,
+      "direct_used_by": 4,
+      "ancestors": 2,
+      "descendants": 27
     },
     {
       "code": "IIP39",
@@ -1222,7 +1222,7 @@
       "direct_uses": 0,
       "direct_used_by": 1,
       "ancestors": 0,
-      "descendants": 6
+      "descendants": 18
     },
     {
       "code": "IIP40",
@@ -1233,8 +1233,8 @@
       "label": "P40: Whatever ideas follow in the Mind from ideas that are adequate in the [5] mind are also adequate.",
       "direct_uses": 3,
       "direct_used_by": 3,
-      "ancestors": 3,
-      "descendants": 5
+      "ancestors": 4,
+      "descendants": 17
     },
     {
       "code": "IIP41",
@@ -1245,8 +1245,8 @@
       "label": "P41: Knowledge of the first kind is the only cause of falsity, whereas knowledge of the second and of the third kind is necessarily true.",
       "direct_uses": 2,
       "direct_used_by": 3,
-      "ancestors": 16,
-      "descendants": 13
+      "ancestors": 29,
+      "descendants": 34
     },
     {
       "code": "IIP42",
@@ -1267,10 +1267,10 @@
       "href": "/nodes/IIP43.html",
       "source": "/text/part0030.html#cite-IIP43",
       "label": "P43: He who has a true idea at the same time knows that he has a true idea, and cannot doubt the truth of the thing.",
-      "direct_uses": 0,
+      "direct_uses": 2,
       "direct_used_by": 3,
-      "ancestors": 0,
-      "descendants": 6
+      "ancestors": 28,
+      "descendants": 17
     },
     {
       "code": "IIP44",
@@ -1279,9 +1279,9 @@
       "href": "/nodes/IIP44.html",
       "source": "/text/part0030.html#p-part0030-0094",
       "label": "[5] P44: It is of the nature of Reason to regard things as necessary, not as contingent.",
-      "direct_uses": 4,
+      "direct_uses": 6,
       "direct_used_by": 2,
-      "ancestors": 19,
+      "ancestors": 39,
       "descendants": 2
     },
     {
@@ -1289,12 +1289,12 @@
       "type": "proposition",
       "part": "Part II",
       "href": "/nodes/IIP45.html",
-      "source": "/text/part0030.html#p-part0030-0104",
+      "source": "/text/part0030.html#cite-IIP45",
       "label": "[II/127] P45: Each idea of each body, or of each singular thing which actually exists, necessarily involves an68 eternal and infinite essence of God.",
       "direct_uses": 4,
-      "direct_used_by": 2,
+      "direct_used_by": 3,
       "ancestors": 4,
-      "descendants": 12
+      "descendants": 19
     },
     {
       "code": "IIP46",
@@ -1303,10 +1303,10 @@
       "href": "/nodes/IIP46.html",
       "source": "/text/part0030.html#p-part0030-0107",
       "label": "[25] P46: The knowledge of God’s eternal and infinite essence which each idea involves is adequate and perfect.",
-      "direct_uses": 1,
+      "direct_uses": 2,
       "direct_used_by": 2,
-      "ancestors": 5,
-      "descendants": 11
+      "ancestors": 8,
+      "descendants": 18
     },
     {
       "code": "IIP47",
@@ -1315,10 +1315,10 @@
       "href": "/nodes/IIP47.html",
       "source": "/text/part0030.html#cite-IIP47",
       "label": "P47: The human Mind has an adequate knowledge of God’s eternal and infinite [5] essence.",
-      "direct_uses": 1,
+      "direct_uses": 5,
       "direct_used_by": 2,
-      "ancestors": 6,
-      "descendants": 8
+      "ancestors": 39,
+      "descendants": 15
     },
     {
       "code": "IIP48",
@@ -1330,7 +1330,7 @@
       "direct_uses": 1,
       "direct_used_by": 2,
       "ancestors": 1,
-      "descendants": 4
+      "descendants": 15
     },
     {
       "code": "IIP49",
@@ -1339,10 +1339,10 @@
       "href": "/nodes/IIP49.html",
       "source": "/text/part0030.html#p-part0030-0120",
       "label": "[15] P49: In the Mind there is no volition, or affirmation and negation, except that which the idea involves insofar as it is an idea.",
-      "direct_uses": 5,
+      "direct_uses": 6,
       "direct_used_by": 2,
-      "ancestors": 11,
-      "descendants": 3
+      "ancestors": 59,
+      "descendants": 14
     },
     {
       "code": "IIID1",
@@ -1352,9 +1352,9 @@
       "source": "/text/part0030.html#cite-IIID1",
       "label": "D1: I call that cause adequate whose effect can be clearly and distinctly perceived through it. But I call it partial, or inadequate, if its [5] effect cannot be understood through it alone.",
       "direct_uses": 0,
-      "direct_used_by": 3,
+      "direct_used_by": 4,
       "ancestors": 0,
-      "descendants": 21
+      "descendants": 62
     },
     {
       "code": "IIID2",
@@ -1366,7 +1366,7 @@
       "direct_uses": 1,
       "direct_used_by": 3,
       "ancestors": 1,
-      "descendants": 21
+      "descendants": 61
     },
     {
       "code": "IIID3",
@@ -1378,7 +1378,7 @@
       "direct_uses": 0,
       "direct_used_by": 1,
       "ancestors": 0,
-      "descendants": 8
+      "descendants": 48
     },
     {
       "code": "IIIP1",
@@ -1387,10 +1387,10 @@
       "href": "/nodes/IIIP1.html",
       "source": "/text/part0030.html#cite-IIIP1",
       "label": "P1: Our Mind does certain things [acts] and undergoes other things, viz. [5] insofar as it has adequate ideas, it necessarily does certain things, and insofar as it has inadequate ideas, it necessarily undergoes other things.",
-      "direct_uses": 2,
+      "direct_uses": 3,
       "direct_used_by": 3,
-      "ancestors": 3,
-      "descendants": 19
+      "ancestors": 23,
+      "descendants": 60
     },
     {
       "code": "IIIP2",
@@ -1402,7 +1402,7 @@
       "direct_uses": 1,
       "direct_used_by": 1,
       "ancestors": 1,
-      "descendants": 3
+      "descendants": 4
     },
     {
       "code": "IIIP3",
@@ -1413,8 +1413,8 @@
       "label": "P3: The actions of the Mind arise from adequate ideas alone; the passions depend on inadequate ideas alone.",
       "direct_uses": 3,
       "direct_used_by": 3,
-      "ancestors": 20,
-      "descendants": 18
+      "ancestors": 61,
+      "descendants": 60
     },
     {
       "code": "IIIP4",
@@ -1424,21 +1424,21 @@
       "source": "/text/part0030.html#cite-IIIP4",
       "label": "P4: No thing can be destroyed except through an external cause.",
       "direct_uses": 0,
-      "direct_used_by": 3,
+      "direct_used_by": 6,
       "ancestors": 0,
-      "descendants": 24
+      "descendants": 67
     },
     {
       "code": "IIIP5",
       "type": "proposition",
       "part": "Part III",
       "href": "/nodes/IIIP5.html",
-      "source": "/text/part0030.html#p-part0030-0198",
+      "source": "/text/part0030.html#cite-IIIP5",
       "label": "[30] P5: Things14 are of a contrary nature, i.e., cannot be in the same subject, insofar as one can destroy the other.",
       "direct_uses": 1,
-      "direct_used_by": 3,
+      "direct_used_by": 4,
       "ancestors": 1,
-      "descendants": 22
+      "descendants": 63
     },
     {
       "code": "IIIP6",
@@ -1447,22 +1447,22 @@
       "href": "/nodes/IIIP6.html",
       "source": "/text/part0030.html#cite-IIIP6",
       "label": "P6: Each thing, as far as it can by its own power,15 strives to persevere in its being.",
-      "direct_uses": 3,
-      "direct_used_by": 3,
-      "ancestors": 4,
-      "descendants": 22
+      "direct_uses": 4,
+      "direct_used_by": 4,
+      "ancestors": 30,
+      "descendants": 62
     },
     {
       "code": "IIIP7",
       "type": "proposition",
       "part": "Part III",
       "href": "/nodes/IIIP7.html",
-      "source": "/text/part0030.html#p-part0030-0202",
+      "source": "/text/part0030.html#cite-IIIP7",
       "label": "[20] P7: The striving by which each thing strives to persevere in its being is nothing but the actual essence of the thing.",
       "direct_uses": 1,
-      "direct_used_by": 3,
-      "ancestors": 5,
-      "descendants": 19
+      "direct_used_by": 4,
+      "ancestors": 31,
+      "descendants": 61
     },
     {
       "code": "IIIP8",
@@ -1471,22 +1471,22 @@
       "href": "/nodes/IIIP8.html",
       "source": "/text/part0030.html#p-part0030-0204",
       "label": "[II/147] P8: The striving by which each thing strives to persevere in its being involves no finite time, but an indefinite time.",
-      "direct_uses": 0,
+      "direct_uses": 1,
       "direct_used_by": 1,
-      "ancestors": 0,
-      "descendants": 19
+      "ancestors": 1,
+      "descendants": 61
     },
     {
       "code": "IIIP9",
       "type": "proposition",
       "part": "Part III",
       "href": "/nodes/IIIP9.html",
-      "source": "/text/part0030.html#p-part0030-0206",
+      "source": "/text/part0030.html#cite-IIIP9",
       "label": "[15] P9: Both insofar as the Mind has clear and distinct ideas, and insofar as it has confused ideas, it strives, for an indefinite duration, to persevere in its being and it is conscious of this striving it has.",
       "direct_uses": 3,
-      "direct_used_by": 2,
-      "ancestors": 20,
-      "descendants": 18
+      "direct_used_by": 4,
+      "ancestors": 60,
+      "descendants": 60
     },
     {
       "code": "IIIP10",
@@ -1495,10 +1495,10 @@
       "href": "/nodes/IIIP10.html",
       "source": "/text/part0030.html#p-part0030-0211",
       "label": "[10] P10: An idea that excludes the existence of our Body cannot be in our Mind, but is contrary to it.",
-      "direct_uses": 0,
+      "direct_uses": 3,
       "direct_used_by": 2,
-      "ancestors": 0,
-      "descendants": 20
+      "ancestors": 61,
+      "descendants": 60
     },
     {
       "code": "IIIP11",
@@ -1507,34 +1507,34 @@
       "href": "/nodes/IIIP11.html",
       "source": "/text/part0030.html#cite-IIIP11",
       "label": "P11: The idea of any thing that increases or diminishes, aids or restrains, our [25] Body’s power of acting, increases or diminishes, aids or restrains, our Mind’s power of thinking.",
-      "direct_uses": 4,
+      "direct_uses": 5,
       "direct_used_by": 3,
-      "ancestors": 20,
-      "descendants": 18
+      "ancestors": 61,
+      "descendants": 60
     },
     {
       "code": "IIIP12",
       "type": "proposition",
       "part": "Part III",
       "href": "/nodes/IIIP12.html",
-      "source": "/text/part0030.html#p-part0030-0220",
+      "source": "/text/part0030.html#cite-IIIP12",
       "label": "[II/150] P12: The Mind, as far as it can, strives to imagine those things that increase or aid the Body’s power of acting.",
-      "direct_uses": 1,
-      "direct_used_by": 2,
-      "ancestors": 20,
-      "descendants": 18
+      "direct_uses": 3,
+      "direct_used_by": 6,
+      "ancestors": 61,
+      "descendants": 60
     },
     {
       "code": "IIIP13",
       "type": "proposition",
       "part": "Part III",
       "href": "/nodes/IIIP13.html",
-      "source": "/text/part0030.html#p-part0030-0222",
+      "source": "/text/part0030.html#cite-IIIP13",
       "label": "[20] P13: When the Mind imagines those things that diminish or restrain the Body’s power of acting, it strives, as far as it can, to recollect things that exclude their existence.",
-      "direct_uses": 1,
-      "direct_used_by": 2,
-      "ancestors": 20,
-      "descendants": 18
+      "direct_uses": 2,
+      "direct_used_by": 8,
+      "ancestors": 61,
+      "descendants": 59
     },
     {
       "code": "IIIP14",
@@ -1544,21 +1544,21 @@
       "source": "/text/part0030.html#cite-IIIP14",
       "label": "P14: If the Mind has once been affected by two affects at once, then afterwards, when it is affected by one of them, it will also be affected by the other.",
       "direct_uses": 1,
-      "direct_used_by": 1,
+      "direct_used_by": 2,
       "ancestors": 1,
-      "descendants": 7
+      "descendants": 54
     },
     {
       "code": "IIIP15",
       "type": "proposition",
       "part": "Part III",
       "href": "/nodes/IIIP15.html",
-      "source": "/text/part0030.html#p-part0030-0228",
+      "source": "/text/part0030.html#cite-IIIP15",
       "label": "[25] P15: Any thing can be the accidental cause of Joy, Sadness, or Desire.",
-      "direct_uses": 2,
+      "direct_uses": 3,
       "direct_used_by": 2,
-      "ancestors": 3,
-      "descendants": 6
+      "ancestors": 61,
+      "descendants": 53
     },
     {
       "code": "IIIP16",
@@ -1567,10 +1567,10 @@
       "href": "/nodes/IIIP16.html",
       "source": "/text/part0030.html#cite-IIIP16",
       "label": "P16: From the mere fact that we imagine a thing to have some likeness to an object that usually affects the Mind with Joy or Sadness, we love it or hate it, [II/153] even though that in which the thing is like the object is not the efficient cause of these aff",
-      "direct_uses": 1,
-      "direct_used_by": 3,
-      "ancestors": 3,
-      "descendants": 6
+      "direct_uses": 2,
+      "direct_used_by": 4,
+      "ancestors": 61,
+      "descendants": 58
     },
     {
       "code": "IIIP17",
@@ -1579,22 +1579,22 @@
       "href": "/nodes/IIIP17.html",
       "source": "/text/part0030.html#cite-IIIP17",
       "label": "P17: If we imagine that a thing which usually affects us with an affect of [15] Sadness is like another which usually affects us with an equally great affect of Joy, we shall hate it and at the same time love it.",
-      "direct_uses": 0,
-      "direct_used_by": 1,
-      "ancestors": 0,
-      "descendants": 23
+      "direct_uses": 1,
+      "direct_used_by": 2,
+      "ancestors": 57,
+      "descendants": 59
     },
     {
       "code": "IIIP18",
       "type": "proposition",
       "part": "Part III",
       "href": "/nodes/IIIP18.html",
-      "source": "/text/part0030.html#p-part0030-0239",
+      "source": "/text/part0030.html#cite-IIIP18",
       "label": "[10] P18: Man is affected with the same affect of Joy or Sadness from the image of a past or future thing as from the image of a present thing.",
       "direct_uses": 1,
       "direct_used_by": 2,
-      "ancestors": 1,
-      "descendants": 22
+      "ancestors": 44,
+      "descendants": 60
     },
     {
       "code": "IIIP19",
@@ -1603,22 +1603,22 @@
       "href": "/nodes/IIIP19.html",
       "source": "/text/part0030.html#cite-IIIP19",
       "label": "P19: He who imagines that what he loves is destroyed will be saddened; but he who imagines it to be preserved, will rejoice.",
-      "direct_uses": 0,
+      "direct_uses": 1,
       "direct_used_by": 3,
-      "ancestors": 0,
-      "descendants": 15
+      "ancestors": 62,
+      "descendants": 29
     },
     {
       "code": "IIIP20",
       "type": "proposition",
       "part": "Part III",
       "href": "/nodes/IIIP20.html",
-      "source": "/text/part0030.html#p-part0030-0245",
+      "source": "/text/part0030.html#cite-IIIP20",
       "label": "[II/156] P20: He who imagines that what he hates is destroyed will rejoice.",
-      "direct_uses": 0,
-      "direct_used_by": 2,
-      "ancestors": 0,
-      "descendants": 6
+      "direct_uses": 1,
+      "direct_used_by": 3,
+      "ancestors": 62,
+      "descendants": 25
     },
     {
       "code": "IIIP21",
@@ -1628,9 +1628,9 @@
       "source": "/text/part0030.html#cite-IIIP21",
       "label": "P21: He who imagines what he loves to be affected with Joy or Sadness will [15] also be affected with Joy or Sadness; and each of those affects will be greater or lesser in the lover as they are greater or lesser in the thing loved.",
       "direct_uses": 1,
-      "direct_used_by": 2,
-      "ancestors": 1,
-      "descendants": 11
+      "direct_used_by": 3,
+      "ancestors": 63,
+      "descendants": 26
     },
     {
       "code": "IIIP22",
@@ -1641,8 +1641,8 @@
       "label": "[II/157] P22: If we imagine someone to affect with Joy a thing we love, we shall be affected with Love toward him. If, on the other hand, we imagine him to affect [5] the same thing with Sadness, we shall also be affected with Hate toward him.",
       "direct_uses": 1,
       "direct_used_by": 2,
-      "ancestors": 2,
-      "descendants": 6
+      "ancestors": 59,
+      "descendants": 17
     },
     {
       "code": "IIIP23",
@@ -1651,10 +1651,10 @@
       "href": "/nodes/IIIP23.html",
       "source": "/text/part0030.html#cite-IIIP23",
       "label": "P23: He who imagines what he hates to be affected with Sadness will rejoice; if, on the other hand, he should imagine it to be affected with Joy, he will be saddened. And both these affects will be the greater or lesser, as its contrary is [30] greater or less",
-      "direct_uses": 2,
-      "direct_used_by": 1,
-      "ancestors": 2,
-      "descendants": 4
+      "direct_uses": 3,
+      "direct_used_by": 2,
+      "ancestors": 64,
+      "descendants": 23
     },
     {
       "code": "IIIP24",
@@ -1665,7 +1665,7 @@
       "label": "[20] P24: If we imagine someone to affect with Joy a thing we hate, we shall be affected with Hate toward him also. On the other hand, if we imagine him to affect the same thing with Sadness, we shall be affected with Love toward him.",
       "direct_uses": 1,
       "direct_used_by": 1,
-      "ancestors": 3,
+      "ancestors": 45,
       "descendants": 2
     },
     {
@@ -1673,48 +1673,48 @@
       "type": "proposition",
       "part": "Part III",
       "href": "/nodes/IIIP25.html",
-      "source": "/text/part0030.html#p-part0030-0261",
+      "source": "/text/part0030.html#cite-IIIP25",
       "label": "[II/159] P25: We strive to affirm, concerning ourselves and what we love, whatever we imagine to affect with Joy ourselves or what we love. On the other hand, we strive to deny whatever we imagine affects with Sadness ourselves or what [5] we love.",
-      "direct_uses": 0,
+      "direct_uses": 3,
       "direct_used_by": 2,
-      "ancestors": 0,
-      "descendants": 5
+      "ancestors": 64,
+      "descendants": 18
     },
     {
       "code": "IIIP26",
       "type": "proposition",
       "part": "Part III",
       "href": "/nodes/IIIP26.html",
-      "source": "/text/part0030.html#p-part0030-0263",
+      "source": "/text/part0030.html#cite-IIIP26",
       "label": "[15] P26: We strive to affirm, concerning what we hate, whatever we imagine to affect it with Sadness, and on the other hand to deny whatever we imagine to affect it with Joy.",
       "direct_uses": 2,
       "direct_used_by": 1,
-      "ancestors": 4,
-      "descendants": 3
+      "ancestors": 68,
+      "descendants": 16
     },
     {
       "code": "IIIP27",
       "type": "proposition",
       "part": "Part III",
       "href": "/nodes/IIIP27.html",
-      "source": "/text/part0030.html#p-part0030-0267",
+      "source": "/text/part0030.html#cite-IIIP27",
       "label": "[5] P27: If we imagine a thing like us, toward which we have had no affect, to be affected with some affect, we are thereby affected with a like affect.",
-      "direct_uses": 0,
-      "direct_used_by": 2,
-      "ancestors": 0,
-      "descendants": 7
+      "direct_uses": 3,
+      "direct_used_by": 4,
+      "ancestors": 64,
+      "descendants": 23
     },
     {
       "code": "IIIP28",
       "type": "proposition",
       "part": "Part III",
       "href": "/nodes/IIIP28.html",
-      "source": "/text/part0030.html#p-part0030-0277",
+      "source": "/text/part0030.html#cite-IIIP28",
       "label": "[30] P28: We strive to further the occurrence of whatever we imagine will lead to Joy, and to avert or destroy what we imagine is contrary to it, or will lead to Sadness.",
-      "direct_uses": 0,
-      "direct_used_by": 2,
-      "ancestors": 0,
-      "descendants": 4
+      "direct_uses": 3,
+      "direct_used_by": 3,
+      "ancestors": 63,
+      "descendants": 18
     },
     {
       "code": "IIIP29",
@@ -1723,22 +1723,34 @@
       "href": "/nodes/IIIP29.html",
       "source": "/text/part0030.html#cite-IIIP29",
       "label": "P29: We shall strive to do also whatever we imagine mena to look on with Joy, and on the other hand, we shall be averse to doing what we imagine men are averse to.",
-      "direct_uses": 1,
-      "direct_used_by": 1,
-      "ancestors": 1,
-      "descendants": 3
+      "direct_uses": 2,
+      "direct_used_by": 2,
+      "ancestors": 66,
+      "descendants": 17
     },
     {
       "code": "IIIP30",
       "type": "proposition",
       "part": "Part III",
       "href": "/nodes/IIIP30.html",
-      "source": "/text/part0030.html#p-part0030-0283",
+      "source": "/text/part0030.html#cite-IIIP30",
       "label": "[5] P30: If someone has done something which he imagines affects others with Joy, he will be affected with Joy accompanied by the idea of himself as cause, or he will regard himself with Joy. If, on the other hand, he has done something which he imagines affec",
       "direct_uses": 0,
       "direct_used_by": 1,
       "ancestors": 0,
-      "descendants": 3
+      "descendants": 6
+    },
+    {
+      "code": "IIIP31",
+      "type": "proposition",
+      "part": "Part III",
+      "href": "/nodes/IIIP31.html",
+      "source": "/text/part0031.html#cite-IIIP31",
+      "label": "[P31]",
+      "direct_uses": 3,
+      "direct_used_by": 2,
+      "ancestors": 67,
+      "descendants": 16
     },
     {
       "code": "IIIP32",
@@ -1747,22 +1759,34 @@
       "href": "/nodes/IIIP32.html",
       "source": "/text/part0031.html#p-part0031-0011",
       "label": "[II/165] P32: If we imagine that someone enjoys some thing that only one can possess, we shall strive to bring it about that he does not possess it.",
-      "direct_uses": 2,
+      "direct_uses": 1,
       "direct_used_by": 2,
-      "ancestors": 21,
-      "descendants": 2
+      "ancestors": 0,
+      "descendants": 13
+    },
+    {
+      "code": "IIIP33",
+      "type": "proposition",
+      "part": "Part III",
+      "href": "/nodes/IIIP33.html",
+      "source": "/text/part0031.html#cite-IIIP33",
+      "label": "[P33]: When we love a thing like ourselves, we strive, as far as we can, to bring it about that it loves us in return.",
+      "direct_uses": 1,
+      "direct_used_by": 3,
+      "ancestors": 62,
+      "descendants": 9
     },
     {
       "code": "IIIP34",
       "type": "proposition",
       "part": "Part III",
       "href": "/nodes/IIIP34.html",
-      "source": "/text/part0031.html#p-part0031-0017",
+      "source": "/text/part0031.html#cite-IIIP34",
       "label": "[5] P34: The greater the affect with which we imagine a thing we love to be affected toward us, the more we shall exult at being esteemed.",
-      "direct_uses": 2,
-      "direct_used_by": 1,
-      "ancestors": 22,
-      "descendants": 2
+      "direct_uses": 3,
+      "direct_used_by": 2,
+      "ancestors": 64,
+      "descendants": 5
     },
     {
       "code": "IIIP35",
@@ -1771,9 +1795,9 @@
       "href": "/nodes/IIIP35.html",
       "source": "/text/part0031.html#p-part0031-0019",
       "label": "[20] P35: If someone imagines that a thing he loves is united with another by as close, or by a closer, bond of Friendship than that with which he himself, alone, possessed the thing, he will be affected with Hate toward the thing he loves, and will envy the o",
-      "direct_uses": 3,
+      "direct_uses": 4,
       "direct_used_by": 1,
-      "ancestors": 31,
+      "ancestors": 75,
       "descendants": 1
     },
     {
@@ -1783,10 +1807,22 @@
       "href": "/nodes/IIIP36.html",
       "source": "/text/part0031.html#p-part0031-0023",
       "label": "P36: He who recollects a thing by which he was once pleased desires to possess [30] it in the same circumstances as when he first was pleased by it.",
-      "direct_uses": 4,
+      "direct_uses": 1,
       "direct_used_by": 1,
-      "ancestors": 21,
+      "ancestors": 0,
       "descendants": 0
+    },
+    {
+      "code": "IIIP37",
+      "type": "proposition",
+      "part": "Part III",
+      "href": "/nodes/IIIP37.html",
+      "source": "/text/part0031.html#cite-IIIP37",
+      "label": "[P37]",
+      "direct_uses": 3,
+      "direct_used_by": 4,
+      "ancestors": 59,
+      "descendants": 21
     },
     {
       "code": "IIIP38",
@@ -1795,22 +1831,34 @@
       "href": "/nodes/IIIP38.html",
       "source": "/text/part0031.html#p-part0031-0032",
       "label": "[5] P38: If someone begins to hate a thing he has loved, so that the Love is completely destroyed, then (from an equal cause) he will have a greater hate for it than if he had never loved it, and this hate will be the greater as the Love before was greater.",
-      "direct_uses": 1,
+      "direct_uses": 3,
       "direct_used_by": 1,
-      "ancestors": 2,
+      "ancestors": 66,
       "descendants": 3
+    },
+    {
+      "code": "IIIP39",
+      "type": "proposition",
+      "part": "Part III",
+      "href": "/nodes/IIIP39.html",
+      "source": "/text/part0031.html#cite-IIIP39",
+      "label": "[P39]",
+      "direct_uses": 1,
+      "direct_used_by": 2,
+      "ancestors": 59,
+      "descendants": 18
     },
     {
       "code": "IIIP40",
       "type": "proposition",
       "part": "Part III",
       "href": "/nodes/IIIP40.html",
-      "source": "/text/part0031.html#p-part0031-0040",
+      "source": "/text/part0031.html#cite-IIIP40",
       "label": "[5] P40: He who imagines he is hated by someone, and believes he has given the other no cause for hate, will hate the other in return.",
-      "direct_uses": 2,
-      "direct_used_by": 2,
-      "ancestors": 5,
-      "descendants": 2
+      "direct_uses": 3,
+      "direct_used_by": 4,
+      "ancestors": 66,
+      "descendants": 15
     },
     {
       "code": "IIIP41",
@@ -1819,9 +1867,9 @@
       "href": "/nodes/IIIP41.html",
       "source": "/text/part0031.html#p-part0031-0047",
       "label": "[15] P41: If someone imagines that someone loves him, and does not believe he has given any cause for this,b he will love [that person] in return.29",
-      "direct_uses": 0,
+      "direct_uses": 1,
       "direct_used_by": 2,
-      "ancestors": 0,
+      "ancestors": 55,
       "descendants": 4
     },
     {
@@ -1831,9 +1879,9 @@
       "href": "/nodes/IIIP42.html",
       "source": "/text/part0031.html#p-part0031-0054",
       "label": "[10] P42: He who has benefited someone—whether moved to do so by Love or by the hope of Esteem—will be saddened if he sees his benefit accepted in an ungrateful spirit.",
-      "direct_uses": 1,
+      "direct_uses": 3,
       "direct_used_by": 1,
-      "ancestors": 1,
+      "ancestors": 66,
       "descendants": 2
     },
     {
@@ -1843,9 +1891,9 @@
       "href": "/nodes/IIIP43.html",
       "source": "/text/part0031.html#p-part0031-0056",
       "label": "[26] P43: Hate is increased by being returned, but can be destroyed by Love.",
-      "direct_uses": 1,
+      "direct_uses": 3,
       "direct_used_by": 1,
-      "ancestors": 1,
+      "ancestors": 70,
       "descendants": 2
     },
     {
@@ -1855,9 +1903,9 @@
       "href": "/nodes/IIIP44.html",
       "source": "/text/part0031.html#cite-IIIP44",
       "label": "P44: Hate completely conquered by Love passes into Love, and the Love is [10] therefore greater than if Hate had not preceded it.",
-      "direct_uses": 2,
+      "direct_uses": 3,
       "direct_used_by": 1,
-      "ancestors": 8,
+      "ancestors": 66,
       "descendants": 2
     },
     {
@@ -1867,9 +1915,9 @@
       "href": "/nodes/IIIP45.html",
       "source": "/text/part0031.html#p-part0031-0061",
       "label": "[II/175] P45: If someone imagines that someone like himself is affected with Hate toward a thing like himself which he loves, he will hate that [person].",
-      "direct_uses": 0,
+      "direct_uses": 1,
       "direct_used_by": 0,
-      "ancestors": 0,
+      "ancestors": 57,
       "descendants": 0
     },
     {
@@ -1881,7 +1929,7 @@
       "label": "P46: If someone has been affected with Joy or Sadness by someone of a class, or nation, different from his own, and this Joy or Sadness is accompanied by the [15] idea of that person as its cause, under the universal name of the class or nation, he will love o",
       "direct_uses": 1,
       "direct_used_by": 0,
-      "ancestors": 4,
+      "ancestors": 58,
       "descendants": 0
     },
     {
@@ -1894,19 +1942,31 @@
       "direct_uses": 0,
       "direct_used_by": 1,
       "ancestors": 0,
-      "descendants": 3
+      "descendants": 14
     },
     {
       "code": "IIIP48",
       "type": "proposition",
       "part": "Part III",
       "href": "/nodes/IIIP48.html",
-      "source": "/text/part0031.html#p-part0031-0070",
+      "source": "/text/part0031.html#cite-IIIP48",
       "label": "[25] P48: Love or Hate—say, of Peter—is destroyed if the Sadness the Hate involves, or the Joy the Love involves, is attached to the idea of another cause, and each is diminished to the extent that we imagine that Peter was not its only cause.",
-      "direct_uses": 2,
+      "direct_uses": 0,
       "direct_used_by": 2,
-      "ancestors": 1,
-      "descendants": 3
+      "ancestors": 0,
+      "descendants": 21
+    },
+    {
+      "code": "IIIP49",
+      "type": "proposition",
+      "part": "Part III",
+      "href": "/nodes/IIIP49.html",
+      "source": "/text/part0031.html#cite-IIIP49",
+      "label": "[P49]",
+      "direct_uses": 2,
+      "direct_used_by": 1,
+      "ancestors": 2,
+      "descendants": 16
     },
     {
       "code": "IIIP51",
@@ -1915,10 +1975,10 @@
       "href": "/nodes/IIIP51.html",
       "source": "/text/part0031.html#cite-IIIP51",
       "label": "P51: Different men can be affected differently by one and the same object; and one and the same man can be affected differently at different times by one and the same object.",
-      "direct_uses": 1,
+      "direct_uses": 2,
       "direct_used_by": 2,
-      "ancestors": 1,
-      "descendants": 4
+      "ancestors": 4,
+      "descendants": 15
     },
     {
       "code": "IIIP52",
@@ -1928,9 +1988,9 @@
       "source": "/text/part0031.html#cite-IIIP52",
       "label": "P52: If we have previously seen an object together with others, or we imagine [30] it has nothing but what is common to many things, we shall not consider it so long as one which we imagine to have something singular.",
       "direct_uses": 2,
-      "direct_used_by": 1,
-      "ancestors": 4,
-      "descendants": 4
+      "direct_used_by": 2,
+      "ancestors": 31,
+      "descendants": 15
     },
     {
       "code": "IIIP53",
@@ -1940,21 +2000,21 @@
       "source": "/text/part0031.html#cite-IIIP53",
       "label": "P53: When the Mind considers itself and its power of acting, it rejoices, and [20] does so the more, the more distinctly it imagines itself and its power of acting.",
       "direct_uses": 0,
-      "direct_used_by": 2,
+      "direct_used_by": 3,
       "ancestors": 0,
-      "descendants": 6
+      "descendants": 18
     },
     {
       "code": "IIIP54",
       "type": "proposition",
       "part": "Part III",
       "href": "/nodes/IIIP54.html",
-      "source": "/text/part0031.html#p-part0031-0097",
+      "source": "/text/part0031.html#cite-IIIP54",
       "label": "[5] P54: The Mind strives to imagine only those things that posit its power of acting.",
       "direct_uses": 0,
-      "direct_used_by": 1,
+      "direct_used_by": 2,
       "ancestors": 0,
-      "descendants": 4
+      "descendants": 15
     },
     {
       "code": "IIIP55",
@@ -1965,8 +2025,8 @@
       "label": "[15] P55: When the Mind imagines its own lack of power, it is saddened by it.",
       "direct_uses": 3,
       "direct_used_by": 2,
-      "ancestors": 7,
-      "descendants": 3
+      "ancestors": 25,
+      "descendants": 14
     },
     {
       "code": "IIIP56",
@@ -1977,8 +2037,8 @@
       "label": "[15] P56: There are as many species of Joy, Sadness, and Desire, and consequently of each affect composed of these (like vacillation of mind) or derived from them (like Love, Hate, Hope, Fear, etc.), as there are species of objects by which we [20] are affecte",
       "direct_uses": 4,
       "direct_used_by": 2,
-      "ancestors": 24,
-      "descendants": 2
+      "ancestors": 65,
+      "descendants": 14
     },
     {
       "code": "IIIP57",
@@ -1990,7 +2050,7 @@
       "direct_uses": 1,
       "direct_used_by": 2,
       "ancestors": 0,
-      "descendants": 3
+      "descendants": 9
     },
     {
       "code": "IIIP58",
@@ -1999,10 +2059,10 @@
       "href": "/nodes/IIIP58.html",
       "source": "/text/part0031.html#p-part0031-0126",
       "label": "[25] P58: Apart from the Joy and Desire that are passions, there are other affects of Joy and Desire that are related to us insofar as we act.",
-      "direct_uses": 1,
+      "direct_uses": 2,
       "direct_used_by": 1,
-      "ancestors": 1,
-      "descendants": 3
+      "ancestors": 26,
+      "descendants": 14
     },
     {
       "code": "IIIP59",
@@ -2011,10 +2071,10 @@
       "href": "/nodes/IIIP59.html",
       "source": "/text/part0031.html#cite-IIIP59",
       "label": "P59: Among all the affects that are related to the Mind insofar as it acts, [10] there are none that are not related to Joy or Desire.",
-      "direct_uses": 14,
+      "direct_uses": 17,
       "direct_used_by": 1,
-      "ancestors": 67,
-      "descendants": 2
+      "ancestors": 118,
+      "descendants": 13
     },
     {
       "code": "IVD1",
@@ -2024,9 +2084,9 @@
       "source": "/text/part0031.html#cite-IVD1",
       "label": "D1: By good I shall understand what we certainly know to be useful to us.",
       "direct_uses": 0,
-      "direct_used_by": 1,
+      "direct_used_by": 3,
       "ancestors": 0,
-      "descendants": 4
+      "descendants": 42
     },
     {
       "code": "IVD2",
@@ -2036,9 +2096,9 @@
       "source": "/text/part0031.html#cite-IVD2",
       "label": "D2: By evil, however, I shall understand what we certainly know [15] prevents us from being masters of some good.",
       "direct_uses": 0,
-      "direct_used_by": 2,
+      "direct_used_by": 4,
       "ancestors": 0,
-      "descendants": 17
+      "descendants": 48
     },
     {
       "code": "IVD3",
@@ -2048,9 +2108,9 @@
       "source": "/text/part0031.html#cite-IVD3",
       "label": "D3: I call singular things contingent insofar as we find nothing, while we attend only to their essence, which necessarily posits their existence [20] or which necessarily excludes it.",
       "direct_uses": 0,
-      "direct_used_by": 1,
+      "direct_used_by": 2,
       "ancestors": 0,
-      "descendants": 3
+      "descendants": 4
     },
     {
       "code": "IVD4",
@@ -2108,9 +2168,21 @@
       "source": "/text/part0031.html#cite-IVD8",
       "label": "D8: By virtue and power I understand the same thing, i.e. (by IIIP7), [20] virtue, insofar as it is related to man, is the very essence, or nature, of man, insofar as he has the power of bringing about certain things, which can be understood through the laws o",
       "direct_uses": 0,
-      "direct_used_by": 2,
+      "direct_used_by": 6,
       "ancestors": 0,
-      "descendants": 6
+      "descendants": 21
+    },
+    {
+      "code": "IVA1",
+      "type": "axiom",
+      "part": "Part IV",
+      "href": "/nodes/IVA1.html",
+      "source": "/text/part0031.html#cite-IVA1",
+      "label": "[25] [A1:]5 There is no singular thing in nature than which there is not another more powerful and stronger. Whatever one is given, there is another more powerful by which the firs",
+      "direct_uses": 0,
+      "direct_used_by": 1,
+      "ancestors": 0,
+      "descendants": 15
     },
     {
       "code": "IVP1",
@@ -2121,7 +2193,7 @@
       "label": "[II/211] P1: Nothing positive which a false idea has is removed by the presence of the true insofar as it is true.",
       "direct_uses": 3,
       "direct_used_by": 1,
-      "ancestors": 15,
+      "ancestors": 28,
       "descendants": 1
     },
     {
@@ -2144,9 +2216,9 @@
       "source": "/text/part0031.html#cite-IVP3",
       "label": "P3: The force by which a man perseveres in existing is limited, and infinitely [20] surpassed by the power of external causes.",
       "direct_uses": 0,
-      "direct_used_by": 2,
+      "direct_used_by": 5,
       "ancestors": 0,
-      "descendants": 13
+      "descendants": 38
     },
     {
       "code": "IVP4",
@@ -2157,32 +2229,32 @@
       "label": "P4: It is impossible that a man should not be a part of Nature, and that he should be able to undergo no changes except those which can be understood [30] through his own nature alone, and of which he is the adequate cause.",
       "direct_uses": 5,
       "direct_used_by": 1,
-      "ancestors": 8,
-      "descendants": 3
+      "ancestors": 29,
+      "descendants": 9
     },
     {
       "code": "IVP5",
       "type": "proposition",
       "part": "Part IV",
       "href": "/nodes/IVP5.html",
-      "source": "/text/part0031.html#p-part0031-0282",
+      "source": "/text/part0031.html#cite-IVP5",
       "label": "[II/214] P5: The force and growth of any passion, and its perseverance in existing, are not defined by the power by which we strive to persevere in existing, but by [5] the power of an external cause compared with our own.",
       "direct_uses": 2,
-      "direct_used_by": 2,
-      "ancestors": 2,
-      "descendants": 14
+      "direct_used_by": 4,
+      "ancestors": 3,
+      "descendants": 40
     },
     {
       "code": "IVP6",
       "type": "proposition",
       "part": "Part IV",
       "href": "/nodes/IVP6.html",
-      "source": "/text/part0031.html#p-part0031-0284",
+      "source": "/text/part0031.html#cite-IVP6",
       "label": "P6: The force of any passion, or affect, can surpass the other actions, or power, [15] of a man, so that the affect stubbornly clings to the man.",
-      "direct_uses": 1,
-      "direct_used_by": 2,
-      "ancestors": 3,
-      "descendants": 4
+      "direct_uses": 2,
+      "direct_used_by": 3,
+      "ancestors": 5,
+      "descendants": 15
     },
     {
       "code": "IVP7",
@@ -2191,34 +2263,34 @@
       "href": "/nodes/IVP7.html",
       "source": "/text/part0031.html#cite-IVP7",
       "label": "P7: An affect cannot be restrained or taken away except by an affect opposite to, and stronger than, the affect to be restrained.",
-      "direct_uses": 3,
-      "direct_used_by": 2,
-      "ancestors": 5,
-      "descendants": 3
+      "direct_uses": 5,
+      "direct_used_by": 4,
+      "ancestors": 10,
+      "descendants": 14
     },
     {
       "code": "IVP8",
       "type": "proposition",
       "part": "Part IV",
       "href": "/nodes/IVP8.html",
-      "source": "/text/part0031.html#p-part0031-0292",
+      "source": "/text/part0031.html#cite-IVP8",
       "label": "[20] P8: The knowledge of good and evil is nothing but an affect of Joy or Sadness, insofar as we are conscious of it.",
-      "direct_uses": 3,
-      "direct_used_by": 2,
-      "ancestors": 10,
-      "descendants": 3
+      "direct_uses": 4,
+      "direct_used_by": 5,
+      "ancestors": 26,
+      "descendants": 22
     },
     {
       "code": "IVP9",
       "type": "proposition",
       "part": "Part IV",
       "href": "/nodes/IVP9.html",
-      "source": "/text/part0031.html#p-part0031-0295",
+      "source": "/text/part0031.html#cite-IVP9",
       "label": "[5] P9: An affect whose cause we imagine to be with us in the present is stronger than if we did not imagine it to be with us.",
       "direct_uses": 0,
-      "direct_used_by": 2,
+      "direct_used_by": 4,
       "ancestors": 0,
-      "descendants": 4
+      "descendants": 33
     },
     {
       "code": "IVP10",
@@ -2239,10 +2311,10 @@
       "href": "/nodes/IVP11.html",
       "source": "/text/part0031.html#cite-IVP11",
       "label": "P11: An affect toward a thing we imagine as necessary is more intense, other things equal, than one toward a thing we imagine as possible or contingent, [25] or not necessary.",
-      "direct_uses": 0,
+      "direct_uses": 1,
       "direct_used_by": 1,
-      "ancestors": 0,
-      "descendants": 13
+      "ancestors": 1,
+      "descendants": 28
     },
     {
       "code": "IVP12",
@@ -2263,9 +2335,9 @@
       "href": "/nodes/IVP13.html",
       "source": "/text/part0031.html#p-part0031-0308",
       "label": "[II/219] P13: An affect toward a contingent thing which we know does not exist in the present is milder, other things equal, than an affect toward a past thing.",
-      "direct_uses": 1,
+      "direct_uses": 3,
       "direct_used_by": 0,
-      "ancestors": 2,
+      "ancestors": 4,
       "descendants": 0
     },
     {
@@ -2275,9 +2347,9 @@
       "href": "/nodes/IVP14.html",
       "source": "/text/part0031.html#cite-IVP14",
       "label": "P14: No affect can be restrained by the true knowledge of good and evil insofar [20] as it is true, but only insofar as it is considered as an affect.9",
-      "direct_uses": 2,
+      "direct_uses": 3,
       "direct_used_by": 0,
-      "ancestors": 27,
+      "ancestors": 51,
       "descendants": 0
     },
     {
@@ -2287,9 +2359,9 @@
       "href": "/nodes/IVP15.html",
       "source": "/text/part0031.html#p-part0031-0313",
       "label": "[II/220] P15: A Desire which arises from a true knowledge of good and evil can be extinguished or restrained by many other Desires which arise from affects by which we are tormented.",
-      "direct_uses": 0,
+      "direct_uses": 4,
       "direct_used_by": 1,
-      "ancestors": 0,
+      "ancestors": 30,
       "descendants": 3
     },
     {
@@ -2301,7 +2373,7 @@
       "label": "P16: A Desire which arises from a true knowledge of good and evil, insofar as [25] this knowledge concerns the future, can be quite easily restrained or extinguished by a Desire for the pleasures of the moment.",
       "direct_uses": 1,
       "direct_used_by": 1,
-      "ancestors": 1,
+      "ancestors": 25,
       "descendants": 2
     },
     {
@@ -2314,7 +2386,7 @@
       "direct_uses": 0,
       "direct_used_by": 1,
       "ancestors": 0,
-      "descendants": 3
+      "descendants": 9
     },
     {
       "code": "IVP18",
@@ -2326,7 +2398,7 @@
       "direct_uses": 1,
       "direct_used_by": 2,
       "ancestors": 1,
-      "descendants": 4
+      "descendants": 10
     },
     {
       "code": "IVP19",
@@ -2335,10 +2407,10 @@
       "href": "/nodes/IVP19.html",
       "source": "/text/part0031.html#cite-IVP19",
       "label": "P19: From the laws of his own nature, everyone necessarily wants, or is repelled by, what he judges to be good or evil.",
-      "direct_uses": 0,
+      "direct_uses": 1,
       "direct_used_by": 1,
-      "ancestors": 0,
-      "descendants": 1
+      "ancestors": 21,
+      "descendants": 13
     },
     {
       "code": "IVP20",
@@ -2347,10 +2419,10 @@
       "href": "/nodes/IVP20.html",
       "source": "/text/part0031.html#cite-IVP20",
       "label": "P20: The more each one strives, and is able, to seek his own advantage, i.e., to preserve his being, the more he is endowed with virtue; conversely, insofar as each one neglects his own advantage, i.e., neglects to preserve his being, he [10] lacks power.",
-      "direct_uses": 1,
+      "direct_uses": 3,
       "direct_used_by": 1,
-      "ancestors": 1,
-      "descendants": 1
+      "ancestors": 67,
+      "descendants": 13
     },
     {
       "code": "IVP21",
@@ -2371,9 +2443,9 @@
       "href": "/nodes/IVP22.html",
       "source": "/text/part0031.html#cite-IVP22",
       "label": "P22: No virtue can be conceived prior to this [virtue] (viz. the striving to [15] preserve oneself).",
-      "direct_uses": 2,
+      "direct_uses": 3,
       "direct_used_by": 2,
-      "ancestors": 1,
+      "ancestors": 2,
       "descendants": 1
     },
     {
@@ -2383,10 +2455,10 @@
       "href": "/nodes/IVP23.html",
       "source": "/text/part0031.html#cite-IVP23",
       "label": "P23: A man cannot absolutely be said to act from virtue insofar as he is [30] determined to do something because he has inadequate ideas, but only insofar as he is determined because he understands.",
-      "direct_uses": 0,
+      "direct_uses": 2,
       "direct_used_by": 1,
-      "ancestors": 0,
-      "descendants": 5
+      "ancestors": 2,
+      "descendants": 11
     },
     {
       "code": "IVP24",
@@ -2395,10 +2467,10 @@
       "href": "/nodes/IVP24.html",
       "source": "/text/part0031.html#cite-IVP24",
       "label": "P24: Acting absolutely from virtue is nothing else in us but acting, living, and preserving our being (these three signify the same thing) by the guidance [15] of reason, from the foundation of seeking one’s own advantage.",
-      "direct_uses": 0,
+      "direct_uses": 1,
       "direct_used_by": 1,
-      "ancestors": 0,
-      "descendants": 4
+      "ancestors": 1,
+      "descendants": 10
     },
     {
       "code": "IVP25",
@@ -2410,7 +2482,7 @@
       "direct_uses": 0,
       "direct_used_by": 2,
       "ancestors": 0,
-      "descendants": 12
+      "descendants": 29
     },
     {
       "code": "IVP26",
@@ -2419,22 +2491,22 @@
       "href": "/nodes/IVP26.html",
       "source": "/text/part0031.html#cite-IVP26",
       "label": "P26: What we strive for from reason is nothing but understanding; nor does [5] the Mind, insofar as it uses reason, judge anything else useful to itself except what leads to understanding.",
-      "direct_uses": 1,
-      "direct_used_by": 2,
-      "ancestors": 1,
-      "descendants": 9
+      "direct_uses": 2,
+      "direct_used_by": 3,
+      "ancestors": 2,
+      "descendants": 28
     },
     {
       "code": "IVP27",
       "type": "proposition",
       "part": "Part IV",
       "href": "/nodes/IVP27.html",
-      "source": "/text/part0031.html#p-part0031-0357",
+      "source": "/text/part0031.html#cite-IVP27",
       "label": "[25] P27: We know nothing to be certainly good or evil, except what really leads to understanding or what can prevent us from understanding.",
       "direct_uses": 3,
       "direct_used_by": 2,
-      "ancestors": 25,
-      "descendants": 8
+      "ancestors": 48,
+      "descendants": 27
     },
     {
       "code": "IVP28",
@@ -2443,10 +2515,10 @@
       "href": "/nodes/IVP28.html",
       "source": "/text/part0031.html#cite-IVP28",
       "label": "P28: Knowledge of God is the Mind’s greatest good; its greatest virtue is to know God.",
-      "direct_uses": 4,
+      "direct_uses": 7,
       "direct_used_by": 1,
-      "ancestors": 28,
-      "descendants": 4
+      "ancestors": 51,
+      "descendants": 10
     },
     {
       "code": "IVP29",
@@ -2455,10 +2527,10 @@
       "href": "/nodes/IVP29.html",
       "source": "/text/part0031.html#cite-IVP29",
       "label": "P29: Any singular thing whose nature is entirely different from ours can [25] neither aid nor restrain our power of acting, and absolutely, no thing can be either good or evil for us, unless it has something in common with us.",
-      "direct_uses": 2,
+      "direct_uses": 3,
       "direct_used_by": 1,
-      "ancestors": 7,
-      "descendants": 1
+      "ancestors": 47,
+      "descendants": 14
     },
     {
       "code": "IVP30",
@@ -2468,9 +2540,9 @@
       "source": "/text/part0032.html#cite-IVP30",
       "label": "P30: No thing can be evil through what it has in common with our nature; but insofar as it is evil for us, it is contrary to us.",
       "direct_uses": 4,
-      "direct_used_by": 1,
-      "ancestors": 31,
-      "descendants": 1
+      "direct_used_by": 2,
+      "ancestors": 69,
+      "descendants": 14
     },
     {
       "code": "IVP31",
@@ -2480,9 +2552,9 @@
       "source": "/text/part0032.html#cite-IVP31",
       "label": "P31: Insofar as a thing agrees with our nature, it is necessarily good.",
       "direct_uses": 4,
-      "direct_used_by": 1,
-      "ancestors": 39,
-      "descendants": 0
+      "direct_used_by": 2,
+      "ancestors": 82,
+      "descendants": 13
     },
     {
       "code": "IVP32",
@@ -2493,8 +2565,8 @@
       "label": "[20] P32: Insofar as men are subject to passions, they cannot be said to agree in nature.",
       "direct_uses": 2,
       "direct_used_by": 1,
-      "ancestors": 21,
-      "descendants": 2
+      "ancestors": 61,
+      "descendants": 13
     },
     {
       "code": "IVP33",
@@ -2504,9 +2576,9 @@
       "source": "/text/part0032.html#cite-IVP33",
       "label": "P33: Men can disagree in nature insofar as they are torn by affects which are passions; and to that extent also one and the same man is changeable and inconstant.",
       "direct_uses": 4,
-      "direct_used_by": 1,
-      "ancestors": 25,
-      "descendants": 1
+      "direct_used_by": 2,
+      "ancestors": 66,
+      "descendants": 13
     },
     {
       "code": "IVP34",
@@ -2515,22 +2587,22 @@
       "href": "/nodes/IVP34.html",
       "source": "/text/part0032.html#cite-IVP34",
       "label": "P34: Insofar as men are torn by affects which are passions, they can be contrary to one another.",
-      "direct_uses": 7,
-      "direct_used_by": 1,
-      "ancestors": 96,
-      "descendants": 1
+      "direct_uses": 9,
+      "direct_used_by": 3,
+      "ancestors": 147,
+      "descendants": 12
     },
     {
       "code": "IVP35",
       "type": "proposition",
       "part": "Part IV",
       "href": "/nodes/IVP35.html",
-      "source": "/text/part0032.html#p-part0032-0018",
+      "source": "/text/part0032.html#cite-IVP35",
       "label": "[30] P35: Only insofar as men live according to the guidance of reason, must they always agree in nature.",
       "direct_uses": 8,
-      "direct_used_by": 1,
-      "ancestors": 107,
-      "descendants": 0
+      "direct_used_by": 4,
+      "ancestors": 147,
+      "descendants": 12
     },
     {
       "code": "IVP36",
@@ -2539,10 +2611,10 @@
       "href": "/nodes/IVP36.html",
       "source": "/text/part0032.html#p-part0032-0027",
       "label": "[20] P36: The greatest good of those who seek virtue is common to all, and can be enjoyed by all equally.",
-      "direct_uses": 5,
+      "direct_uses": 7,
       "direct_used_by": 1,
-      "ancestors": 37,
-      "descendants": 3
+      "ancestors": 160,
+      "descendants": 9
     },
     {
       "code": "IVP37",
@@ -2551,34 +2623,34 @@
       "href": "/nodes/IVP37.html",
       "source": "/text/part0032.html#cite-IVP37",
       "label": "P37: The good which everyone who seeks virtue wants for himself, he also desires for other men; and this Desire is greater as his knowledge of God is greater.",
-      "direct_uses": 11,
-      "direct_used_by": 1,
-      "ancestors": 54,
-      "descendants": 2
+      "direct_uses": 13,
+      "direct_used_by": 8,
+      "ancestors": 167,
+      "descendants": 8
     },
     {
       "code": "IVP38",
       "type": "proposition",
       "part": "Part IV",
       "href": "/nodes/IVP38.html",
-      "source": "/text/part0032.html#p-part0032-0051",
+      "source": "/text/part0032.html#cite-IVP38",
       "label": "[5] P38: Whatever so disposes the human Body that it can be affected in a great many ways, or renders it capable of affecting external Bodies in a great many ways, is useful to man; the more it renders the Body capable of being affected in a great many ways, o",
       "direct_uses": 2,
-      "direct_used_by": 1,
-      "ancestors": 24,
-      "descendants": 2
+      "direct_used_by": 5,
+      "ancestors": 47,
+      "descendants": 27
     },
     {
       "code": "IVP39",
       "type": "proposition",
       "part": "Part IV",
       "href": "/nodes/IVP39.html",
-      "source": "/text/part0032.html#p-part0032-0053",
+      "source": "/text/part0032.html#cite-IVP39",
       "label": "[20] P39: Those things are good which bring about the preservation of the proportion of motion and rest the human Body’s parts have to one another; on the other hand, those things are evil which bring it about that the parts of the human Body have a different ",
       "direct_uses": 1,
-      "direct_used_by": 1,
-      "ancestors": 22,
-      "descendants": 1
+      "direct_used_by": 2,
+      "ancestors": 41,
+      "descendants": 2
     },
     {
       "code": "IVP40",
@@ -2587,22 +2659,22 @@
       "href": "/nodes/IVP40.html",
       "source": "/text/part0032.html#p-part0032-0059",
       "label": "[II/241] P40: Things which are of assistance to the common Society of men, or which bring it about that men live harmoniously, are useful; those, on the other hand, are evil which bring discord to the State.",
-      "direct_uses": 0,
+      "direct_uses": 1,
       "direct_used_by": 1,
-      "ancestors": 0,
-      "descendants": 2
+      "ancestors": 146,
+      "descendants": 12
     },
     {
       "code": "IVP41",
       "type": "proposition",
       "part": "Part IV",
       "href": "/nodes/IVP41.html",
-      "source": "/text/part0032.html#p-part0032-0062",
+      "source": "/text/part0032.html#cite-IVP41",
       "label": "[10] P41: Joy is not directly evil, but good; Sadness, on the other hand, is directly evil.",
-      "direct_uses": 1,
-      "direct_used_by": 1,
-      "ancestors": 1,
-      "descendants": 12
+      "direct_uses": 2,
+      "direct_used_by": 5,
+      "ancestors": 40,
+      "descendants": 27
     },
     {
       "code": "IVP42",
@@ -2611,9 +2683,9 @@
       "href": "/nodes/IVP42.html",
       "source": "/text/part0032.html#p-part0032-0064",
       "label": "[20] P42: Cheerfulness cannot be excessive, but is always good; Melancholy, on the other hand, is always evil.",
-      "direct_uses": 1,
+      "direct_uses": 2,
       "direct_used_by": 0,
-      "ancestors": 21,
+      "ancestors": 42,
       "descendants": 0
     },
     {
@@ -2621,12 +2693,12 @@
       "type": "proposition",
       "part": "Part IV",
       "href": "/nodes/IVP43.html",
-      "source": "/text/part0032.html#p-part0032-0067",
+      "source": "/text/part0032.html#cite-IVP43",
       "label": "[5] P43: Pleasure can be excessive and evil, whereas Pain can be good insofar as the Pleasure, or Joy, is evil.",
-      "direct_uses": 3,
-      "direct_used_by": 2,
-      "ancestors": 6,
-      "descendants": 11
+      "direct_uses": 4,
+      "direct_used_by": 5,
+      "ancestors": 40,
+      "descendants": 27
     },
     {
       "code": "IVP44",
@@ -2637,7 +2709,7 @@
       "label": "[25] P44: Love and Desire can be excessive.",
       "direct_uses": 1,
       "direct_used_by": 1,
-      "ancestors": 7,
+      "ancestors": 32,
       "descendants": 1
     },
     {
@@ -2647,9 +2719,9 @@
       "href": "/nodes/IVP45.html",
       "source": "/text/part0032.html#cite-IVP45",
       "label": "P45: Hate can never be good.",
-      "direct_uses": 1,
+      "direct_uses": 2,
       "direct_used_by": 1,
-      "ancestors": 55,
+      "ancestors": 168,
       "descendants": 1
     },
     {
@@ -2659,9 +2731,9 @@
       "href": "/nodes/IVP46.html",
       "source": "/text/part0032.html#cite-IVP46",
       "label": "P46: He who lives according to the guidance of reason strives, as far as he can, to repay the other’s Hate, Anger, and Disdain toward him, with Love, or Nobility.",
-      "direct_uses": 2,
+      "direct_uses": 3,
       "direct_used_by": 1,
-      "ancestors": 11,
+      "ancestors": 173,
       "descendants": 1
     },
     {
@@ -2671,10 +2743,10 @@
       "href": "/nodes/IVP47.html",
       "source": "/text/part0032.html#p-part0032-0087",
       "label": "[30] P47: Affects of Hope and Fear cannot be good of themselves.",
-      "direct_uses": 0,
+      "direct_uses": 2,
       "direct_used_by": 1,
-      "ancestors": 0,
-      "descendants": 4
+      "ancestors": 32,
+      "descendants": 10
     },
     {
       "code": "IVP48",
@@ -2697,7 +2769,7 @@
       "label": "[25] P49: Overestimation easily makes the man who is overestimated proud.",
       "direct_uses": 2,
       "direct_used_by": 0,
-      "ancestors": 2,
+      "ancestors": 68,
       "descendants": 0
     },
     {
@@ -2707,9 +2779,9 @@
       "href": "/nodes/IVP50.html",
       "source": "/text/part0032.html#p-part0032-0094",
       "label": "[II/247] P50: Pity, in a man who lives according to the guidance of reason, is evil of itself, and useless.25",
-      "direct_uses": 1,
+      "direct_uses": 3,
       "direct_used_by": 1,
-      "ancestors": 1,
+      "ancestors": 168,
       "descendants": 1
     },
     {
@@ -2719,9 +2791,9 @@
       "href": "/nodes/IVP51.html",
       "source": "/text/part0032.html#p-part0032-0102",
       "label": "[II/248] P51: Favor is not contrary to reason, but can agree with it and arise from it.",
-      "direct_uses": 1,
+      "direct_uses": 2,
       "direct_used_by": 0,
-      "ancestors": 55,
+      "ancestors": 169,
       "descendants": 0
     },
     {
@@ -2731,9 +2803,9 @@
       "href": "/nodes/IVP52.html",
       "source": "/text/part0032.html#cite-IVP52",
       "label": "P52: Self-esteem can arise from reason, and only that self-esteem which does [25] arise from reason is the greatest there can be.",
-      "direct_uses": 3,
+      "direct_uses": 4,
       "direct_used_by": 1,
-      "ancestors": 6,
+      "ancestors": 36,
       "descendants": 1
     },
     {
@@ -2781,7 +2853,7 @@
       "label": "P56: Either very great Pride or very great Despondency indicates very great weakness of mind.",
       "direct_uses": 3,
       "direct_used_by": 0,
-      "ancestors": 4,
+      "ancestors": 29,
       "descendants": 0
     },
     {
@@ -2793,7 +2865,7 @@
       "label": "P57: The proud man loves the presence of parasites, or flatterers, but hates the presence of the noble.",
       "direct_uses": 1,
       "direct_used_by": 1,
-      "ancestors": 21,
+      "ancestors": 62,
       "descendants": 1
     },
     {
@@ -2805,7 +2877,7 @@
       "label": "P58: Love of esteem is not contrary to reason, but can arise from it.",
       "direct_uses": 2,
       "direct_used_by": 0,
-      "ancestors": 14,
+      "ancestors": 31,
       "descendants": 0
     },
     {
@@ -2815,10 +2887,10 @@
       "href": "/nodes/IVP59.html",
       "source": "/text/part0032.html#cite-IVP59",
       "label": "P59: To every action to which we are determined from an affect which is a passion, we can be determined by reason, without that affect.",
-      "direct_uses": 0,
+      "direct_uses": 2,
       "direct_used_by": 1,
-      "ancestors": 0,
-      "descendants": 1
+      "ancestors": 32,
+      "descendants": 6
     },
     {
       "code": "IVP60",
@@ -2842,7 +2914,7 @@
       "direct_uses": 0,
       "direct_used_by": 1,
       "ancestors": 0,
-      "descendants": 3
+      "descendants": 5
     },
     {
       "code": "IVP62",
@@ -2853,7 +2925,7 @@
       "label": "[II/257] P62: Insofar as the Mind conceives things from the dictate of reason, it is affected equally, whether the idea is of a future or past thing, or of a present one.",
       "direct_uses": 4,
       "direct_used_by": 1,
-      "ancestors": 30,
+      "ancestors": 74,
       "descendants": 1
     },
     {
@@ -2861,12 +2933,12 @@
       "type": "proposition",
       "part": "Part IV",
       "href": "/nodes/IVP63.html",
-      "source": "/text/part0032.html#p-part0032-0153",
+      "source": "/text/part0032.html#cite-IVP63",
       "label": "[5] P63: He who is guided by Fear, and does good to avoid evil, is not guided by reason.",
       "direct_uses": 1,
-      "direct_used_by": 1,
+      "direct_used_by": 3,
       "ancestors": 1,
-      "descendants": 2
+      "descendants": 4
     },
     {
       "code": "IVP64",
@@ -2877,7 +2949,7 @@
       "label": "[5] P64: Knowledge of evil is an inadequate knowledge.",
       "direct_uses": 1,
       "direct_used_by": 1,
-      "ancestors": 24,
+      "ancestors": 34,
       "descendants": 1
     },
     {
@@ -2901,7 +2973,7 @@
       "label": "P66: From the guidance of reason we want a greater future good in preference [5] to a lesser present one, and a lesser present evil in preference to a greater future one.",
       "direct_uses": 3,
       "direct_used_by": 1,
-      "ancestors": 31,
+      "ancestors": 77,
       "descendants": 0
     },
     {
@@ -2911,9 +2983,9 @@
       "href": "/nodes/IVP67.html",
       "source": "/text/part0032.html#p-part0032-0170",
       "label": "[II/261] P67: A free man thinks of nothing less than of death, and his wisdom is a meditation on life, not on death.34",
-      "direct_uses": 0,
+      "direct_uses": 1,
       "direct_used_by": 0,
-      "ancestors": 0,
+      "ancestors": 2,
       "descendants": 0
     },
     {
@@ -2923,9 +2995,9 @@
       "href": "/nodes/IVP68.html",
       "source": "/text/part0032.html#cite-IVP68",
       "label": "P68: If men were born free, they would form no concept of good and evil so long as they remained free.",
-      "direct_uses": 1,
+      "direct_uses": 2,
       "direct_used_by": 0,
-      "ancestors": 25,
+      "ancestors": 173,
       "descendants": 0
     },
     {
@@ -2947,9 +3019,9 @@
       "href": "/nodes/IVP70.html",
       "source": "/text/part0032.html#cite-IVP70",
       "label": "P70: A free man who lives among the ignorant strives, as far as he can, to avoid their favors.",
-      "direct_uses": 1,
+      "direct_uses": 2,
       "direct_used_by": 1,
-      "ancestors": 2,
+      "ancestors": 172,
       "descendants": 1
     },
     {
@@ -2959,9 +3031,9 @@
       "href": "/nodes/IVP71.html",
       "source": "/text/part0032.html#cite-IVP71",
       "label": "P71: Only free men are very thankful to one another.",
-      "direct_uses": 0,
+      "direct_uses": 2,
       "direct_used_by": 1,
-      "ancestors": 0,
+      "ancestors": 168,
       "descendants": 1
     },
     {
@@ -2983,9 +3055,9 @@
       "href": "/nodes/IVP73.html",
       "source": "/text/part0032.html#p-part0032-0192",
       "label": "[30] P73: A man who is guided by reason is more free in a state, where he lives according to a common decision, than in solitude, where he obeys only himself.",
-      "direct_uses": 7,
+      "direct_uses": 11,
       "direct_used_by": 1,
-      "ancestors": 40,
+      "ancestors": 190,
       "descendants": 0
     },
     {
@@ -2998,7 +3070,7 @@
       "direct_uses": 0,
       "direct_used_by": 1,
       "ancestors": 0,
-      "descendants": 4
+      "descendants": 5
     },
     {
       "code": "VA2",
@@ -3010,7 +3082,7 @@
       "direct_uses": 0,
       "direct_used_by": 1,
       "ancestors": 0,
-      "descendants": 3
+      "descendants": 7
     },
     {
       "code": "VP1",
@@ -3021,8 +3093,8 @@
       "label": "[10] P1: In just the same way as thoughts and ideas of things are ordered and connected in the Mind, so the affections of the body, or images of things are ordered and connected in the body.",
       "direct_uses": 5,
       "direct_used_by": 1,
-      "ancestors": 9,
-      "descendants": 2
+      "ancestors": 14,
+      "descendants": 3
     },
     {
       "code": "VP2",
@@ -3032,9 +3104,9 @@
       "source": "/text/part0032.html#cite-VP2",
       "label": "P2: If we separate emotions, or affects,8 from the thought of an external cause, [25] and join them to other thoughts, then the Love, or Hate, toward the external cause is destroyed, as are the vacillations of mind arising from these affects.",
       "direct_uses": 0,
-      "direct_used_by": 1,
+      "direct_used_by": 2,
       "ancestors": 0,
-      "descendants": 1
+      "descendants": 6
     },
     {
       "code": "VP3",
@@ -3044,21 +3116,21 @@
       "source": "/text/part0032.html#cite-VP3",
       "label": "P3: An affect which is a passion ceases to be a passion as soon as we form a clear and distinct idea of it.",
       "direct_uses": 2,
-      "direct_used_by": 1,
+      "direct_used_by": 3,
       "ancestors": 5,
-      "descendants": 2
+      "descendants": 3
     },
     {
       "code": "VP4",
       "type": "proposition",
       "part": "Part V",
       "href": "/nodes/VP4.html",
-      "source": "/text/part0032.html#p-part0032-0256",
+      "source": "/text/part0032.html#cite-VP4",
       "label": "[20] P4: There is no affection of the Body of which we cannot form a clear and distinct concept.",
       "direct_uses": 7,
-      "direct_used_by": 1,
-      "ancestors": 9,
-      "descendants": 0
+      "direct_used_by": 2,
+      "ancestors": 79,
+      "descendants": 5
     },
     {
       "code": "VP5",
@@ -3069,8 +3141,8 @@
       "label": "[5] P5: The greatest affect of all, other things equal, is one toward a thing we imagine simply, and neither as necessary, nor as possible, nor as contingent.",
       "direct_uses": 1,
       "direct_used_by": 1,
-      "ancestors": 15,
-      "descendants": 3
+      "ancestors": 28,
+      "descendants": 4
     },
     {
       "code": "VP6",
@@ -3081,8 +3153,8 @@
       "label": "[20] P6: Insofar as the Mind understands all things as necessary, it has a greater power over the affects, or is less acted on by them.",
       "direct_uses": 4,
       "direct_used_by": 1,
-      "ancestors": 24,
-      "descendants": 2
+      "ancestors": 40,
+      "descendants": 3
     },
     {
       "code": "VP7",
@@ -3092,9 +3164,9 @@
       "source": "/text/part0032.html#cite-VP7",
       "label": "P7: Affects that arise from, or are aroused by, reason are, if we take account [15] of time, more powerful than those that are related to singular things which we regard as absent.",
       "direct_uses": 2,
-      "direct_used_by": 1,
-      "ancestors": 2,
-      "descendants": 3
+      "direct_used_by": 3,
+      "ancestors": 8,
+      "descendants": 4
     },
     {
       "code": "VP8",
@@ -3104,9 +3176,9 @@
       "source": "/text/part0032.html#cite-VP8",
       "label": "P8: The more an affect arises from a number of causes concurring together, the [5] greater it is.",
       "direct_uses": 1,
-      "direct_used_by": 1,
+      "direct_used_by": 2,
       "ancestors": 1,
-      "descendants": 2
+      "descendants": 6
     },
     {
       "code": "VP9",
@@ -3127,22 +3199,22 @@
       "href": "/nodes/VP10.html",
       "source": "/text/part0032.html#cite-VP10",
       "label": "P10: So long as we are not torn by affects contrary to our nature, we have [5] the power of ordering and connecting the affections of the Body according to the order of the intellect.",
-      "direct_uses": 3,
-      "direct_used_by": 1,
-      "ancestors": 34,
-      "descendants": 1
+      "direct_uses": 4,
+      "direct_used_by": 2,
+      "ancestors": 58,
+      "descendants": 2
     },
     {
       "code": "VP11",
       "type": "proposition",
       "part": "Part V",
       "href": "/nodes/VP11.html",
-      "source": "/text/part0032.html#p-part0032-0287",
+      "source": "/text/part0032.html#cite-VP11",
       "label": "[15] P11: As an image is related to more things, the more frequent it is, or the more often it flourishes, and the more it engages the Mind.",
-      "direct_uses": 0,
-      "direct_used_by": 1,
-      "ancestors": 0,
-      "descendants": 2
+      "direct_uses": 1,
+      "direct_used_by": 3,
+      "ancestors": 2,
+      "descendants": 4
     },
     {
       "code": "VP12",
@@ -3153,7 +3225,7 @@
       "label": "P12: The images of things are more easily joined to images related to things [25] we understand clearly and distinctly than to other images.",
       "direct_uses": 1,
       "direct_used_by": 1,
-      "ancestors": 1,
+      "ancestors": 3,
       "descendants": 1
     },
     {
@@ -3175,10 +3247,10 @@
       "href": "/nodes/VP14.html",
       "source": "/text/part0032.html#cite-VP14",
       "label": "P14: The Mind can bring it about that all the Body’s affections, or images of [10] things, are related to the idea of God.",
-      "direct_uses": 0,
-      "direct_used_by": 1,
-      "ancestors": 0,
-      "descendants": 3
+      "direct_uses": 1,
+      "direct_used_by": 4,
+      "ancestors": 78,
+      "descendants": 4
     },
     {
       "code": "VP15",
@@ -3188,21 +3260,21 @@
       "source": "/text/part0032.html#cite-VP15",
       "label": "P15: He who understands himself and his affects clearly and distinctly loves God, and does so the more, the more he understands himself and his affects.",
       "direct_uses": 1,
-      "direct_used_by": 1,
-      "ancestors": 1,
-      "descendants": 2
+      "direct_used_by": 3,
+      "ancestors": 71,
+      "descendants": 3
     },
     {
       "code": "VP16",
       "type": "proposition",
       "part": "Part V",
       "href": "/nodes/VP16.html",
-      "source": "/text/part0032.html#p-part0032-0297",
+      "source": "/text/part0032.html#cite-VP16",
       "label": "[25] P16: This Love toward God must engage the Mind most.",
-      "direct_uses": 1,
-      "direct_used_by": 1,
-      "ancestors": 2,
-      "descendants": 1
+      "direct_uses": 3,
+      "direct_used_by": 2,
+      "ancestors": 75,
+      "descendants": 2
     },
     {
       "code": "VP17",
@@ -3225,7 +3297,7 @@
       "label": "[20] P18: No one can hate God.",
       "direct_uses": 2,
       "direct_used_by": 1,
-      "ancestors": 11,
+      "ancestors": 13,
       "descendants": 1
     },
     {
@@ -3237,7 +3309,7 @@
       "label": "P19: He who loves God cannot strive that God should love him in return.",
       "direct_uses": 1,
       "direct_used_by": 0,
-      "ancestors": 1,
+      "ancestors": 63,
       "descendants": 0
     },
     {
@@ -3247,9 +3319,9 @@
       "href": "/nodes/VP20.html",
       "source": "/text/part0032.html#p-part0032-0309",
       "label": "[15] P20: This Love toward God cannot be tainted by an affect of Envy or Jealousy: instead, the more men we imagine to be joined to God by the same bond of Love, the more it is encouraged.",
-      "direct_uses": 9,
+      "direct_uses": 15,
       "direct_used_by": 0,
-      "ancestors": 84,
+      "ancestors": 149,
       "descendants": 0
     },
     {
@@ -3257,12 +3329,12 @@
       "type": "proposition",
       "part": "Part V",
       "href": "/nodes/VP21.html",
-      "source": "/text/part0032.html#p-part0032-0323",
+      "source": "/text/part0032.html#cite-VP21",
       "label": "[25] P21: The Mind can neither imagine anything, nor recollect past things, except while the Body endures.",
       "direct_uses": 2,
-      "direct_used_by": 1,
+      "direct_used_by": 6,
       "ancestors": 3,
-      "descendants": 3
+      "descendants": 18
     },
     {
       "code": "VP22",
@@ -3273,8 +3345,8 @@
       "label": "P22: Nevertheless, in God there is necessarily an idea that expresses the essence [5] of this or that human Body, under a species of eternity.",
       "direct_uses": 4,
       "direct_used_by": 1,
-      "ancestors": 9,
-      "descendants": 4
+      "ancestors": 34,
+      "descendants": 16
     },
     {
       "code": "VP23",
@@ -3284,9 +3356,9 @@
       "source": "/text/part0032.html#cite-VP23",
       "label": "P23: The human Mind cannot be absolutely destroyed with the Body, but [15] something of it remains which is eternal.",
       "direct_uses": 2,
-      "direct_used_by": 1,
-      "ancestors": 19,
-      "descendants": 3
+      "direct_used_by": 4,
+      "ancestors": 45,
+      "descendants": 15
     },
     {
       "code": "VP24",
@@ -3296,9 +3368,9 @@
       "source": "/text/part0032.html#cite-VP24",
       "label": "P24: The more we understand singular things, the more we understand God.15",
       "direct_uses": 0,
-      "direct_used_by": 1,
+      "direct_used_by": 3,
       "ancestors": 0,
-      "descendants": 4
+      "descendants": 10
     },
     {
       "code": "VP25",
@@ -3310,7 +3382,7 @@
       "direct_uses": 1,
       "direct_used_by": 1,
       "ancestors": 1,
-      "descendants": 3
+      "descendants": 8
     },
     {
       "code": "VP26",
@@ -3331,10 +3403,10 @@
       "href": "/nodes/VP27.html",
       "source": "/text/part0032.html#cite-VP27",
       "label": "P27: The greatest satisfaction of Mind there can be arises from this third kind of knowledge.",
-      "direct_uses": 1,
-      "direct_used_by": 1,
+      "direct_uses": 2,
+      "direct_used_by": 4,
       "ancestors": 2,
-      "descendants": 2
+      "descendants": 7
     },
     {
       "code": "VP28",
@@ -3353,24 +3425,24 @@
       "type": "proposition",
       "part": "Part V",
       "href": "/nodes/VP29.html",
-      "source": "/text/part0032.html#p-part0032-0341",
+      "source": "/text/part0032.html#cite-VP29",
       "label": "[10] P29: Whatever the Mind understands under a species of eternity, it understands not from the fact that it conceives the Body’s present actual existence, but from the fact that it conceives the Body’s essence under a species of eternity.",
-      "direct_uses": 2,
-      "direct_used_by": 1,
-      "ancestors": 21,
-      "descendants": 2
+      "direct_uses": 3,
+      "direct_used_by": 5,
+      "ancestors": 51,
+      "descendants": 14
     },
     {
       "code": "VP30",
       "type": "proposition",
       "part": "Part V",
       "href": "/nodes/VP30.html",
-      "source": "/text/part0032.html#p-part0032-0345",
+      "source": "/text/part0032.html#cite-VP30",
       "label": "[5] P30: Insofar as our Mind knows itself and the Body under a species of eternity, it necessarily has knowledge of God, and knows that it is in God and is conceived through God.",
       "direct_uses": 0,
-      "direct_used_by": 1,
+      "direct_used_by": 2,
       "ancestors": 0,
-      "descendants": 2
+      "descendants": 13
     },
     {
       "code": "VP31",
@@ -3379,10 +3451,10 @@
       "href": "/nodes/VP31.html",
       "source": "/text/part0032.html#cite-VP31",
       "label": "P31: The third kind of knowledge depends on the Mind, as on a formal cause, insofar as the Mind itself is eternal.",
-      "direct_uses": 2,
+      "direct_uses": 4,
       "direct_used_by": 1,
-      "ancestors": 23,
-      "descendants": 1
+      "ancestors": 53,
+      "descendants": 10
     },
     {
       "code": "VP32",
@@ -3391,10 +3463,10 @@
       "href": "/nodes/VP32.html",
       "source": "/text/part0032.html#cite-VP32",
       "label": "P32: Whatever we understand by the third kind of knowledge we take pleasure in, and our pleasure is accompanied by the idea of God as a cause.",
-      "direct_uses": 1,
-      "direct_used_by": 1,
-      "ancestors": 0,
-      "descendants": 0
+      "direct_uses": 4,
+      "direct_used_by": 3,
+      "ancestors": 55,
+      "descendants": 2
     },
     {
       "code": "VP33",
@@ -3404,9 +3476,9 @@
       "source": "/text/part0032.html#cite-VP33",
       "label": "P33: The intellectual Love of God, which arises from the third kind of knowledge, [30] is eternal.",
       "direct_uses": 3,
-      "direct_used_by": 1,
-      "ancestors": 25,
-      "descendants": 0
+      "direct_used_by": 3,
+      "ancestors": 54,
+      "descendants": 9
     },
     {
       "code": "VP34",
@@ -3415,9 +3487,9 @@
       "href": "/nodes/VP34.html",
       "source": "/text/part0032.html#p-part0032-0357",
       "label": "[15] P34: Only while the Body endures is the Mind subject to affects which are related to the passions.",
-      "direct_uses": 0,
+      "direct_uses": 1,
       "direct_used_by": 0,
-      "ancestors": 0,
+      "ancestors": 4,
       "descendants": 0
     },
     {
@@ -3429,7 +3501,7 @@
       "label": "P35: God loves himself with an infinite intellectual Love.",
       "direct_uses": 3,
       "direct_used_by": 1,
-      "ancestors": 4,
+      "ancestors": 19,
       "descendants": 2
     },
     {
@@ -3439,9 +3511,9 @@
       "href": "/nodes/VP36.html",
       "source": "/text/part0032.html#cite-VP36",
       "label": "P36: The Mind’s intellectual Love of God is the very Love of God by which God loves himself, not insofar as he is infinite, but insofar as he can be explained [15] by the human Mind’s essence, considered under a species of eternity; i.e., the Mind’s intellectu",
-      "direct_uses": 1,
+      "direct_uses": 3,
       "direct_used_by": 1,
-      "ancestors": 5,
+      "ancestors": 58,
       "descendants": 1
     },
     {
@@ -3451,10 +3523,10 @@
       "href": "/nodes/VP37.html",
       "source": "/text/part0032.html#cite-VP37",
       "label": "P37: There is nothing in nature which is contrary to this intellectual, Love, or which can take it away.",
-      "direct_uses": 0,
-      "direct_used_by": 1,
-      "ancestors": 0,
-      "descendants": 1
+      "direct_uses": 2,
+      "direct_used_by": 2,
+      "ancestors": 55,
+      "descendants": 8
     },
     {
       "code": "VP38",
@@ -3463,10 +3535,10 @@
       "href": "/nodes/VP38.html",
       "source": "/text/part0032.html#cite-VP38",
       "label": "P38: The more the Mind understands things by the second and third kind of [10] knowledge, the less it is acted on by affects which are evil, and the less it fears death.",
-      "direct_uses": 0,
-      "direct_used_by": 1,
-      "ancestors": 0,
-      "descendants": 1
+      "direct_uses": 5,
+      "direct_used_by": 2,
+      "ancestors": 60,
+      "descendants": 2
     },
     {
       "code": "VP39",
@@ -3475,9 +3547,9 @@
       "href": "/nodes/VP39.html",
       "source": "/text/part0032.html#cite-VP39",
       "label": "P39: He who has a Body capable of a great many things has a Mind whose greatest part is eternal.",
-      "direct_uses": 1,
+      "direct_uses": 6,
       "direct_used_by": 0,
-      "ancestors": 1,
+      "ancestors": 108,
       "descendants": 0
     },
     {
@@ -3487,9 +3559,9 @@
       "href": "/nodes/VP40.html",
       "source": "/text/part0032.html#p-part0032-0381",
       "label": "[II/306] P40: The more perfection each thing has, the more it acts and the less it is acted on; and conversely, the more it acts, the more perfect it is.",
-      "direct_uses": 2,
+      "direct_uses": 5,
       "direct_used_by": 1,
-      "ancestors": 1,
+      "ancestors": 53,
       "descendants": 0
     },
     {
@@ -3499,9 +3571,9 @@
       "href": "/nodes/VP41.html",
       "source": "/text/part0032.html#p-part0032-0386",
       "label": "[25] P41: Even if we did not know that our Mind is eternal, we would still regard as of the first importance Morality, Religion, and absolutely all the things we have shown (in Part IV) to be related to Tenacity and Nobility.",
-      "direct_uses": 0,
+      "direct_uses": 1,
       "direct_used_by": 0,
-      "ancestors": 0,
+      "ancestors": 1,
       "descendants": 0
     },
     {
@@ -3511,9 +3583,9 @@
       "href": "/nodes/VP42.html",
       "source": "/text/part0032.html#cite-VP42",
       "label": "P42: Blessedness is not the reward of virtue, but virtue itself; nor do we enjoy it because we restrain our lusts; on the contrary, because we enjoy it, we are able to restrain them.",
-      "direct_uses": 1,
+      "direct_uses": 4,
       "direct_used_by": 0,
-      "ancestors": 6,
+      "ancestors": 66,
       "descendants": 0
     },
     {
@@ -3590,6 +3662,24 @@
     {
       "source": "IP4",
       "source_href": "/nodes/IP4.html",
+      "target": "ID3",
+      "target_href": "/nodes/ID3.html",
+      "type": "cites",
+      "label": "D3",
+      "via": ""
+    },
+    {
+      "source": "IP4",
+      "source_href": "/nodes/IP4.html",
+      "target": "ID5",
+      "target_href": "/nodes/ID5.html",
+      "type": "cites",
+      "label": "D5",
+      "via": ""
+    },
+    {
+      "source": "IP4",
+      "source_href": "/nodes/IP4.html",
       "target": "ID4",
       "target_href": "/nodes/ID4.html",
       "type": "cites",
@@ -3612,6 +3702,15 @@
       "target_href": "/nodes/IP1.html",
       "type": "cites",
       "label": "P1",
+      "via": ""
+    },
+    {
+      "source": "IP5",
+      "source_href": "/nodes/IP5.html",
+      "target": "ID3",
+      "target_href": "/nodes/ID3.html",
+      "type": "cites",
+      "label": "D3",
       "via": ""
     },
     {
@@ -3662,10 +3761,37 @@
     {
       "source": "IP6",
       "source_href": "/nodes/IP6.html",
+      "target": "ID5",
+      "target_href": "/nodes/ID5.html",
+      "type": "cites",
+      "label": "D5",
+      "via": ""
+    },
+    {
+      "source": "IP6",
+      "source_href": "/nodes/IP6.html",
       "target": "IP6",
       "target_href": "/nodes/IP6.html",
       "type": "cites",
       "label": "P6",
+      "via": ""
+    },
+    {
+      "source": "IP6",
+      "source_href": "/nodes/IP6.html",
+      "target": "IA4",
+      "target_href": "/nodes/IA4.html",
+      "type": "cites",
+      "label": "A4",
+      "via": ""
+    },
+    {
+      "source": "IP6",
+      "source_href": "/nodes/IP6.html",
+      "target": "ID3",
+      "target_href": "/nodes/ID3.html",
+      "type": "cites",
+      "label": "D3",
       "via": ""
     },
     {
@@ -3684,6 +3810,15 @@
       "target_href": "/nodes/ID1.html",
       "type": "cites",
       "label": "D1",
+      "via": ""
+    },
+    {
+      "source": "IP8",
+      "source_href": "/nodes/IP8.html",
+      "target": "IP5",
+      "target_href": "/nodes/IP5.html",
+      "type": "cites",
+      "label": "P5",
       "via": ""
     },
     {
@@ -3716,6 +3851,24 @@
     {
       "source": "IP10",
       "source_href": "/nodes/IP10.html",
+      "target": "ID4",
+      "target_href": "/nodes/ID4.html",
+      "type": "cites",
+      "label": "D4",
+      "via": ""
+    },
+    {
+      "source": "IP10",
+      "source_href": "/nodes/IP10.html",
+      "target": "ID3",
+      "target_href": "/nodes/ID3.html",
+      "type": "cites",
+      "label": "D3",
+      "via": ""
+    },
+    {
+      "source": "IP10",
+      "source_href": "/nodes/IP10.html",
       "target": "ID6",
       "target_href": "/nodes/ID6.html",
       "type": "cites",
@@ -3732,6 +3885,51 @@
       "via": ""
     },
     {
+      "source": "IP11",
+      "source_href": "/nodes/IP11.html",
+      "target": "IP7",
+      "target_href": "/nodes/IP7.html",
+      "type": "cites",
+      "label": "P7",
+      "via": ""
+    },
+    {
+      "source": "IP11",
+      "source_href": "/nodes/IP11.html",
+      "target": "IP2",
+      "target_href": "/nodes/IP2.html",
+      "type": "cites",
+      "label": "P2",
+      "via": ""
+    },
+    {
+      "source": "IP11",
+      "source_href": "/nodes/IP11.html",
+      "target": "IA1",
+      "target_href": "/nodes/IA1.html",
+      "type": "cites",
+      "label": "A1",
+      "via": ""
+    },
+    {
+      "source": "IP11",
+      "source_href": "/nodes/IP11.html",
+      "target": "ID6",
+      "target_href": "/nodes/ID6.html",
+      "type": "cites",
+      "label": "D6",
+      "via": ""
+    },
+    {
+      "source": "IP11",
+      "source_href": "/nodes/IP11.html",
+      "target": "IP6",
+      "target_href": "/nodes/IP6.html",
+      "type": "cites",
+      "label": "P6",
+      "via": ""
+    },
+    {
       "source": "IP12",
       "source_href": "/nodes/IP12.html",
       "target": "IP8",
@@ -3743,10 +3941,64 @@
     {
       "source": "IP12",
       "source_href": "/nodes/IP12.html",
+      "target": "IP7",
+      "target_href": "/nodes/IP7.html",
+      "type": "cites",
+      "label": "P7",
+      "via": ""
+    },
+    {
+      "source": "IP12",
+      "source_href": "/nodes/IP12.html",
+      "target": "IP5",
+      "target_href": "/nodes/IP5.html",
+      "type": "cites",
+      "label": "P5",
+      "via": ""
+    },
+    {
+      "source": "IP12",
+      "source_href": "/nodes/IP12.html",
+      "target": "IP6",
+      "target_href": "/nodes/IP6.html",
+      "type": "cites",
+      "label": "P6",
+      "via": ""
+    },
+    {
+      "source": "IP12",
+      "source_href": "/nodes/IP12.html",
+      "target": "IP2",
+      "target_href": "/nodes/IP2.html",
+      "type": "cites",
+      "label": "P2",
+      "via": ""
+    },
+    {
+      "source": "IP12",
+      "source_href": "/nodes/IP12.html",
+      "target": "ID4",
+      "target_href": "/nodes/ID4.html",
+      "type": "cites",
+      "label": "D4",
+      "via": ""
+    },
+    {
+      "source": "IP12",
+      "source_href": "/nodes/IP12.html",
       "target": "IP10",
       "target_href": "/nodes/IP10.html",
       "type": "cites",
       "label": "P10",
+      "via": ""
+    },
+    {
+      "source": "IP13",
+      "source_href": "/nodes/IP13.html",
+      "target": "IP5",
+      "target_href": "/nodes/IP5.html",
+      "type": "cites",
+      "label": "P5",
       "via": ""
     },
     {
@@ -3765,6 +4017,15 @@
       "target_href": "/nodes/IP11.html",
       "type": "cites",
       "label": "P11",
+      "via": ""
+    },
+    {
+      "source": "IP13",
+      "source_href": "/nodes/IP13.html",
+      "target": "IP8",
+      "target_href": "/nodes/IP8.html",
+      "type": "cites",
+      "label": "P8",
       "via": ""
     },
     {
@@ -3786,6 +4047,42 @@
       "via": "/text/part0029_split_001.html#page_417"
     },
     {
+      "source": "IP14",
+      "source_href": "/nodes/IP14.html",
+      "target": "ID6",
+      "target_href": "/nodes/ID6.html",
+      "type": "cites",
+      "label": "D6",
+      "via": ""
+    },
+    {
+      "source": "IP14",
+      "source_href": "/nodes/IP14.html",
+      "target": "IP11",
+      "target_href": "/nodes/IP11.html",
+      "type": "cites",
+      "label": "P11",
+      "via": ""
+    },
+    {
+      "source": "IP14",
+      "source_href": "/nodes/IP14.html",
+      "target": "IP5",
+      "target_href": "/nodes/IP5.html",
+      "type": "cites",
+      "label": "P5",
+      "via": ""
+    },
+    {
+      "source": "IP14",
+      "source_href": "/nodes/IP14.html",
+      "target": "IA1",
+      "target_href": "/nodes/IA1.html",
+      "type": "cites",
+      "label": "A1",
+      "via": ""
+    },
+    {
       "source": "IP15",
       "source_href": "/nodes/IP15.html",
       "target": "IP14",
@@ -3797,10 +4094,55 @@
     {
       "source": "IP15",
       "source_href": "/nodes/IP15.html",
+      "target": "ID3",
+      "target_href": "/nodes/ID3.html",
+      "type": "cites",
+      "label": "D3",
+      "via": ""
+    },
+    {
+      "source": "IP15",
+      "source_href": "/nodes/IP15.html",
+      "target": "ID5",
+      "target_href": "/nodes/ID5.html",
+      "type": "cites",
+      "label": "D5",
+      "via": ""
+    },
+    {
+      "source": "IP15",
+      "source_href": "/nodes/IP15.html",
+      "target": "IA1",
+      "target_href": "/nodes/IA1.html",
+      "type": "cites",
+      "label": "A1",
+      "via": ""
+    },
+    {
+      "source": "IP15",
+      "source_href": "/nodes/IP15.html",
+      "target": "IP12",
+      "target_href": "/nodes/IP12.html",
+      "type": "cites",
+      "label": "P12",
+      "via": ""
+    },
+    {
+      "source": "IP15",
+      "source_href": "/nodes/IP15.html",
       "target": "IP13",
       "target_href": "/nodes/IP13.html",
       "type": "cites",
       "label": "P13C",
+      "via": ""
+    },
+    {
+      "source": "IP15",
+      "source_href": "/nodes/IP15.html",
+      "target": "IP8",
+      "target_href": "/nodes/IP8.html",
+      "type": "cites",
+      "label": "P8",
       "via": ""
     },
     {
@@ -3811,6 +4153,15 @@
       "type": "cites",
       "label": "P13C",
       "via": "/text/part0029_split_001.html#page_420"
+    },
+    {
+      "source": "IP16",
+      "source_href": "/nodes/IP16.html",
+      "target": "ID6",
+      "target_href": "/nodes/ID6.html",
+      "type": "cites",
+      "label": "D6",
+      "via": ""
     },
     {
       "source": "IP17",
@@ -3828,6 +4179,15 @@
       "target_href": "/nodes/IP15.html",
       "type": "cites",
       "label": "P15",
+      "via": ""
+    },
+    {
+      "source": "IP17",
+      "source_href": "/nodes/IP17.html",
+      "target": "IP11",
+      "target_href": "/nodes/IP11.html",
+      "type": "cites",
+      "label": "P11",
       "via": ""
     },
     {
@@ -3867,12 +4227,75 @@
       "via": "/text/part0029_split_001.html#e3006"
     },
     {
+      "source": "IP18",
+      "source_href": "/nodes/IP18.html",
+      "target": "IP15",
+      "target_href": "/nodes/IP15.html",
+      "type": "cites",
+      "label": "P15",
+      "via": ""
+    },
+    {
+      "source": "IP18",
+      "source_href": "/nodes/IP18.html",
+      "target": "IP14",
+      "target_href": "/nodes/IP14.html",
+      "type": "cites",
+      "label": "P14",
+      "via": ""
+    },
+    {
+      "source": "IP18",
+      "source_href": "/nodes/IP18.html",
+      "target": "ID3",
+      "target_href": "/nodes/ID3.html",
+      "type": "cites",
+      "label": "D3",
+      "via": ""
+    },
+    {
+      "source": "IP19",
+      "source_href": "/nodes/IP19.html",
+      "target": "ID6",
+      "target_href": "/nodes/ID6.html",
+      "type": "cites",
+      "label": "D6",
+      "via": ""
+    },
+    {
+      "source": "IP19",
+      "source_href": "/nodes/IP19.html",
+      "target": "IP11",
+      "target_href": "/nodes/IP11.html",
+      "type": "cites",
+      "label": "P11",
+      "via": ""
+    },
+    {
+      "source": "IP19",
+      "source_href": "/nodes/IP19.html",
+      "target": "IP7",
+      "target_href": "/nodes/IP7.html",
+      "type": "cites",
+      "label": "P7",
+      "via": ""
+    },
+    {
       "source": "IP19",
       "source_href": "/nodes/IP19.html",
       "target": "ID8",
       "target_href": "/nodes/ID8.html",
       "type": "cites",
       "label": "D8",
+      "via": ""
+    },
+    {
+      "source": "IP19",
+      "source_href": "/nodes/IP19.html",
+      "target": "ID4",
+      "target_href": "/nodes/ID4.html",
+      "type": "cites",
+      "label": "D4",
       "via": ""
     },
     {
@@ -3887,10 +4310,100 @@
     {
       "source": "IP20",
       "source_href": "/nodes/IP20.html",
+      "target": "IP19",
+      "target_href": "/nodes/IP19.html",
+      "type": "cites",
+      "label": "P19",
+      "via": ""
+    },
+    {
+      "source": "IP20",
+      "source_href": "/nodes/IP20.html",
+      "target": "ID8",
+      "target_href": "/nodes/ID8.html",
+      "type": "cites",
+      "label": "D8",
+      "via": ""
+    },
+    {
+      "source": "IP20",
+      "source_href": "/nodes/IP20.html",
+      "target": "ID4",
+      "target_href": "/nodes/ID4.html",
+      "type": "cites",
+      "label": "D4",
+      "via": ""
+    },
+    {
+      "source": "IP20",
+      "source_href": "/nodes/IP20.html",
       "target": "IP20",
       "target_href": "/nodes/IP20.html",
       "type": "cites",
       "label": "P20",
+      "via": ""
+    },
+    {
+      "source": "IP21",
+      "source_href": "/nodes/IP21.html",
+      "target": "IP11",
+      "target_href": "/nodes/IP11.html",
+      "type": "cites",
+      "label": "P11",
+      "via": ""
+    },
+    {
+      "source": "IP21",
+      "source_href": "/nodes/IP21.html",
+      "target": "ID2",
+      "target_href": "/nodes/ID2.html",
+      "type": "cites",
+      "label": "D2",
+      "via": ""
+    },
+    {
+      "source": "IP23",
+      "source_href": "/nodes/IP23.html",
+      "target": "ID5",
+      "target_href": "/nodes/ID5.html",
+      "type": "cites",
+      "label": "D5",
+      "via": ""
+    },
+    {
+      "source": "IP23",
+      "source_href": "/nodes/IP23.html",
+      "target": "IP15",
+      "target_href": "/nodes/IP15.html",
+      "type": "cites",
+      "label": "P15",
+      "via": ""
+    },
+    {
+      "source": "IP23",
+      "source_href": "/nodes/IP23.html",
+      "target": "ID8",
+      "target_href": "/nodes/ID8.html",
+      "type": "cites",
+      "label": "D8",
+      "via": ""
+    },
+    {
+      "source": "IP23",
+      "source_href": "/nodes/IP23.html",
+      "target": "ID6",
+      "target_href": "/nodes/ID6.html",
+      "type": "cites",
+      "label": "D6",
+      "via": ""
+    },
+    {
+      "source": "IP23",
+      "source_href": "/nodes/IP23.html",
+      "target": "IP19",
+      "target_href": "/nodes/IP19.html",
+      "type": "cites",
+      "label": "P19",
       "via": ""
     },
     {
@@ -3909,6 +4422,33 @@
       "target_href": "/nodes/IP22.html",
       "type": "cites",
       "label": "P22",
+      "via": ""
+    },
+    {
+      "source": "IP25",
+      "source_href": "/nodes/IP25.html",
+      "target": "IA4",
+      "target_href": "/nodes/IA4.html",
+      "type": "cites",
+      "label": "A4",
+      "via": ""
+    },
+    {
+      "source": "IP25",
+      "source_href": "/nodes/IP25.html",
+      "target": "IP15",
+      "target_href": "/nodes/IP15.html",
+      "type": "cites",
+      "label": "P15",
+      "via": ""
+    },
+    {
+      "source": "IP25",
+      "source_href": "/nodes/IP25.html",
+      "target": "ID5",
+      "target_href": "/nodes/ID5.html",
+      "type": "cites",
+      "label": "D5",
       "via": ""
     },
     {
@@ -3950,6 +4490,60 @@
     {
       "source": "IP28",
       "source_href": "/nodes/IP28.html",
+      "target": "IP21",
+      "target_href": "/nodes/IP21.html",
+      "type": "cites",
+      "label": "P21",
+      "via": ""
+    },
+    {
+      "source": "IP28",
+      "source_href": "/nodes/IP28.html",
+      "target": "IA1",
+      "target_href": "/nodes/IA1.html",
+      "type": "cites",
+      "label": "A1",
+      "via": ""
+    },
+    {
+      "source": "IP28",
+      "source_href": "/nodes/IP28.html",
+      "target": "ID3",
+      "target_href": "/nodes/ID3.html",
+      "type": "cites",
+      "label": "D3",
+      "via": ""
+    },
+    {
+      "source": "IP28",
+      "source_href": "/nodes/IP28.html",
+      "target": "ID5",
+      "target_href": "/nodes/ID5.html",
+      "type": "cites",
+      "label": "D5",
+      "via": ""
+    },
+    {
+      "source": "IP28",
+      "source_href": "/nodes/IP28.html",
+      "target": "IP22",
+      "target_href": "/nodes/IP22.html",
+      "type": "cites",
+      "label": "P22",
+      "via": ""
+    },
+    {
+      "source": "IP28",
+      "source_href": "/nodes/IP28.html",
+      "target": "IP15",
+      "target_href": "/nodes/IP15.html",
+      "type": "cites",
+      "label": "P15",
+      "via": ""
+    },
+    {
+      "source": "IP28",
+      "source_href": "/nodes/IP28.html",
       "target": "IP26",
       "target_href": "/nodes/IP26.html",
       "type": "cites",
@@ -3959,10 +4553,55 @@
     {
       "source": "IP29",
       "source_href": "/nodes/IP29.html",
+      "target": "IP15",
+      "target_href": "/nodes/IP15.html",
+      "type": "cites",
+      "label": "P15",
+      "via": ""
+    },
+    {
+      "source": "IP29",
+      "source_href": "/nodes/IP29.html",
+      "target": "IP11",
+      "target_href": "/nodes/IP11.html",
+      "type": "cites",
+      "label": "P11",
+      "via": ""
+    },
+    {
+      "source": "IP29",
+      "source_href": "/nodes/IP29.html",
+      "target": "IP16",
+      "target_href": "/nodes/IP16.html",
+      "type": "cites",
+      "label": "P16",
+      "via": ""
+    },
+    {
+      "source": "IP29",
+      "source_href": "/nodes/IP29.html",
+      "target": "IP21",
+      "target_href": "/nodes/IP21.html",
+      "type": "cites",
+      "label": "P21",
+      "via": ""
+    },
+    {
+      "source": "IP29",
+      "source_href": "/nodes/IP29.html",
       "target": "IP28",
       "target_href": "/nodes/IP28.html",
       "type": "cites",
       "label": "P28",
+      "via": ""
+    },
+    {
+      "source": "IP29",
+      "source_href": "/nodes/IP29.html",
+      "target": "IP26",
+      "target_href": "/nodes/IP26.html",
+      "type": "cites",
+      "label": "P26",
       "via": ""
     },
     {
@@ -3984,6 +4623,51 @@
       "via": "/text/part0029_split_001.html#e3063"
     },
     {
+      "source": "IP30",
+      "source_href": "/nodes/IP30.html",
+      "target": "IA6",
+      "target_href": "/nodes/IA6.html",
+      "type": "cites",
+      "label": "A6",
+      "via": ""
+    },
+    {
+      "source": "IP30",
+      "source_href": "/nodes/IP30.html",
+      "target": "IP15",
+      "target_href": "/nodes/IP15.html",
+      "type": "cites",
+      "label": "P15",
+      "via": ""
+    },
+    {
+      "source": "IP31",
+      "source_href": "/nodes/IP31.html",
+      "target": "ID5",
+      "target_href": "/nodes/ID5.html",
+      "type": "cites",
+      "label": "D5",
+      "via": ""
+    },
+    {
+      "source": "IP31",
+      "source_href": "/nodes/IP31.html",
+      "target": "IP15",
+      "target_href": "/nodes/IP15.html",
+      "type": "cites",
+      "label": "P15",
+      "via": ""
+    },
+    {
+      "source": "IP31",
+      "source_href": "/nodes/IP31.html",
+      "target": "ID6",
+      "target_href": "/nodes/ID6.html",
+      "type": "cites",
+      "label": "D6",
+      "via": ""
+    },
+    {
       "source": "IP31",
       "source_href": "/nodes/IP31.html",
       "target": "IP29",
@@ -3995,10 +4679,37 @@
     {
       "source": "IP32",
       "source_href": "/nodes/IP32.html",
+      "target": "IP28",
+      "target_href": "/nodes/IP28.html",
+      "type": "cites",
+      "label": "P28",
+      "via": ""
+    },
+    {
+      "source": "IP32",
+      "source_href": "/nodes/IP32.html",
       "target": "IP23",
       "target_href": "/nodes/IP23.html",
       "type": "cites",
       "label": "P23",
+      "via": ""
+    },
+    {
+      "source": "IP32",
+      "source_href": "/nodes/IP32.html",
+      "target": "ID7",
+      "target_href": "/nodes/ID7.html",
+      "type": "cites",
+      "label": "D7",
+      "via": ""
+    },
+    {
+      "source": "IP32",
+      "source_href": "/nodes/IP32.html",
+      "target": "IP29",
+      "target_href": "/nodes/IP29.html",
+      "type": "cites",
+      "label": "P29",
       "via": ""
     },
     {
@@ -4009,6 +4720,60 @@
       "type": "cites",
       "label": "P23",
       "via": "/text/part0029_split_001.html#e3047"
+    },
+    {
+      "source": "IP33",
+      "source_href": "/nodes/IP33.html",
+      "target": "IP16",
+      "target_href": "/nodes/IP16.html",
+      "type": "cites",
+      "label": "P16",
+      "via": ""
+    },
+    {
+      "source": "IP33",
+      "source_href": "/nodes/IP33.html",
+      "target": "IP29",
+      "target_href": "/nodes/IP29.html",
+      "type": "cites",
+      "label": "P29",
+      "via": ""
+    },
+    {
+      "source": "IP33",
+      "source_href": "/nodes/IP33.html",
+      "target": "IP11",
+      "target_href": "/nodes/IP11.html",
+      "type": "cites",
+      "label": "P11",
+      "via": ""
+    },
+    {
+      "source": "IP33",
+      "source_href": "/nodes/IP33.html",
+      "target": "ID7",
+      "target_href": "/nodes/ID7.html",
+      "type": "cites",
+      "label": "D7",
+      "via": ""
+    },
+    {
+      "source": "IP34",
+      "source_href": "/nodes/IP34.html",
+      "target": "IP11",
+      "target_href": "/nodes/IP11.html",
+      "type": "cites",
+      "label": "P11",
+      "via": ""
+    },
+    {
+      "source": "IP34",
+      "source_href": "/nodes/IP34.html",
+      "target": "IP16",
+      "target_href": "/nodes/IP16.html",
+      "type": "cites",
+      "label": "P16",
+      "via": ""
     },
     {
       "source": "IP35",
@@ -4027,6 +4792,24 @@
       "type": "cites",
       "label": "P34",
       "via": "/text/part0029_split_001.html#e3121"
+    },
+    {
+      "source": "IP36",
+      "source_href": "/nodes/IP36.html",
+      "target": "IP34",
+      "target_href": "/nodes/IP34.html",
+      "type": "cites",
+      "label": "P34",
+      "via": ""
+    },
+    {
+      "source": "IP36",
+      "source_href": "/nodes/IP36.html",
+      "target": "IP16",
+      "target_href": "/nodes/IP16.html",
+      "type": "cites",
+      "label": "P16",
+      "via": ""
     },
     {
       "source": "IIA5",
@@ -4148,6 +4931,15 @@
     {
       "source": "IIP9",
       "source_href": "/nodes/IIP9.html",
+      "target": "IIP3",
+      "target_href": "/nodes/IIP3.html",
+      "type": "cites",
+      "label": "P3",
+      "via": ""
+    },
+    {
+      "source": "IIP9",
+      "source_href": "/nodes/IIP9.html",
       "target": "IIP9",
       "target_href": "/nodes/IIP9.html",
       "type": "cites",
@@ -4218,6 +5010,15 @@
       "via": ""
     },
     {
+      "source": "IIP11",
+      "source_href": "/nodes/IIP11.html",
+      "target": "IIA1",
+      "target_href": "/nodes/IIA1.html",
+      "type": "cites",
+      "label": "A1",
+      "via": ""
+    },
+    {
       "source": "IIP12",
       "source_href": "/nodes/IIP12.html",
       "target": "IIP11",
@@ -4233,6 +5034,15 @@
       "target_href": "/nodes/IIA4.html",
       "type": "cites",
       "label": "A4",
+      "via": ""
+    },
+    {
+      "source": "IIP13",
+      "source_href": "/nodes/IIP13.html",
+      "target": "IIP11",
+      "target_href": "/nodes/IIP11.html",
+      "type": "cites",
+      "label": "P11",
       "via": ""
     },
     {
@@ -4269,6 +5079,78 @@
       "target_href": "/nodes/IID1.html",
       "type": "cites",
       "label": "D1",
+      "via": ""
+    },
+    {
+      "source": "IIP13",
+      "source_href": "/nodes/IIP13.html",
+      "target": "IIP6",
+      "target_href": "/nodes/IIP6.html",
+      "type": "cites",
+      "label": "P6",
+      "via": ""
+    },
+    {
+      "source": "IIP13",
+      "source_href": "/nodes/IIP13.html",
+      "target": "IIA1",
+      "target_href": "/nodes/IIA1.html",
+      "type": "cites",
+      "label": "A1",
+      "via": ""
+    },
+    {
+      "source": "IIP14",
+      "source_href": "/nodes/IIP14.html",
+      "target": "IIP12",
+      "target_href": "/nodes/IIP12.html",
+      "type": "cites",
+      "label": "P12",
+      "via": ""
+    },
+    {
+      "source": "IIP15",
+      "source_href": "/nodes/IIP15.html",
+      "target": "IIP13",
+      "target_href": "/nodes/IIP13.html",
+      "type": "cites",
+      "label": "P13",
+      "via": ""
+    },
+    {
+      "source": "IIP15",
+      "source_href": "/nodes/IIP15.html",
+      "target": "IIP7",
+      "target_href": "/nodes/IIP7.html",
+      "type": "cites",
+      "label": "P7",
+      "via": ""
+    },
+    {
+      "source": "IIP16",
+      "source_href": "/nodes/IIP16.html",
+      "target": "IIA1",
+      "target_href": "/nodes/IIA1.html",
+      "type": "cites",
+      "label": "A1",
+      "via": ""
+    },
+    {
+      "source": "IIP17",
+      "source_href": "/nodes/IIP17.html",
+      "target": "IIP12",
+      "target_href": "/nodes/IIP12.html",
+      "type": "cites",
+      "label": "P12",
+      "via": ""
+    },
+    {
+      "source": "IIP17",
+      "source_href": "/nodes/IIP17.html",
+      "target": "IIP16",
+      "target_href": "/nodes/IIP16.html",
+      "type": "cites",
+      "label": "P16",
       "via": ""
     },
     {
@@ -4400,6 +5282,15 @@
     {
       "source": "IIP23",
       "source_href": "/nodes/IIP23.html",
+      "target": "IIP20",
+      "target_href": "/nodes/IIP20.html",
+      "type": "cites",
+      "label": "P20",
+      "via": ""
+    },
+    {
+      "source": "IIP23",
+      "source_href": "/nodes/IIP23.html",
       "target": "IIP19",
       "target_href": "/nodes/IIP19.html",
       "type": "cites",
@@ -4488,6 +5379,15 @@
       "via": ""
     },
     {
+      "source": "IIP28",
+      "source_href": "/nodes/IIP28.html",
+      "target": "IIP25",
+      "target_href": "/nodes/IIP25.html",
+      "type": "cites",
+      "label": "P25",
+      "via": ""
+    },
+    {
       "source": "IIP29",
       "source_href": "/nodes/IIP29.html",
       "target": "IIP27",
@@ -4517,10 +5417,37 @@
     {
       "source": "IIP29",
       "source_href": "/nodes/IIP29.html",
+      "target": "IIP19",
+      "target_href": "/nodes/IIP19.html",
+      "type": "cites",
+      "label": "P19",
+      "via": ""
+    },
+    {
+      "source": "IIP29",
+      "source_href": "/nodes/IIP29.html",
+      "target": "IIP26",
+      "target_href": "/nodes/IIP26.html",
+      "type": "cites",
+      "label": "P26",
+      "via": ""
+    },
+    {
+      "source": "IIP29",
+      "source_href": "/nodes/IIP29.html",
       "target": "IIP29",
       "target_href": "/nodes/IIP29.html",
       "type": "cites",
       "label": "P29",
+      "via": ""
+    },
+    {
+      "source": "IIP29",
+      "source_href": "/nodes/IIP29.html",
+      "target": "IIP25",
+      "target_href": "/nodes/IIP25.html",
+      "type": "cites",
+      "label": "P25",
       "via": ""
     },
     {
@@ -4623,6 +5550,15 @@
       "via": "/text/part0029_split_001.html#e2972"
     },
     {
+      "source": "IIP34",
+      "source_href": "/nodes/IIP34.html",
+      "target": "IIP32",
+      "target_href": "/nodes/IIP32.html",
+      "type": "cites",
+      "label": "P32",
+      "via": ""
+    },
+    {
       "source": "IIP35",
       "source_href": "/nodes/IIP35.html",
       "target": "IIP33",
@@ -4643,6 +5579,33 @@
     {
       "source": "IIP36",
       "source_href": "/nodes/IIP36.html",
+      "target": "IIP32",
+      "target_href": "/nodes/IIP32.html",
+      "type": "cites",
+      "label": "P32",
+      "via": ""
+    },
+    {
+      "source": "IIP36",
+      "source_href": "/nodes/IIP36.html",
+      "target": "IIP24",
+      "target_href": "/nodes/IIP24.html",
+      "type": "cites",
+      "label": "P24",
+      "via": ""
+    },
+    {
+      "source": "IIP36",
+      "source_href": "/nodes/IIP36.html",
+      "target": "IIP28",
+      "target_href": "/nodes/IIP28.html",
+      "type": "cites",
+      "label": "P28",
+      "via": ""
+    },
+    {
+      "source": "IIP36",
+      "source_href": "/nodes/IIP36.html",
       "target": "IIP6",
       "target_href": "/nodes/IIP6.html",
       "type": "cites",
@@ -4656,6 +5619,24 @@
       "target_href": "/nodes/IID2.html",
       "type": "cites",
       "label": "D2",
+      "via": ""
+    },
+    {
+      "source": "IIP38",
+      "source_href": "/nodes/IIP38.html",
+      "target": "IIP25",
+      "target_href": "/nodes/IIP25.html",
+      "type": "cites",
+      "label": "P25",
+      "via": ""
+    },
+    {
+      "source": "IIP38",
+      "source_href": "/nodes/IIP38.html",
+      "target": "IIP27",
+      "target_href": "/nodes/IIP27.html",
+      "type": "cites",
+      "label": "P27",
       "via": ""
     },
     {
@@ -4740,12 +5721,39 @@
       "via": "/text/part0030.html#e3404"
     },
     {
+      "source": "IIP43",
+      "source_href": "/nodes/IIP43.html",
+      "target": "IIP20",
+      "target_href": "/nodes/IIP20.html",
+      "type": "cites",
+      "label": "P20",
+      "via": ""
+    },
+    {
+      "source": "IIP43",
+      "source_href": "/nodes/IIP43.html",
+      "target": "IIP34",
+      "target_href": "/nodes/IIP34.html",
+      "type": "cites",
+      "label": "P34",
+      "via": ""
+    },
+    {
       "source": "IIP44",
       "source_href": "/nodes/IIP44.html",
       "target": "IIP41",
       "target_href": "/nodes/IIP41.html",
       "type": "cites",
       "label": "P41",
+      "via": ""
+    },
+    {
+      "source": "IIP44",
+      "source_href": "/nodes/IIP44.html",
+      "target": "IIP18",
+      "target_href": "/nodes/IIP18.html",
+      "type": "cites",
+      "label": "P18",
       "via": ""
     },
     {
@@ -4764,6 +5772,15 @@
       "target_href": "/nodes/IP16.html",
       "type": "cites",
       "label": "IP16",
+      "via": ""
+    },
+    {
+      "source": "IIP44",
+      "source_href": "/nodes/IIP44.html",
+      "target": "IIP38",
+      "target_href": "/nodes/IIP38.html",
+      "type": "cites",
+      "label": "P38",
       "via": ""
     },
     {
@@ -4841,11 +5858,56 @@
     {
       "source": "IIP46",
       "source_href": "/nodes/IIP46.html",
+      "target": "IIP38",
+      "target_href": "/nodes/IIP38.html",
+      "type": "cites",
+      "label": "P38",
+      "via": ""
+    },
+    {
+      "source": "IIP46",
+      "source_href": "/nodes/IIP46.html",
       "target": "IIP45",
       "target_href": "/nodes/IIP45.html",
       "type": "cites",
       "label": "P45",
       "via": "/text/part0030.html#e3478"
+    },
+    {
+      "source": "IIP47",
+      "source_href": "/nodes/IIP47.html",
+      "target": "IIP22",
+      "target_href": "/nodes/IIP22.html",
+      "type": "cites",
+      "label": "P22",
+      "via": ""
+    },
+    {
+      "source": "IIP47",
+      "source_href": "/nodes/IIP47.html",
+      "target": "IIP23",
+      "target_href": "/nodes/IIP23.html",
+      "type": "cites",
+      "label": "P23",
+      "via": ""
+    },
+    {
+      "source": "IIP47",
+      "source_href": "/nodes/IIP47.html",
+      "target": "IIP19",
+      "target_href": "/nodes/IIP19.html",
+      "type": "cites",
+      "label": "P19",
+      "via": ""
+    },
+    {
+      "source": "IIP47",
+      "source_href": "/nodes/IIP47.html",
+      "target": "IIP45",
+      "target_href": "/nodes/IIP45.html",
+      "type": "cites",
+      "label": "P45",
+      "via": ""
     },
     {
       "source": "IIP47",
@@ -4913,6 +5975,15 @@
     {
       "source": "IIP49",
       "source_href": "/nodes/IIP49.html",
+      "target": "IIP35",
+      "target_href": "/nodes/IIP35.html",
+      "type": "cites",
+      "label": "P35",
+      "via": ""
+    },
+    {
+      "source": "IIP49",
+      "source_href": "/nodes/IIP49.html",
       "target": "IIP47",
       "target_href": "/nodes/IIP47.html",
       "type": "cites",
@@ -4944,6 +6015,15 @@
       "target_href": "/nodes/IP36.html",
       "type": "cites",
       "label": "IP36",
+      "via": ""
+    },
+    {
+      "source": "IIIP1",
+      "source_href": "/nodes/IIIP1.html",
+      "target": "IIID1",
+      "target_href": "/nodes/IIID1.html",
+      "type": "cites",
+      "label": "D1",
       "via": ""
     },
     {
@@ -5030,6 +6110,15 @@
     {
       "source": "IIIP6",
       "source_href": "/nodes/IIIP6.html",
+      "target": "IIIP4",
+      "target_href": "/nodes/IIIP4.html",
+      "type": "cites",
+      "label": "P4",
+      "via": ""
+    },
+    {
+      "source": "IIIP6",
+      "source_href": "/nodes/IIIP6.html",
       "target": "IIIP5",
       "target_href": "/nodes/IIIP5.html",
       "type": "cites",
@@ -5061,6 +6150,15 @@
       "target_href": "/nodes/IIIP6.html",
       "type": "cites",
       "label": "P6",
+      "via": ""
+    },
+    {
+      "source": "IIIP8",
+      "source_href": "/nodes/IIIP8.html",
+      "target": "IIIP4",
+      "target_href": "/nodes/IIIP4.html",
+      "type": "cites",
+      "label": "P4",
       "via": ""
     },
     {
@@ -5109,6 +6207,33 @@
       "via": "/text/part0030.html#e3619"
     },
     {
+      "source": "IIIP10",
+      "source_href": "/nodes/IIIP10.html",
+      "target": "IIIP5",
+      "target_href": "/nodes/IIIP5.html",
+      "type": "cites",
+      "label": "P5",
+      "via": ""
+    },
+    {
+      "source": "IIIP10",
+      "source_href": "/nodes/IIIP10.html",
+      "target": "IIIP13",
+      "target_href": "/nodes/IIIP13.html",
+      "type": "cites",
+      "label": "P13",
+      "via": ""
+    },
+    {
+      "source": "IIIP10",
+      "source_href": "/nodes/IIIP10.html",
+      "target": "IIIP7",
+      "target_href": "/nodes/IIIP7.html",
+      "type": "cites",
+      "label": "P7",
+      "via": ""
+    },
+    {
       "source": "IIIP11",
       "source_href": "/nodes/IIIP11.html",
       "target": "IIP14",
@@ -5142,6 +6267,15 @@
       "target_href": "/nodes/IIIP18.html",
       "type": "cites",
       "label": "P18",
+      "via": ""
+    },
+    {
+      "source": "IIIP11",
+      "source_href": "/nodes/IIIP11.html",
+      "target": "IIIP4",
+      "target_href": "/nodes/IIIP4.html",
+      "type": "cites",
+      "label": "P4",
       "via": ""
     },
     {
@@ -5181,12 +6315,39 @@
       "via": ""
     },
     {
+      "source": "IIIP12",
+      "source_href": "/nodes/IIIP12.html",
+      "target": "IIIP6",
+      "target_href": "/nodes/IIIP6.html",
+      "type": "cites",
+      "label": "P6",
+      "via": ""
+    },
+    {
+      "source": "IIIP12",
+      "source_href": "/nodes/IIIP12.html",
+      "target": "IIIP9",
+      "target_href": "/nodes/IIIP9.html",
+      "type": "cites",
+      "label": "P9",
+      "via": ""
+    },
+    {
       "source": "IIIP13",
       "source_href": "/nodes/IIIP13.html",
       "target": "IIIP12",
       "target_href": "/nodes/IIIP12.html",
       "type": "cites",
       "label": "P12",
+      "via": ""
+    },
+    {
+      "source": "IIIP13",
+      "source_href": "/nodes/IIIP13.html",
+      "target": "IIIP9",
+      "target_href": "/nodes/IIIP9.html",
+      "type": "cites",
+      "label": "P9",
       "via": ""
     },
     {
@@ -5219,10 +6380,28 @@
     {
       "source": "IIIP15",
       "source_href": "/nodes/IIIP15.html",
+      "target": "IIIP12",
+      "target_href": "/nodes/IIIP12.html",
+      "type": "cites",
+      "label": "P12",
+      "via": ""
+    },
+    {
+      "source": "IIIP15",
+      "source_href": "/nodes/IIIP15.html",
       "target": "IIIP16",
       "target_href": "/nodes/IIIP16.html",
       "type": "cites",
       "label": "P16",
+      "via": ""
+    },
+    {
+      "source": "IIIP16",
+      "source_href": "/nodes/IIIP16.html",
+      "target": "IIIP14",
+      "target_href": "/nodes/IIIP14.html",
+      "type": "cites",
+      "label": "P14",
       "via": ""
     },
     {
@@ -5244,12 +6423,39 @@
       "via": "/text/part0030.html#e3653"
     },
     {
+      "source": "IIIP17",
+      "source_href": "/nodes/IIIP17.html",
+      "target": "IIIP16",
+      "target_href": "/nodes/IIIP16.html",
+      "type": "cites",
+      "label": "P16",
+      "via": ""
+    },
+    {
       "source": "IIIP18",
       "source_href": "/nodes/IIIP18.html",
       "target": "IIIP17",
       "target_href": "/nodes/IIIP17.html",
       "type": "cites",
       "label": "P17C",
+      "via": ""
+    },
+    {
+      "source": "IIIP19",
+      "source_href": "/nodes/IIIP19.html",
+      "target": "IIIP12",
+      "target_href": "/nodes/IIIP12.html",
+      "type": "cites",
+      "label": "P12",
+      "via": ""
+    },
+    {
+      "source": "IIIP20",
+      "source_href": "/nodes/IIIP20.html",
+      "target": "IIIP13",
+      "target_href": "/nodes/IIIP13.html",
+      "type": "cites",
+      "label": "P13",
       "via": ""
     },
     {
@@ -5277,6 +6483,15 @@
       "target_href": "/nodes/IIIP20.html",
       "type": "cites",
       "label": "P20",
+      "via": ""
+    },
+    {
+      "source": "IIIP23",
+      "source_href": "/nodes/IIIP23.html",
+      "target": "IIIP13",
+      "target_href": "/nodes/IIIP13.html",
+      "type": "cites",
+      "label": "P13",
       "via": ""
     },
     {
@@ -5325,6 +6540,33 @@
       "via": "/text/part0030.html#e3690"
     },
     {
+      "source": "IIIP25",
+      "source_href": "/nodes/IIIP25.html",
+      "target": "IIIP21",
+      "target_href": "/nodes/IIIP21.html",
+      "type": "cites",
+      "label": "P21",
+      "via": ""
+    },
+    {
+      "source": "IIIP25",
+      "source_href": "/nodes/IIIP25.html",
+      "target": "IIIP12",
+      "target_href": "/nodes/IIIP12.html",
+      "type": "cites",
+      "label": "P12",
+      "via": ""
+    },
+    {
+      "source": "IIIP25",
+      "source_href": "/nodes/IIIP25.html",
+      "target": "IIIP13",
+      "target_href": "/nodes/IIIP13.html",
+      "type": "cites",
+      "label": "P13",
+      "via": ""
+    },
+    {
       "source": "IIIP26",
       "source_href": "/nodes/IIIP26.html",
       "target": "IIIP23",
@@ -5352,6 +6594,69 @@
       "via": "/text/part0030.html#e3704"
     },
     {
+      "source": "IIIP27",
+      "source_href": "/nodes/IIIP27.html",
+      "target": "IIIP23",
+      "target_href": "/nodes/IIIP23.html",
+      "type": "cites",
+      "label": "P23",
+      "via": ""
+    },
+    {
+      "source": "IIIP27",
+      "source_href": "/nodes/IIIP27.html",
+      "target": "IIIP27",
+      "target_href": "/nodes/IIIP27.html",
+      "type": "cites",
+      "label": "P27",
+      "via": ""
+    },
+    {
+      "source": "IIIP27",
+      "source_href": "/nodes/IIIP27.html",
+      "target": "IIIP13",
+      "target_href": "/nodes/IIIP13.html",
+      "type": "cites",
+      "label": "P13",
+      "via": ""
+    },
+    {
+      "source": "IIIP28",
+      "source_href": "/nodes/IIIP28.html",
+      "target": "IIIP12",
+      "target_href": "/nodes/IIIP12.html",
+      "type": "cites",
+      "label": "P12",
+      "via": ""
+    },
+    {
+      "source": "IIIP28",
+      "source_href": "/nodes/IIIP28.html",
+      "target": "IIIP20",
+      "target_href": "/nodes/IIIP20.html",
+      "type": "cites",
+      "label": "P20",
+      "via": ""
+    },
+    {
+      "source": "IIIP28",
+      "source_href": "/nodes/IIIP28.html",
+      "target": "IIIP13",
+      "target_href": "/nodes/IIIP13.html",
+      "type": "cites",
+      "label": "P13",
+      "via": ""
+    },
+    {
+      "source": "IIIP29",
+      "source_href": "/nodes/IIIP29.html",
+      "target": "IIIP27",
+      "target_href": "/nodes/IIIP27.html",
+      "type": "cites",
+      "label": "P27",
+      "via": ""
+    },
+    {
       "source": "IIIP29",
       "source_href": "/nodes/IIIP29.html",
       "target": "IIIP28",
@@ -5370,21 +6675,48 @@
       "via": "/text/part0030.html#e3724"
     },
     {
+      "source": "IIIP31",
+      "source_href": "/nodes/IIIP31.html",
+      "target": "IIIP17",
+      "target_href": "/nodes/IIIP17.html",
+      "type": "cites",
+      "label": "P17S",
+      "via": ""
+    },
+    {
+      "source": "IIIP31",
+      "source_href": "/nodes/IIIP31.html",
+      "target": "IIIP28",
+      "target_href": "/nodes/IIIP28.html",
+      "type": "cites",
+      "label": "P28",
+      "via": ""
+    },
+    {
+      "source": "IIIP31",
+      "source_href": "/nodes/IIIP31.html",
+      "target": "IIIP29",
+      "target_href": "/nodes/IIIP29.html",
+      "type": "cites",
+      "label": "P29S",
+      "via": ""
+    },
+    {
+      "source": "IIIP31",
+      "source_href": "/nodes/IIIP31.html",
+      "target": "IIIP28",
+      "target_href": "/nodes/IIIP28.html",
+      "type": "cites",
+      "label": "P28",
+      "via": "/text/part0030.html#e3724"
+    },
+    {
       "source": "IIIP32",
       "source_href": "/nodes/IIIP32.html",
       "target": "IIIP32",
       "target_href": "/nodes/IIIP32.html",
       "type": "cites",
       "label": "P32",
-      "via": ""
-    },
-    {
-      "source": "IIIP32",
-      "source_href": "/nodes/IIIP32.html",
-      "target": "IIIP12",
-      "target_href": "/nodes/IIIP12.html",
-      "type": "cites",
-      "label": "P12",
       "via": ""
     },
     {
@@ -5397,13 +6729,31 @@
       "via": "/text/part0031.html#page_513"
     },
     {
-      "source": "IIIP32",
-      "source_href": "/nodes/IIIP32.html",
+      "source": "IIIP33",
+      "source_href": "/nodes/IIIP33.html",
+      "target": "IIIP12",
+      "target_href": "/nodes/IIIP12.html",
+      "type": "cites",
+      "label": "P12",
+      "via": ""
+    },
+    {
+      "source": "IIIP33",
+      "source_href": "/nodes/IIIP33.html",
       "target": "IIIP12",
       "target_href": "/nodes/IIIP12.html",
       "type": "cites",
       "label": "P12",
       "via": "/text/part0030.html#page_502"
+    },
+    {
+      "source": "IIIP34",
+      "source_href": "/nodes/IIIP34.html",
+      "target": "IIIP33",
+      "target_href": "/nodes/IIIP33.html",
+      "type": "cites",
+      "label": "P33",
+      "via": ""
     },
     {
       "source": "IIIP34",
@@ -5439,6 +6789,15 @@
       "target_href": "/nodes/IIIP34.html",
       "type": "cites",
       "label": "P34",
+      "via": ""
+    },
+    {
+      "source": "IIIP35",
+      "source_href": "/nodes/IIIP35.html",
+      "target": "IIIP31",
+      "target_href": "/nodes/IIIP31.html",
+      "type": "cites",
+      "label": "P31",
       "via": ""
     },
     {
@@ -5498,33 +6857,6 @@
     {
       "source": "IIIP36",
       "source_href": "/nodes/IIIP36.html",
-      "target": "IIIP7",
-      "target_href": "/nodes/IIIP7.html",
-      "type": "cites",
-      "label": "P7",
-      "via": ""
-    },
-    {
-      "source": "IIIP36",
-      "source_href": "/nodes/IIIP36.html",
-      "target": "IIIP5",
-      "target_href": "/nodes/IIIP5.html",
-      "type": "cites",
-      "label": "P5",
-      "via": ""
-    },
-    {
-      "source": "IIIP36",
-      "source_href": "/nodes/IIIP36.html",
-      "target": "IIIP9",
-      "target_href": "/nodes/IIIP9.html",
-      "type": "cites",
-      "label": "P9S",
-      "via": ""
-    },
-    {
-      "source": "IIIP36",
-      "source_href": "/nodes/IIIP36.html",
       "target": "IIIP36",
       "target_href": "/nodes/IIIP36.html",
       "type": "cites",
@@ -5532,8 +6864,35 @@
       "via": "/text/part0031.html#page_515"
     },
     {
-      "source": "IIIP36",
-      "source_href": "/nodes/IIIP36.html",
+      "source": "IIIP37",
+      "source_href": "/nodes/IIIP37.html",
+      "target": "IIIP7",
+      "target_href": "/nodes/IIIP7.html",
+      "type": "cites",
+      "label": "P7",
+      "via": ""
+    },
+    {
+      "source": "IIIP37",
+      "source_href": "/nodes/IIIP37.html",
+      "target": "IIIP5",
+      "target_href": "/nodes/IIIP5.html",
+      "type": "cites",
+      "label": "P5",
+      "via": ""
+    },
+    {
+      "source": "IIIP37",
+      "source_href": "/nodes/IIIP37.html",
+      "target": "IIIP9",
+      "target_href": "/nodes/IIIP9.html",
+      "type": "cites",
+      "label": "P9S",
+      "via": ""
+    },
+    {
+      "source": "IIIP37",
+      "source_href": "/nodes/IIIP37.html",
       "target": "IIIP7",
       "target_href": "/nodes/IIIP7.html",
       "type": "cites",
@@ -5541,8 +6900,8 @@
       "via": "/text/part0030.html#e3617"
     },
     {
-      "source": "IIIP36",
-      "source_href": "/nodes/IIIP36.html",
+      "source": "IIIP37",
+      "source_href": "/nodes/IIIP37.html",
       "target": "IIIP5",
       "target_href": "/nodes/IIIP5.html",
       "type": "cites",
@@ -5550,8 +6909,8 @@
       "via": "/text/part0030.html#e3612"
     },
     {
-      "source": "IIIP36",
-      "source_href": "/nodes/IIIP36.html",
+      "source": "IIIP37",
+      "source_href": "/nodes/IIIP37.html",
       "target": "IIIP9",
       "target_href": "/nodes/IIIP9.html",
       "type": "cites",
@@ -5565,6 +6924,42 @@
       "target_href": "/nodes/IIIP21.html",
       "type": "cites",
       "label": "P21",
+      "via": ""
+    },
+    {
+      "source": "IIIP38",
+      "source_href": "/nodes/IIIP38.html",
+      "target": "IIIP37",
+      "target_href": "/nodes/IIIP37.html",
+      "type": "cites",
+      "label": "P37",
+      "via": ""
+    },
+    {
+      "source": "IIIP38",
+      "source_href": "/nodes/IIIP38.html",
+      "target": "IIIP33",
+      "target_href": "/nodes/IIIP33.html",
+      "type": "cites",
+      "label": "P33",
+      "via": ""
+    },
+    {
+      "source": "IIIP39",
+      "source_href": "/nodes/IIIP39.html",
+      "target": "IIIP37",
+      "target_href": "/nodes/IIIP37.html",
+      "type": "cites",
+      "label": "P37",
+      "via": ""
+    },
+    {
+      "source": "IIIP40",
+      "source_href": "/nodes/IIIP40.html",
+      "target": "IIIP39",
+      "target_href": "/nodes/IIIP39.html",
+      "type": "cites",
+      "label": "P39",
       "via": ""
     },
     {
@@ -5604,6 +6999,33 @@
       "via": "/text/part0030.html#e3707"
     },
     {
+      "source": "IIIP41",
+      "source_href": "/nodes/IIIP41.html",
+      "target": "IIIP39",
+      "target_href": "/nodes/IIIP39.html",
+      "type": "cites",
+      "label": "P39",
+      "via": ""
+    },
+    {
+      "source": "IIIP42",
+      "source_href": "/nodes/IIIP42.html",
+      "target": "IIIP33",
+      "target_href": "/nodes/IIIP33.html",
+      "type": "cites",
+      "label": "P33",
+      "via": ""
+    },
+    {
+      "source": "IIIP42",
+      "source_href": "/nodes/IIIP42.html",
+      "target": "IIIP34",
+      "target_href": "/nodes/IIIP34.html",
+      "type": "cites",
+      "label": "P34",
+      "via": ""
+    },
+    {
       "source": "IIIP42",
       "source_href": "/nodes/IIIP42.html",
       "target": "IIIP19",
@@ -5615,10 +7037,28 @@
     {
       "source": "IIIP43",
       "source_href": "/nodes/IIIP43.html",
+      "target": "IIIP40",
+      "target_href": "/nodes/IIIP40.html",
+      "type": "cites",
+      "label": "P40",
+      "via": ""
+    },
+    {
+      "source": "IIIP43",
+      "source_href": "/nodes/IIIP43.html",
       "target": "IIIP41",
       "target_href": "/nodes/IIIP41.html",
       "type": "cites",
       "label": "P41",
+      "via": ""
+    },
+    {
+      "source": "IIIP43",
+      "source_href": "/nodes/IIIP43.html",
+      "target": "IIIP37",
+      "target_href": "/nodes/IIIP37.html",
+      "type": "cites",
+      "label": "P37",
       "via": ""
     },
     {
@@ -5642,6 +7082,15 @@
     {
       "source": "IIIP44",
       "source_href": "/nodes/IIIP44.html",
+      "target": "IIIP37",
+      "target_href": "/nodes/IIIP37.html",
+      "type": "cites",
+      "label": "P37",
+      "via": ""
+    },
+    {
+      "source": "IIIP44",
+      "source_href": "/nodes/IIIP44.html",
       "target": "IIIP6",
       "target_href": "/nodes/IIIP6.html",
       "type": "cites",
@@ -5658,6 +7107,15 @@
       "via": "/text/part0031.html#e3770"
     },
     {
+      "source": "IIIP45",
+      "source_href": "/nodes/IIIP45.html",
+      "target": "IIIP40",
+      "target_href": "/nodes/IIIP40.html",
+      "type": "cites",
+      "label": "P40",
+      "via": ""
+    },
+    {
       "source": "IIIP46",
       "source_href": "/nodes/IIIP46.html",
       "target": "IIIP16",
@@ -5667,8 +7125,8 @@
       "via": ""
     },
     {
-      "source": "IIIP48",
-      "source_href": "/nodes/IIIP48.html",
+      "source": "IIIP49",
+      "source_href": "/nodes/IIIP49.html",
       "target": "ID7",
       "target_href": "/nodes/ID7.html",
       "type": "cites",
@@ -5676,8 +7134,8 @@
       "via": ""
     },
     {
-      "source": "IIIP48",
-      "source_href": "/nodes/IIIP48.html",
+      "source": "IIIP49",
+      "source_href": "/nodes/IIIP49.html",
       "target": "IIIP48",
       "target_href": "/nodes/IIIP48.html",
       "type": "cites",
@@ -5685,8 +7143,8 @@
       "via": ""
     },
     {
-      "source": "IIIP48",
-      "source_href": "/nodes/IIIP48.html",
+      "source": "IIIP49",
+      "source_href": "/nodes/IIIP49.html",
       "target": "IIIP48",
       "target_href": "/nodes/IIIP48.html",
       "type": "cites",
@@ -5700,6 +7158,15 @@
       "target_href": "/nodes/IIA1.html",
       "type": "cites",
       "label": "IIA1",
+      "via": ""
+    },
+    {
+      "source": "IIIP51",
+      "source_href": "/nodes/IIIP51.html",
+      "target": "IIIP49",
+      "target_href": "/nodes/IIIP49.html",
+      "type": "cites",
+      "label": "P49",
       "via": ""
     },
     {
@@ -5745,6 +7212,15 @@
       "target_href": "/nodes/IIIP53.html",
       "type": "cites",
       "label": "P53C",
+      "via": ""
+    },
+    {
+      "source": "IIIP55",
+      "source_href": "/nodes/IIIP55.html",
+      "target": "IIIP53",
+      "target_href": "/nodes/IIIP53.html",
+      "type": "cites",
+      "label": "P53",
       "via": ""
     },
     {
@@ -5831,6 +7307,15 @@
     {
       "source": "IIIP58",
       "source_href": "/nodes/IIIP58.html",
+      "target": "IIIP53",
+      "target_href": "/nodes/IIIP53.html",
+      "type": "cites",
+      "label": "P53",
+      "via": ""
+    },
+    {
+      "source": "IIIP58",
+      "source_href": "/nodes/IIIP58.html",
       "target": "IIP43",
       "target_href": "/nodes/IIP43.html",
       "type": "cites",
@@ -5853,6 +7338,15 @@
       "target_href": "/nodes/IIP23.html",
       "type": "cites",
       "label": "IIP23",
+      "via": ""
+    },
+    {
+      "source": "IIIP59",
+      "source_href": "/nodes/IIIP59.html",
+      "target": "IIIP52",
+      "target_href": "/nodes/IIIP52.html",
+      "type": "cites",
+      "label": "P52",
       "via": ""
     },
     {
@@ -5934,6 +7428,24 @@
       "target_href": "/nodes/IIP35.html",
       "type": "cites",
       "label": "IIP35S",
+      "via": ""
+    },
+    {
+      "source": "IIIP59",
+      "source_href": "/nodes/IIIP59.html",
+      "target": "IIIP54",
+      "target_href": "/nodes/IIIP54.html",
+      "type": "cites",
+      "label": "P54",
+      "via": ""
+    },
+    {
+      "source": "IIIP59",
+      "source_href": "/nodes/IIIP59.html",
+      "target": "IIIP31",
+      "target_href": "/nodes/IIIP31.html",
+      "type": "cites",
+      "label": "P31",
       "via": ""
     },
     {
@@ -6173,6 +7685,15 @@
     {
       "source": "IVP6",
       "source_href": "/nodes/IVP6.html",
+      "target": "IVP3",
+      "target_href": "/nodes/IVP3.html",
+      "type": "cites",
+      "label": "P3",
+      "via": ""
+    },
+    {
+      "source": "IVP6",
+      "source_href": "/nodes/IVP6.html",
       "target": "IVP5",
       "target_href": "/nodes/IVP5.html",
       "type": "cites",
@@ -6182,10 +7703,28 @@
     {
       "source": "IVP7",
       "source_href": "/nodes/IVP7.html",
+      "target": "IVP5",
+      "target_href": "/nodes/IVP5.html",
+      "type": "cites",
+      "label": "P5",
+      "via": ""
+    },
+    {
+      "source": "IVP7",
+      "source_href": "/nodes/IVP7.html",
       "target": "IIP6",
       "target_href": "/nodes/IIP6.html",
       "type": "cites",
       "label": "IIP6",
+      "via": ""
+    },
+    {
+      "source": "IVP7",
+      "source_href": "/nodes/IVP7.html",
+      "target": "IVA1",
+      "target_href": "/nodes/IVA1.html",
+      "type": "cites",
+      "label": "A1",
       "via": ""
     },
     {
@@ -6213,6 +7752,15 @@
       "target_href": "/nodes/IVD1.html",
       "type": "cites",
       "label": "D1",
+      "via": ""
+    },
+    {
+      "source": "IVP8",
+      "source_href": "/nodes/IVP8.html",
+      "target": "IVD2",
+      "target_href": "/nodes/IVD2.html",
+      "type": "cites",
+      "label": "D2",
       "via": ""
     },
     {
@@ -6279,6 +7827,15 @@
       "via": "/text/part0031.html#e4085"
     },
     {
+      "source": "IVP11",
+      "source_href": "/nodes/IVP11.html",
+      "target": "IVP9",
+      "target_href": "/nodes/IVP9.html",
+      "type": "cites",
+      "label": "P9",
+      "via": ""
+    },
+    {
       "source": "IVP12",
       "source_href": "/nodes/IVP12.html",
       "target": "IVD3",
@@ -6317,10 +7874,28 @@
     {
       "source": "IVP13",
       "source_href": "/nodes/IVP13.html",
+      "target": "IVD3",
+      "target_href": "/nodes/IVD3.html",
+      "type": "cites",
+      "label": "D3",
+      "via": ""
+    },
+    {
+      "source": "IVP13",
+      "source_href": "/nodes/IVP13.html",
       "target": "IVP18",
       "target_href": "/nodes/IVP18.html",
       "type": "cites",
       "label": "P18S",
+      "via": ""
+    },
+    {
+      "source": "IVP13",
+      "source_href": "/nodes/IVP13.html",
+      "target": "IVP9",
+      "target_href": "/nodes/IVP9.html",
+      "type": "cites",
+      "label": "P9",
       "via": ""
     },
     {
@@ -6339,6 +7914,15 @@
       "target_href": "/nodes/IVP8.html",
       "type": "cites",
       "label": "P8",
+      "via": ""
+    },
+    {
+      "source": "IVP14",
+      "source_href": "/nodes/IVP14.html",
+      "target": "IVP7",
+      "target_href": "/nodes/IVP7.html",
+      "type": "cites",
+      "label": "P7",
       "via": ""
     },
     {
@@ -6358,6 +7942,42 @@
       "type": "cites",
       "label": "P8",
       "via": "/text/part0031.html#e4081"
+    },
+    {
+      "source": "IVP15",
+      "source_href": "/nodes/IVP15.html",
+      "target": "IVP8",
+      "target_href": "/nodes/IVP8.html",
+      "type": "cites",
+      "label": "P8",
+      "via": ""
+    },
+    {
+      "source": "IVP15",
+      "source_href": "/nodes/IVP15.html",
+      "target": "IVP5",
+      "target_href": "/nodes/IVP5.html",
+      "type": "cites",
+      "label": "P5",
+      "via": ""
+    },
+    {
+      "source": "IVP15",
+      "source_href": "/nodes/IVP15.html",
+      "target": "IVP3",
+      "target_href": "/nodes/IVP3.html",
+      "type": "cites",
+      "label": "P3",
+      "via": ""
+    },
+    {
+      "source": "IVP15",
+      "source_href": "/nodes/IVP15.html",
+      "target": "IVP7",
+      "target_href": "/nodes/IVP7.html",
+      "type": "cites",
+      "label": "P7",
+      "via": ""
     },
     {
       "source": "IVP16",
@@ -6387,6 +8007,33 @@
       "via": ""
     },
     {
+      "source": "IVP19",
+      "source_href": "/nodes/IVP19.html",
+      "target": "IVP8",
+      "target_href": "/nodes/IVP8.html",
+      "type": "cites",
+      "label": "P8",
+      "via": ""
+    },
+    {
+      "source": "IVP20",
+      "source_href": "/nodes/IVP20.html",
+      "target": "IVD8",
+      "target_href": "/nodes/IVD8.html",
+      "type": "cites",
+      "label": "D8",
+      "via": ""
+    },
+    {
+      "source": "IVP20",
+      "source_href": "/nodes/IVP20.html",
+      "target": "IVP6",
+      "target_href": "/nodes/IVP6.html",
+      "type": "cites",
+      "label": "P6",
+      "via": ""
+    },
+    {
       "source": "IVP20",
       "source_href": "/nodes/IVP20.html",
       "target": "IIIP10",
@@ -6407,6 +8054,15 @@
     {
       "source": "IVP22",
       "source_href": "/nodes/IVP22.html",
+      "target": "IVD8",
+      "target_href": "/nodes/IVD8.html",
+      "type": "cites",
+      "label": "D8",
+      "via": ""
+    },
+    {
+      "source": "IVP22",
+      "source_href": "/nodes/IVP22.html",
       "target": "IVP22",
       "target_href": "/nodes/IVP22.html",
       "type": "cites",
@@ -6423,12 +8079,48 @@
       "via": ""
     },
     {
+      "source": "IVP23",
+      "source_href": "/nodes/IVP23.html",
+      "target": "IVD2",
+      "target_href": "/nodes/IVD2.html",
+      "type": "cites",
+      "label": "D2",
+      "via": ""
+    },
+    {
+      "source": "IVP23",
+      "source_href": "/nodes/IVP23.html",
+      "target": "IVD8",
+      "target_href": "/nodes/IVD8.html",
+      "type": "cites",
+      "label": "D8",
+      "via": ""
+    },
+    {
+      "source": "IVP24",
+      "source_href": "/nodes/IVP24.html",
+      "target": "IVD8",
+      "target_href": "/nodes/IVD8.html",
+      "type": "cites",
+      "label": "D8",
+      "via": ""
+    },
+    {
       "source": "IVP26",
       "source_href": "/nodes/IVP26.html",
       "target": "IVP25",
       "target_href": "/nodes/IVP25.html",
       "type": "cites",
       "label": "P25",
+      "via": ""
+    },
+    {
+      "source": "IVP26",
+      "source_href": "/nodes/IVP26.html",
+      "target": "IVD1",
+      "target_href": "/nodes/IVD1.html",
+      "type": "cites",
+      "label": "D1",
       "via": ""
     },
     {
@@ -6488,10 +8180,37 @@
     {
       "source": "IVP28",
       "source_href": "/nodes/IVP28.html",
+      "target": "IVP26",
+      "target_href": "/nodes/IVP26.html",
+      "type": "cites",
+      "label": "P26",
+      "via": ""
+    },
+    {
+      "source": "IVP28",
+      "source_href": "/nodes/IVP28.html",
       "target": "IVP27",
       "target_href": "/nodes/IVP27.html",
       "type": "cites",
       "label": "P27",
+      "via": ""
+    },
+    {
+      "source": "IVP28",
+      "source_href": "/nodes/IVP28.html",
+      "target": "IVD1",
+      "target_href": "/nodes/IVD1.html",
+      "type": "cites",
+      "label": "D1",
+      "via": ""
+    },
+    {
+      "source": "IVP28",
+      "source_href": "/nodes/IVP28.html",
+      "target": "IVP3",
+      "target_href": "/nodes/IVP3.html",
+      "type": "cites",
+      "label": "P3",
       "via": ""
     },
     {
@@ -6537,6 +8256,15 @@
       "target_href": "/nodes/IP28.html",
       "type": "cites",
       "label": "IP28",
+      "via": ""
+    },
+    {
+      "source": "IVP29",
+      "source_href": "/nodes/IVP29.html",
+      "target": "IVP8",
+      "target_href": "/nodes/IVP8.html",
+      "type": "cites",
+      "label": "P8",
       "via": ""
     },
     {
@@ -6767,10 +8495,28 @@
     {
       "source": "IVP34",
       "source_href": "/nodes/IVP34.html",
+      "target": "IVP30",
+      "target_href": "/nodes/IVP30.html",
+      "type": "cites",
+      "label": "P30",
+      "via": ""
+    },
+    {
+      "source": "IVP34",
+      "source_href": "/nodes/IVP34.html",
       "target": "IIIP59",
       "target_href": "/nodes/IIIP59.html",
       "type": "cites",
       "label": "IIIP59",
+      "via": ""
+    },
+    {
+      "source": "IVP34",
+      "source_href": "/nodes/IVP34.html",
+      "target": "IVP31",
+      "target_href": "/nodes/IVP31.html",
+      "type": "cites",
+      "label": "P31",
       "via": ""
     },
     {
@@ -6947,6 +8693,24 @@
     {
       "source": "IVP36",
       "source_href": "/nodes/IVP36.html",
+      "target": "IVP34",
+      "target_href": "/nodes/IVP34.html",
+      "type": "cites",
+      "label": "P34",
+      "via": ""
+    },
+    {
+      "source": "IVP36",
+      "source_href": "/nodes/IVP36.html",
+      "target": "IVP35",
+      "target_href": "/nodes/IVP35.html",
+      "type": "cites",
+      "label": "P35",
+      "via": ""
+    },
+    {
+      "source": "IVP36",
+      "source_href": "/nodes/IVP36.html",
       "target": "IVP47",
       "target_href": "/nodes/IVP47.html",
       "type": "cites",
@@ -7032,6 +8796,24 @@
       "target_href": "/nodes/IVP6.html",
       "type": "cites",
       "label": "P6",
+      "via": ""
+    },
+    {
+      "source": "IVP37",
+      "source_href": "/nodes/IVP37.html",
+      "target": "IVP33",
+      "target_href": "/nodes/IVP33.html",
+      "type": "cites",
+      "label": "P33",
+      "via": ""
+    },
+    {
+      "source": "IVP37",
+      "source_href": "/nodes/IVP37.html",
+      "target": "IVP34",
+      "target_href": "/nodes/IVP34.html",
+      "type": "cites",
+      "label": "P34",
       "via": ""
     },
     {
@@ -7152,6 +8934,15 @@
       "via": "/text/part0032.html#e4248"
     },
     {
+      "source": "IVP40",
+      "source_href": "/nodes/IVP40.html",
+      "target": "IVP35",
+      "target_href": "/nodes/IVP35.html",
+      "type": "cites",
+      "label": "P35",
+      "via": ""
+    },
+    {
       "source": "IVP41",
       "source_href": "/nodes/IVP41.html",
       "target": "IVP11",
@@ -7161,12 +8952,30 @@
       "via": ""
     },
     {
+      "source": "IVP41",
+      "source_href": "/nodes/IVP41.html",
+      "target": "IVP38",
+      "target_href": "/nodes/IVP38.html",
+      "type": "cites",
+      "label": "P38",
+      "via": ""
+    },
+    {
       "source": "IVP42",
       "source_href": "/nodes/IVP42.html",
       "target": "IVP39",
       "target_href": "/nodes/IVP39.html",
       "type": "cites",
       "label": "P39",
+      "via": ""
+    },
+    {
+      "source": "IVP42",
+      "source_href": "/nodes/IVP42.html",
+      "target": "IVP38",
+      "target_href": "/nodes/IVP38.html",
+      "type": "cites",
+      "label": "P38",
       "via": ""
     },
     {
@@ -7177,6 +8986,15 @@
       "type": "cites",
       "label": "P39",
       "via": "/text/part0032.html#e4251"
+    },
+    {
+      "source": "IVP43",
+      "source_href": "/nodes/IVP43.html",
+      "target": "IVP38",
+      "target_href": "/nodes/IVP38.html",
+      "type": "cites",
+      "label": "P38",
+      "via": ""
     },
     {
       "source": "IVP43",
@@ -7251,6 +9069,24 @@
       "via": ""
     },
     {
+      "source": "IVP45",
+      "source_href": "/nodes/IVP45.html",
+      "target": "IVP41",
+      "target_href": "/nodes/IVP41.html",
+      "type": "cites",
+      "label": "P41",
+      "via": ""
+    },
+    {
+      "source": "IVP46",
+      "source_href": "/nodes/IVP46.html",
+      "target": "IVP37",
+      "target_href": "/nodes/IVP37.html",
+      "type": "cites",
+      "label": "P37",
+      "via": ""
+    },
+    {
       "source": "IVP46",
       "source_href": "/nodes/IVP46.html",
       "target": "IIIP43",
@@ -7276,6 +9112,24 @@
       "type": "cites",
       "label": "IIIP43",
       "via": "/text/part0031.html#e3801"
+    },
+    {
+      "source": "IVP47",
+      "source_href": "/nodes/IVP47.html",
+      "target": "IVP41",
+      "target_href": "/nodes/IVP41.html",
+      "type": "cites",
+      "label": "P41",
+      "via": ""
+    },
+    {
+      "source": "IVP47",
+      "source_href": "/nodes/IVP47.html",
+      "target": "IVP43",
+      "target_href": "/nodes/IVP43.html",
+      "type": "cites",
+      "label": "P43",
+      "via": ""
     },
     {
       "source": "IVP49",
@@ -7316,6 +9170,24 @@
     {
       "source": "IVP50",
       "source_href": "/nodes/IVP50.html",
+      "target": "IVP41",
+      "target_href": "/nodes/IVP41.html",
+      "type": "cites",
+      "label": "P41",
+      "via": ""
+    },
+    {
+      "source": "IVP50",
+      "source_href": "/nodes/IVP50.html",
+      "target": "IVP37",
+      "target_href": "/nodes/IVP37.html",
+      "type": "cites",
+      "label": "P37",
+      "via": ""
+    },
+    {
+      "source": "IVP50",
+      "source_href": "/nodes/IVP50.html",
       "target": "IIIP27",
       "target_href": "/nodes/IIIP27.html",
       "type": "cites",
@@ -7334,6 +9206,15 @@
     {
       "source": "IVP51",
       "source_href": "/nodes/IVP51.html",
+      "target": "IVP37",
+      "target_href": "/nodes/IVP37.html",
+      "type": "cites",
+      "label": "P37",
+      "via": ""
+    },
+    {
+      "source": "IVP51",
+      "source_href": "/nodes/IVP51.html",
       "target": "IVP45",
       "target_href": "/nodes/IVP45.html",
       "type": "cites",
@@ -7347,6 +9228,15 @@
       "target_href": "/nodes/IIP40.html",
       "type": "cites",
       "label": "IIP40",
+      "via": ""
+    },
+    {
+      "source": "IVP52",
+      "source_href": "/nodes/IVP52.html",
+      "target": "IVP43",
+      "target_href": "/nodes/IVP43.html",
+      "type": "cites",
+      "label": "P43",
       "via": ""
     },
     {
@@ -7447,6 +9337,24 @@
       "type": "cites",
       "label": "P44S",
       "via": "/text/part0032.html#e4271"
+    },
+    {
+      "source": "IVP59",
+      "source_href": "/nodes/IVP59.html",
+      "target": "IVP41",
+      "target_href": "/nodes/IVP41.html",
+      "type": "cites",
+      "label": "P41",
+      "via": ""
+    },
+    {
+      "source": "IVP59",
+      "source_href": "/nodes/IVP59.html",
+      "target": "IVP43",
+      "target_href": "/nodes/IVP43.html",
+      "type": "cites",
+      "label": "P43",
+      "via": ""
     },
     {
       "source": "IVP60",
@@ -7611,12 +9519,30 @@
       "via": "/text/part0032.html#e4370"
     },
     {
+      "source": "IVP67",
+      "source_href": "/nodes/IVP67.html",
+      "target": "IVP63",
+      "target_href": "/nodes/IVP63.html",
+      "type": "cites",
+      "label": "P63",
+      "via": ""
+    },
+    {
       "source": "IVP68",
       "source_href": "/nodes/IVP68.html",
       "target": "IVP64",
       "target_href": "/nodes/IVP64.html",
       "type": "cites",
       "label": "P64C",
+      "via": ""
+    },
+    {
+      "source": "IVP68",
+      "source_href": "/nodes/IVP68.html",
+      "target": "IVP37",
+      "target_href": "/nodes/IVP37.html",
+      "type": "cites",
+      "label": "P37",
       "via": ""
     },
     {
@@ -7640,11 +9566,56 @@
     {
       "source": "IVP70",
       "source_href": "/nodes/IVP70.html",
+      "target": "IVP37",
+      "target_href": "/nodes/IVP37.html",
+      "type": "cites",
+      "label": "P37",
+      "via": ""
+    },
+    {
+      "source": "IVP70",
+      "source_href": "/nodes/IVP70.html",
       "target": "IIIP42",
       "target_href": "/nodes/IIIP42.html",
       "type": "cites",
       "label": "IIIP42",
       "via": "/text/part0031.html#e3798"
+    },
+    {
+      "source": "IVP71",
+      "source_href": "/nodes/IVP71.html",
+      "target": "IVP35",
+      "target_href": "/nodes/IVP35.html",
+      "type": "cites",
+      "label": "P35",
+      "via": ""
+    },
+    {
+      "source": "IVP71",
+      "source_href": "/nodes/IVP71.html",
+      "target": "IVP37",
+      "target_href": "/nodes/IVP37.html",
+      "type": "cites",
+      "label": "P37",
+      "via": ""
+    },
+    {
+      "source": "IVP73",
+      "source_href": "/nodes/IVP73.html",
+      "target": "IVP63",
+      "target_href": "/nodes/IVP63.html",
+      "type": "cites",
+      "label": "P63",
+      "via": ""
+    },
+    {
+      "source": "IVP73",
+      "source_href": "/nodes/IVP73.html",
+      "target": "IVP37",
+      "target_href": "/nodes/IVP37.html",
+      "type": "cites",
+      "label": "P37",
+      "via": ""
     },
     {
       "source": "IVP73",
@@ -7698,6 +9669,24 @@
       "target_href": "/nodes/IVP57.html",
       "type": "cites",
       "label": "P57S",
+      "via": ""
+    },
+    {
+      "source": "IVP73",
+      "source_href": "/nodes/IVP73.html",
+      "target": "IVP38",
+      "target_href": "/nodes/IVP38.html",
+      "type": "cites",
+      "label": "P38",
+      "via": ""
+    },
+    {
+      "source": "IVP73",
+      "source_href": "/nodes/IVP73.html",
+      "target": "IVP39",
+      "target_href": "/nodes/IVP39.html",
+      "type": "cites",
+      "label": "P39",
       "via": ""
     },
     {
@@ -8027,6 +10016,15 @@
     {
       "source": "VP10",
       "source_href": "/nodes/VP10.html",
+      "target": "VP7",
+      "target_href": "/nodes/VP7.html",
+      "type": "cites",
+      "label": "P7",
+      "via": ""
+    },
+    {
+      "source": "VP10",
+      "source_href": "/nodes/VP10.html",
       "target": "VP6",
       "target_href": "/nodes/VP6.html",
       "type": "cites",
@@ -8061,6 +10059,15 @@
       "via": "/text/part0032.html#e4545"
     },
     {
+      "source": "VP11",
+      "source_href": "/nodes/VP11.html",
+      "target": "VP8",
+      "target_href": "/nodes/VP8.html",
+      "type": "cites",
+      "label": "P8",
+      "via": ""
+    },
+    {
       "source": "VP12",
       "source_href": "/nodes/VP12.html",
       "target": "VP11",
@@ -8079,8 +10086,26 @@
       "via": "/text/part0032.html#e4580"
     },
     {
+      "source": "VP14",
+      "source_href": "/nodes/VP14.html",
+      "target": "VP4",
+      "target_href": "/nodes/VP4.html",
+      "type": "cites",
+      "label": "P4",
+      "via": ""
+    },
+    {
       "source": "VP15",
       "source_href": "/nodes/VP15.html",
+      "target": "VP14",
+      "target_href": "/nodes/VP14.html",
+      "type": "cites",
+      "label": "P14",
+      "via": ""
+    },
+    {
+      "source": "VP16",
+      "source_href": "/nodes/VP16.html",
       "target": "VP14",
       "target_href": "/nodes/VP14.html",
       "type": "cites",
@@ -8094,6 +10119,15 @@
       "target_href": "/nodes/VP15.html",
       "type": "cites",
       "label": "P15",
+      "via": ""
+    },
+    {
+      "source": "VP16",
+      "source_href": "/nodes/VP16.html",
+      "target": "VP11",
+      "target_href": "/nodes/VP11.html",
+      "type": "cites",
+      "label": "P11",
       "via": ""
     },
     {
@@ -8180,10 +10214,37 @@
     {
       "source": "VP20",
       "source_href": "/nodes/VP20.html",
+      "target": "VP2",
+      "target_href": "/nodes/VP2.html",
+      "type": "cites",
+      "label": "P2",
+      "via": ""
+    },
+    {
+      "source": "VP20",
+      "source_href": "/nodes/VP20.html",
+      "target": "VP7",
+      "target_href": "/nodes/VP7.html",
+      "type": "cites",
+      "label": "P7",
+      "via": ""
+    },
+    {
+      "source": "VP20",
+      "source_href": "/nodes/VP20.html",
       "target": "VP9",
       "target_href": "/nodes/VP9.html",
       "type": "cites",
       "label": "P9",
+      "via": ""
+    },
+    {
+      "source": "VP20",
+      "source_href": "/nodes/VP20.html",
+      "target": "VP11",
+      "target_href": "/nodes/VP11.html",
+      "type": "cites",
+      "label": "P11",
       "via": ""
     },
     {
@@ -8211,6 +10272,33 @@
       "target_href": "/nodes/VP13.html",
       "type": "cites",
       "label": "P13",
+      "via": ""
+    },
+    {
+      "source": "VP20",
+      "source_href": "/nodes/VP20.html",
+      "target": "VP14",
+      "target_href": "/nodes/VP14.html",
+      "type": "cites",
+      "label": "P14",
+      "via": ""
+    },
+    {
+      "source": "VP20",
+      "source_href": "/nodes/VP20.html",
+      "target": "VP3",
+      "target_href": "/nodes/VP3.html",
+      "type": "cites",
+      "label": "P3",
+      "via": ""
+    },
+    {
+      "source": "VP20",
+      "source_href": "/nodes/VP20.html",
+      "target": "VP15",
+      "target_href": "/nodes/VP15.html",
+      "type": "cites",
+      "label": "P15",
       "via": ""
     },
     {
@@ -8394,6 +10482,24 @@
       "via": ""
     },
     {
+      "source": "VP27",
+      "source_href": "/nodes/VP27.html",
+      "target": "VP24",
+      "target_href": "/nodes/VP24.html",
+      "type": "cites",
+      "label": "P24",
+      "via": ""
+    },
+    {
+      "source": "VP29",
+      "source_href": "/nodes/VP29.html",
+      "target": "VP21",
+      "target_href": "/nodes/VP21.html",
+      "type": "cites",
+      "label": "P21",
+      "via": ""
+    },
+    {
       "source": "VP29",
       "source_href": "/nodes/VP29.html",
       "target": "ID8",
@@ -8418,6 +10524,24 @@
       "target_href": "/nodes/VP29.html",
       "type": "cites",
       "label": "P29",
+      "via": ""
+    },
+    {
+      "source": "VP31",
+      "source_href": "/nodes/VP31.html",
+      "target": "VP21",
+      "target_href": "/nodes/VP21.html",
+      "type": "cites",
+      "label": "P21",
+      "via": ""
+    },
+    {
+      "source": "VP31",
+      "source_href": "/nodes/VP31.html",
+      "target": "VP23",
+      "target_href": "/nodes/VP23.html",
+      "type": "cites",
+      "label": "P23",
       "via": ""
     },
     {
@@ -8450,10 +10574,37 @@
     {
       "source": "VP32",
       "source_href": "/nodes/VP32.html",
+      "target": "VP27",
+      "target_href": "/nodes/VP27.html",
+      "type": "cites",
+      "label": "P27",
+      "via": ""
+    },
+    {
+      "source": "VP32",
+      "source_href": "/nodes/VP32.html",
+      "target": "VP30",
+      "target_href": "/nodes/VP30.html",
+      "type": "cites",
+      "label": "P30",
+      "via": ""
+    },
+    {
+      "source": "VP32",
+      "source_href": "/nodes/VP32.html",
       "target": "VP32",
       "target_href": "/nodes/VP32.html",
       "type": "cites",
       "label": "P32",
+      "via": ""
+    },
+    {
+      "source": "VP32",
+      "source_href": "/nodes/VP32.html",
+      "target": "VP29",
+      "target_href": "/nodes/VP29.html",
+      "type": "cites",
+      "label": "P29",
       "via": ""
     },
     {
@@ -8481,6 +10632,15 @@
       "target_href": "/nodes/VP33.html",
       "type": "cites",
       "label": "P33",
+      "via": ""
+    },
+    {
+      "source": "VP34",
+      "source_href": "/nodes/VP34.html",
+      "target": "VP21",
+      "target_href": "/nodes/VP21.html",
+      "type": "cites",
+      "label": "P21",
       "via": ""
     },
     {
@@ -8522,10 +10682,136 @@
     {
       "source": "VP36",
       "source_href": "/nodes/VP36.html",
+      "target": "VP32",
+      "target_href": "/nodes/VP32.html",
+      "type": "cites",
+      "label": "P32",
+      "via": ""
+    },
+    {
+      "source": "VP36",
+      "source_href": "/nodes/VP36.html",
       "target": "VP35",
       "target_href": "/nodes/VP35.html",
       "type": "cites",
       "label": "P35",
+      "via": ""
+    },
+    {
+      "source": "VP36",
+      "source_href": "/nodes/VP36.html",
+      "target": "VP27",
+      "target_href": "/nodes/VP27.html",
+      "type": "cites",
+      "label": "P27",
+      "via": ""
+    },
+    {
+      "source": "VP37",
+      "source_href": "/nodes/VP37.html",
+      "target": "VP33",
+      "target_href": "/nodes/VP33.html",
+      "type": "cites",
+      "label": "P33",
+      "via": ""
+    },
+    {
+      "source": "VP37",
+      "source_href": "/nodes/VP37.html",
+      "target": "VP29",
+      "target_href": "/nodes/VP29.html",
+      "type": "cites",
+      "label": "P29",
+      "via": ""
+    },
+    {
+      "source": "VP38",
+      "source_href": "/nodes/VP38.html",
+      "target": "VP23",
+      "target_href": "/nodes/VP23.html",
+      "type": "cites",
+      "label": "P23",
+      "via": ""
+    },
+    {
+      "source": "VP38",
+      "source_href": "/nodes/VP38.html",
+      "target": "VP29",
+      "target_href": "/nodes/VP29.html",
+      "type": "cites",
+      "label": "P29",
+      "via": ""
+    },
+    {
+      "source": "VP38",
+      "source_href": "/nodes/VP38.html",
+      "target": "VP37",
+      "target_href": "/nodes/VP37.html",
+      "type": "cites",
+      "label": "P37",
+      "via": ""
+    },
+    {
+      "source": "VP38",
+      "source_href": "/nodes/VP38.html",
+      "target": "VP27",
+      "target_href": "/nodes/VP27.html",
+      "type": "cites",
+      "label": "P27",
+      "via": ""
+    },
+    {
+      "source": "VP38",
+      "source_href": "/nodes/VP38.html",
+      "target": "VP21",
+      "target_href": "/nodes/VP21.html",
+      "type": "cites",
+      "label": "P21",
+      "via": ""
+    },
+    {
+      "source": "VP39",
+      "source_href": "/nodes/VP39.html",
+      "target": "VP10",
+      "target_href": "/nodes/VP10.html",
+      "type": "cites",
+      "label": "P10",
+      "via": ""
+    },
+    {
+      "source": "VP39",
+      "source_href": "/nodes/VP39.html",
+      "target": "VP14",
+      "target_href": "/nodes/VP14.html",
+      "type": "cites",
+      "label": "P14",
+      "via": ""
+    },
+    {
+      "source": "VP39",
+      "source_href": "/nodes/VP39.html",
+      "target": "VP15",
+      "target_href": "/nodes/VP15.html",
+      "type": "cites",
+      "label": "P15",
+      "via": ""
+    },
+    {
+      "source": "VP39",
+      "source_href": "/nodes/VP39.html",
+      "target": "VP16",
+      "target_href": "/nodes/VP16.html",
+      "type": "cites",
+      "label": "P16",
+      "via": ""
+    },
+    {
+      "source": "VP39",
+      "source_href": "/nodes/VP39.html",
+      "target": "VP33",
+      "target_href": "/nodes/VP33.html",
+      "type": "cites",
+      "label": "P33",
       "via": ""
     },
     {
@@ -8535,6 +10821,33 @@
       "target_href": "/nodes/VP38.html",
       "type": "cites",
       "label": "P38S",
+      "via": ""
+    },
+    {
+      "source": "VP40",
+      "source_href": "/nodes/VP40.html",
+      "target": "VP23",
+      "target_href": "/nodes/VP23.html",
+      "type": "cites",
+      "label": "P23",
+      "via": ""
+    },
+    {
+      "source": "VP40",
+      "source_href": "/nodes/VP40.html",
+      "target": "VP29",
+      "target_href": "/nodes/VP29.html",
+      "type": "cites",
+      "label": "P29",
+      "via": ""
+    },
+    {
+      "source": "VP40",
+      "source_href": "/nodes/VP40.html",
+      "target": "VP21",
+      "target_href": "/nodes/VP21.html",
+      "type": "cites",
+      "label": "P21",
       "via": ""
     },
     {
@@ -8565,12 +10878,48 @@
       "via": "/text/part0032.html#e4694"
     },
     {
+      "source": "VP41",
+      "source_href": "/nodes/VP41.html",
+      "target": "VP24",
+      "target_href": "/nodes/VP24.html",
+      "type": "cites",
+      "label": "P24",
+      "via": ""
+    },
+    {
       "source": "VP42",
       "source_href": "/nodes/VP42.html",
       "target": "VP36",
       "target_href": "/nodes/VP36.html",
       "type": "cites",
       "label": "P36",
+      "via": ""
+    },
+    {
+      "source": "VP42",
+      "source_href": "/nodes/VP42.html",
+      "target": "VP3",
+      "target_href": "/nodes/VP3.html",
+      "type": "cites",
+      "label": "P3",
+      "via": ""
+    },
+    {
+      "source": "VP42",
+      "source_href": "/nodes/VP42.html",
+      "target": "VP32",
+      "target_href": "/nodes/VP32.html",
+      "type": "cites",
+      "label": "P32",
+      "via": ""
+    },
+    {
+      "source": "VP42",
+      "source_href": "/nodes/VP42.html",
+      "target": "VP38",
+      "target_href": "/nodes/VP38.html",
+      "type": "cites",
+      "label": "P38",
       "via": ""
     }
   ]

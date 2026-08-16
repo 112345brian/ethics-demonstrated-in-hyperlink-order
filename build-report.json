@@ -1,12 +1,12 @@
 {
-  "source": "/private/tmp/spinoza_work",
+  "source": "/Users/bri/epub-rebuilds-artifacts/books/spinoza-ethics/book",
   "output": "/private/tmp/claude-501/-Users-bri-epub-rebuilds-artifacts-spinoza-ethics-site/1816327b-82e6-43b9-aa53-cc6c9965d88c/scratchpad/gh-pages-build",
   "files": 111,
-  "anchors": 36459,
-  "linked_targets": 8580,
-  "incoming_references": 47437,
-  "outgoing_reference_sources": 11334,
+  "anchors": 36518,
+  "linked_targets": 8629,
+  "incoming_references": 47852,
+  "outgoing_reference_sources": 11358,
   "search_records": 19131,
-  "ethics_nodes": 295,
-  "node_anchor_mappings": 3827
+  "ethics_nodes": 301,
+  "node_anchor_mappings": 3899
 }
