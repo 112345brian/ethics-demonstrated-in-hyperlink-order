@@ -60,7 +60,11 @@ ETHICS_FILES = {
 
 HTML_NS = "http://www.w3.org/1999/xhtml"
 
-DEFAULT_SOURCE = Path("/tmp/spinoza_work")
+#: The tracked EPUB source tree, per the epub-rebuilds pipeline's convention
+#: (epub-rebuilds-artifacts/books/<slug>/book/). Previously an untracked
+#: working copy at /tmp/spinoza_work with no remote -- see the commit that
+#: introduced this constant for how that was rescued.
+DEFAULT_SOURCE = Path.home() / "epub-rebuilds-artifacts/books/spinoza-ethics/book"
 DEFAULT_OUTPUT = Path(__file__).resolve().parents[2] / "build"
 
 #: Asset directories copied verbatim from the source corpus.
